@@ -1,0 +1,70 @@
+.header {
+    max-width: 1920px;
+    margin: auto;
+    background-color: #1A1A1A;
+    padding: 20px 162px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.nav-btn {
+    display: flex;
+    margin: 0;
+    gap: 30px;
+}
+.btn-item {
+    width: 136px;
+    height: 55px;
+    color: #FFF;
+    background-color: #1A1A1A;
+    border: 1px solid #1A1A1A;
+    padding: 0;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    transition-duration: 300ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn-link {
+    cursor: pointer;
+    color: #FFF;
+    font-family: Urbanist;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 150%;
+}
+.btn-item:hover {
+    border-radius: 10px;
+    border: 1px solid #262626;
+    background-color: #141414;
+    transition-duration: 300ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contact-btn {
+    width: 136px;
+    height: 60px;
+    padding: 0;
+    align-items: center;
+    background-color: #1A1A1A;
+    border: 1px solid #1A1A1A;
+    color: #FFF;
+    font-family: Urbanist;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;        
+    transition-duration: 300ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contact-btn:hover {
+    border-radius: 10px;
+    border: 1px solid #262626;
+    background-color: #141414;
+    transition-duration: 300ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);        
+}
