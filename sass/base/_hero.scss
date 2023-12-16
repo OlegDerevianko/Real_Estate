@@ -1,0 +1,91 @@
+.hero {
+    max-width: 1920px;    
+    background-size: 920px 814px;
+    background: #141414;
+    display: flex;
+    gap: 80px;
+}
+.hero-container {
+    display: flex;
+    padding-left: 162px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 920px;
+}
+.hero-name {
+    color: #FFF;
+    font-family: Urbanist;
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 120%;
+    margin-bottom: 24px;
+}
+.hero-description {
+    color: #999;
+    font-family: Urbanist;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 150%;
+}
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+}
+.hero-btn {
+    display: flex;
+    padding: 18px 24px;
+    margin: 60px 0;
+    justify-content: center;
+    align-items: center;
+    background: #141414;
+    border-radius: 10px;
+    border: 1px solid #262626;
+    color: #FFF;
+    font-family: Urbanist;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 150%;
+    transition-duration: 300ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hero-btn:hover {
+    background: #703BF7;
+    border: 1px solid #703BF7;
+}
+.hero-list {
+    display: flex;
+    gap: 20px;
+}
+.hero-item {
+    width: 240px;
+    padding: 16px 24px;
+    gap: 2px;
+    border-radius: 12px;
+    border: 1px solid #262626;
+    background: #1A1A1A;
+}
+.hero-numbers {
+    color: #FFF;
+    font-family: Urbanist;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 150%;
+}
+.hero-text {
+    color: #999;
+    font-family: Urbanist;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 150%;
+}
+.hero-bg {
+    width: 920px;
+    height: 814px;   
+    background-image: linear-gradient(
+        238deg,
+        rgba(42, 33, 63, 1) 8.76%,
+        rgba(25, 25, 25, 0) 50.09%), url(/images/hero-bg.jpg) ; 
+    background-repeat: no-repeat;
+    background-size: cover;     
+}
