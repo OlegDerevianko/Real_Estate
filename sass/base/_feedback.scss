@@ -57,12 +57,31 @@
 .feedback-item {
     width: 512px;
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
     padding: 50px;
+    gap: 40px;
     flex-direction: column;
     border-radius: 12px;
     border: 1px solid #262626;
     background: #141414;
+}
+.feedback-rate {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 10px;
+}
+.rate-item {
+    padding: 10px;
+    border-radius: 100px;
+    border: 1px solid #262626;
+    background: #1A1A1A;
+}
+.icon-star {
+    fill: rgba(255, 229, 0, 1);
+}
+.feedback-text-container {
+    height: 158px;
 }
 
 .feedback-text {
@@ -89,7 +108,7 @@
     display: flex;
     align-items: center;
         gap: 12px;
-        margin-top: 40px;
+        // margin-top: 40px;
 }
 .feedback-user-wadewarren {
     width: 60px;

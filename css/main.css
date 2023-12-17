@@ -657,7 +657,7 @@ summary {
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-  background: #141414;
+  background: #1A1A1A;
   border: 1px solid #262626;
   color: #FFF;
   font-family: Urbanist;
@@ -772,12 +772,30 @@ summary {
 .feedback-item {
   width: 512px;
   display: flex;
-  justify-content: space-between;
   padding: 50px;
+  gap: 40px;
   flex-direction: column;
   border-radius: 12px;
   border: 1px solid #262626;
   background: #141414; }
+
+.feedback-rate {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 10px; }
+
+.rate-item {
+  padding: 10px;
+  border-radius: 100px;
+  border: 1px solid #262626;
+  background: #1A1A1A; }
+
+.icon-star {
+  fill: #ffe500; }
+
+.feedback-text-container {
+  height: 158px; }
 
 .feedback-text {
   align-self: stretch;
@@ -801,8 +819,7 @@ summary {
 .feedback-user {
   display: flex;
   align-items: center;
-  gap: 12px;
-  margin-top: 40px; }
+  gap: 12px; }
 
 .feedback-user-wadewarren {
   width: 60px;
@@ -891,6 +908,349 @@ summary {
   fill: gray; }
 
 .arrow-right {
+  fill: white; }
+
+.question {
+  width: 1920px;
+  background: #141414;
+  padding-bottom: 100px; }
+
+.question-container {
+  width: 1596px;
+  margin: auto; }
+
+.question-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: end; }
+
+.question-title-name {
+  color: #FFF;
+  font-family: Urbanist;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  margin-bottom: 14px; }
+
+.question-title-text {
+  color: #999;
+  font-family: Urbanist;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; }
+
+.question-title-btn {
+  display: flex;
+  padding: 18px 24px;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid #262626;
+  background: #1A1A1A;
+  color: #FFF;
+  font-family: Urbanist;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); }
+
+.question-title-btn:hover {
+  background: #703BF7;
+  border: 1px solid #703BF7; }
+
+.question-list {
+  display: flex;
+  gap: 30px;
+  margin: 80px 0 50px 0; }
+
+.question-item {
+  width: 512px;
+  display: flex;
+  gap: 30px;
+  padding: 50px;
+  flex-direction: column;
+  border-radius: 12px;
+  border: 1px solid #262626;
+  background: #141414; }
+
+.question-text {
+  align-self: stretch;
+  color: #FFF;
+  font-family: Urbanist;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  flex-grow: 2; }
+
+.question-description {
+  align-self: stretch;
+  color: #FFF;
+  font-family: Urbanist;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; }
+
+.question-item-btn {
+  width: 134px;
+  height: 60px;
+  padding: 0;
+  border-radius: 10px;
+  border: 1px solid #262626;
+  background: #1A1A1A;
+  color: #FFF;
+  font-family: Urbanist;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 131%;
+  letter-spacing: -0.108px;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); }
+
+.question-item-btn:hover {
+  background: #703BF7;
+  border: 1px solid #703BF7; }
+
+.question-pages {
+  display: flex;
+  padding-top: 20px;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-top: 1px solid #262626; }
+
+.question-numbers {
+  color: #999;
+  font-family: Urbanist;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; }
+
+.question-numbers1 {
+  color: #FFF;
+  font-family: Urbanist;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; }
+
+.question-buttons-container {
+  display: flex;
+  gap: 10px; }
+
+.question-btn {
+  width: 58px;
+  height: 58px;
+  padding: 14px;
+  border-radius: 69px;
+  border: 1px solid #262626;
+  background: #1A1A1A; }
+
+.arrow-left {
+  fill: gray; }
+
+.arrow-right {
+  fill: white; }
+
+.join {
+  width: 1920px;
+  background-color: #141414;
+  padding: 100px 0;
+  border-top: 1px solid #262626;
+  border-bottom: 1px solid #262626;
+  background-image: url("/images/abstract.svg"), url("/images/abstract1.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: left -20px bottom 0px, left 1287px bottom 0px; }
+
+.join-container {
+  width: 1596px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 250px;
+  align-items: center; }
+
+.join-title-name {
+  color: #FFF;
+  font-family: Urbanist;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  margin-bottom: 14px; }
+
+.join-title-text {
+  color: #999;
+  font-family: Urbanist;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; }
+
+.join-title-btn {
+  display: flex;
+  padding: 18px 24px;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid #262626;
+  background: #1A1A1A;
+  color: #FFF;
+  font-family: Urbanist;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); }
+
+.join-title-btn:hover {
+  background: #703BF7;
+  border: 1px solid #703BF7; }
+
+.footer {
+  width: 1920px;
+  background: #141414;
+  padding-top: 100px;
+  margin: auto; }
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  width: 1596px;
+  margin: auto;
+  margin-bottom: 100px;
+  gap: 80px; }
+
+.footer-subscribe {
+  display: flex;
+  flex-direction: column;
+  width: 538px;
+  gap: 30px; }
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px; }
+
+.form-submit {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 423px;
+  padding: 18px 24px;
+  border-radius: 12px;
+  border: 1px solid var(--Grey-15, #262626);
+  background: var(--Grey-08, #141414); }
+
+.form-submit input::placeholder {
+  color: #999;
+  font-family: Urbanist;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  /* 133.333% */
+  letter-spacing: -0.108px; }
+
+.form-submit input {
+  min-width: 301px;
+  border-radius: 4px;
+  border: 0px solid;
+  background: #141414;
+  color: #999999; }
+
+.icon-mail {
+  fill: #999999; }
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 978px; }
+
+.links-list {
+  margin: 0; }
+
+.links-item {
+  margin-bottom: 20px; }
+
+.links-item:first-child {
+  margin-bottom: 30px; }
+
+.links-item:last-child {
+  margin-bottom: 0; }
+
+.link-nav-categories {
+  color: #999;
+  font-family: Urbanist;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  /* 120% */
+  letter-spacing: -0.12px; }
+
+.link-nav {
+  color: #FFF;
+  font-family: Urbanist;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  /* 133.333% */
+  letter-spacing: -0.108px; }
+
+.icon-send {
+  fill: white; }
+
+.footer-end {
+  width: 1920px;
+  margin: auto;
+  background-color: #1A1A1A; }
+
+.rights-socials {
+  display: flex;
+  justify-content: space-between;
+  width: 1596px;
+  margin: auto;
+  padding: 16px 0; }
+
+.rights {
+  display: flex;
+  gap: 38px;
+  align-items: center; }
+
+.rights-text {
+  color: #FFF;
+  font-family: Urbanist;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  /* 133.333% */
+  letter-spacing: -0.108px; }
+
+.socials {
+  display: flex;
+  padding: 10px 0px;
+  align-items: center;
+  gap: 10px; }
+
+.socials-btn {
+  border: 0px solid;
+  padding: 0;
+  border-radius: 58px;
+  background: #141414;
+  width: 52px;
+  height: 52px; }
+
+.icon-social {
   fill: white; }
 
 /*# sourceMappingURL=main.css.map */

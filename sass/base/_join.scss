@@ -1,0 +1,60 @@
+.join {
+    width: 1920px;
+    background-color: #141414;
+    padding: 100px 0;
+    border-top: 1px solid #262626;
+    border-bottom: 1px solid #262626;
+    background-image: 
+        url('/images/abstract.svg'),
+        url('/images/abstract1.svg');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 
+    left -20px bottom 0px,
+    left 1287px bottom 0px;
+}
+.join-container {
+    width: 1596px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 250px;
+    align-items: center;
+}
+.join-title-name {
+    color: #FFF;
+    font-family: Urbanist;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    margin-bottom: 14px;
+}
+.join-title-text {
+    color: #999;
+    font-family: Urbanist;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+}
+.join-title-btn {
+    display: flex;
+    padding: 18px 24px;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid #262626;
+    background: #1A1A1A;
+    color: #FFF;
+    font-family: Urbanist;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    transition-duration: 300ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.join-title-btn:hover {
+    background: #703BF7;
+    border: 1px solid #703BF7;
+}

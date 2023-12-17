@@ -1,0 +1,141 @@
+.footer {
+    width: 1920px;
+    background: #141414;
+    padding-top: 100px;
+    margin: auto;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    width: 1596px;
+    margin: auto;
+    margin-bottom: 100px;
+    gap: 80px;
+}
+.footer-subscribe {
+    display: flex;
+    flex-direction: column;
+    width: 538px;
+    gap: 30px;
+}
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    // margin-bottom: 30px;
+}
+.form-submit {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 423px;
+    padding: 18px 24px;
+    border-radius: 12px;
+    border: 1px solid var(--Grey-15, #262626);
+    background: var(--Grey-08, #141414);
+}
+.form-submit input::placeholder {
+    color: #999;
+    font-family: Urbanist;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    /* 133.333% */
+    letter-spacing: -0.108px;
+}
+.form-submit input {
+    min-width: 301px;
+    border-radius: 4px;
+    border: 0px solid;
+    background: #141414;
+    color: rgba(153, 153, 153, 1);
+}
+.icon-mail {
+    fill: rgba(153, 153, 153, 1);
+}
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 978px;
+}
+.links-list {
+    margin: 0;
+}
+.links-item {
+    margin-bottom: 20px;
+}
+.links-item:first-child {
+    margin-bottom: 30px;
+}
+.links-item:last-child {
+    margin-bottom: 0;
+}
+.link-nav-categories {
+    color: #999;
+    font-family: Urbanist;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    /* 120% */
+    letter-spacing: -0.12px;
+}
+.link-nav {
+    color: #FFF;
+    font-family: Urbanist;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    /* 133.333% */
+    letter-spacing: -0.108px;
+}
+.icon-send {
+    fill: rgba(255, 255, 255, 1);
+}
+.footer-end {
+    width: 1920px;
+    margin: auto;
+    background-color: #1A1A1A;
+}
+.rights-socials {
+    display: flex;
+    justify-content: space-between;
+    width: 1596px;
+    margin: auto;
+    padding: 16px 0;
+}
+.rights {
+    display: flex;
+    gap: 38px;
+    align-items: center;
+}
+.rights-text {
+    color: #FFF;
+    font-family: Urbanist;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    /* 133.333% */
+    letter-spacing: -0.108px;
+}
+.socials {
+    display: flex;
+    padding: 10px 0px;
+    align-items: center;
+    gap: 10px;
+}
+.socials-btn {
+    border: 0px solid;
+    padding: 0;
+    border-radius: 58px;
+    background: #141414;
+    width: 52px;
+    height: 52px;
+}
+.icon-social {
+    fill: rgba(255, 255, 255, 1);
+}
