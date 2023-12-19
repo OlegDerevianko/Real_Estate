@@ -1420,4 +1420,245 @@ summary {
   font-weight: 500;
   line-height: 150%; }
 
+.achievements {
+  width: 1920px;
+  margin: auto;
+  background-color: #141414;
+  padding-bottom: 150px; }
+
+.achievements-container {
+  width: 1596px;
+  margin: auto; }
+
+.achievements-name {
+  color: #FFF;
+  font-family: Urbanist;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  margin: 0;
+  margin-bottom: 14px; }
+
+.achievements-text {
+  color: #999;
+  font-family: Urbanist;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; }
+
+.achievements-list {
+  display: flex;
+  gap: 40px;
+  margin: 0;
+  margin-top: 80px; }
+
+.achievements-item {
+  border-radius: 12px;
+  border: 1px solid #262626;
+  background: #141414;
+  box-shadow: 0px 0px 0px 8px #191919;
+  padding: 50px;
+  width: 505px; }
+
+.achievements-item-name {
+  color: #FFF;
+  font-family: Urbanist;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; }
+
+.achievements-item-text {
+  margin-top: 30px;
+  color: #999;
+  font-family: Urbanist;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; }
+
+.experience {
+  width: 1920px;
+  margin: auto;
+  background-color: #141414;
+  padding-bottom: 150px; }
+
+.experience-container {
+  width: 1596px;
+  margin: auto; }
+
+.experience-name {
+  color: #FFF;
+  font-family: Urbanist;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  margin: 0;
+  margin-bottom: 14px; }
+
+.experience-text {
+  color: #999;
+  font-family: Urbanist;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; }
+
+.experience-list {
+  display: flex;
+  margin: 0;
+  margin-top: 80px;
+  flex-wrap: wrap;
+  gap: 30px; }
+
+.experience-item {
+  width: 512px;
+  margin-bottom: 50px; }
+
+.experience-item:nth-child(n+4) {
+  margin-bottom: 0; }
+
+.experience-item-box {
+  width: 512px;
+  padding: 16px 20px;
+  border-left: 1px solid var(--Purple-60, #703BF7); }
+
+.experience-item-title {
+  color: #FFF;
+  font-family: Urbanist;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; }
+
+.experience-border {
+  height: 267px;
+  background: linear-gradient(135deg, #703bf7 10%, rgba(112, 59, 247, 0) 20%);
+  padding: 1px; }
+
+.experience-item-card {
+  height: 100%;
+  padding: 50px;
+  border-radius: 0px 12px 12px 12px;
+  border: 1px solid #262626;
+  background: var(--Grey-08, #141414);
+  background-image: linear-gradient(121deg, #703bf7 -49.01%, rgba(112, 59, 247, 0) 13.65%); }
+
+.experience-item-card:nth-child(3) {
+  align-self: stretch; }
+
+.experience-item-name {
+  color: #FFF;
+  font-family: Urbanist;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; }
+
+.experience-item-text {
+  color: #999;
+  font-family: Urbanist;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  margin-top: 20px; }
+
+.team {
+  width: 1920px;
+  margin: auto;
+  background-color: #141414;
+  padding-bottom: 150px; }
+
+.team-container {
+  width: 1596px;
+  margin: auto; }
+
+.team-name {
+  color: #FFF;
+  font-family: Urbanist;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  margin: 0;
+  margin-bottom: 14px; }
+
+.team-text {
+  color: #999;
+  font-family: Urbanist;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; }
+
+.team-list {
+  margin: 0;
+  margin-top: 80px;
+  gap: 30px;
+  display: flex; }
+
+.team-item {
+  width: 367px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid #262626; }
+
+.team-item-photo {
+  border-radius: 12px;
+  height: 253px; }
+
+.team-item-name {
+  color: #FFF;
+  text-align: center;
+  font-family: Urbanist;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+  margin-top: 50px; }
+
+.team-item-job {
+  color: #999;
+  text-align: center;
+  font-family: Urbanist;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  margin-bottom: 24px;
+  margin-top: 6px; }
+
+.team-item-message {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 14px 14px 24px;
+  border-radius: 100px;
+  border: 1px solid #262626;
+  background: #1A1A1A; }
+
+.message-text {
+  color: #FFF;
+  font-family: Urbanist;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; }
+
+.message-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 100px;
+  background: #703BF7;
+  padding: 10px; }
+
+.message-icon {
+  fill: white; }
+
 /*# sourceMappingURL=main.css.map */

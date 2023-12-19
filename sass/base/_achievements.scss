@@ -1,0 +1,60 @@
+.achievements {
+    width: 1920px;
+    margin: auto;
+    background-color: #141414;
+    padding-bottom: 150px;
+}
+.achievements-container {
+    width: 1596px;
+    margin: auto;
+}
+.achievements-name {
+    color: #FFF;
+    font-family: Urbanist;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+     line-height: 150%;
+     margin: 0;
+     margin-bottom: 14px;
+}
+.achievements-text {
+    color: #999;
+    font-family: Urbanist;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+}
+.achievements-list {
+    display: flex;
+    gap: 40px;
+    margin: 0;
+    margin-top: 80px;
+}
+.achievements-item {
+    border-radius: 12px;
+    border: 1px solid #262626;
+    background: #141414;
+    box-shadow: 0px 0px 0px 8px #191919;    
+    padding: 50px;
+    width: 505px;
+}
+.achievements-item-name {
+    color: #FFF;
+    font-family: Urbanist;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    
+}
+.achievements-item-text {
+    margin-top: 30px;
+    color: #999;
+    font-family: Urbanist;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+}
