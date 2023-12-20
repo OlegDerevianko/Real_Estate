@@ -12,14 +12,12 @@
     align-items: center;
     gap: 10px;
 }
-.nav-btn {
+.nav-list {
     display: flex;
     margin: 0;
     gap: 30px;
 }
-.btn-item {
-    width: 136px;
-    height: 55px;
+.nav-item {
     color: #FFF;
     background-color: #1A1A1A;
     border: 1px solid #1A1A1A;
@@ -30,15 +28,39 @@
     transition-duration: 300ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.btn-link {
+.item-link {
     cursor: pointer;
+    width: 136px;
+    height: 55px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
     color: #FFF;
     font-family: Urbanist;
+    text-align: center;
     font-size: 18px;
     font-weight: 500;
     line-height: 150%;
 }
-.btn-item:hover {
+.current {
+    border-radius: 10px;
+    border: 1px solid #262626;
+    background-color: #141414;
+}
+.btn-link {
+    width: 136px;
+    height: 55px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: #FFF;
+    font-family: Urbanist;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 150%;
+}
+.nav-item:hover {
     border-radius: 10px;
     border: 1px solid #262626;
     background-color: #141414;
@@ -46,6 +68,7 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-btn {
+    cursor: pointer;
     width: 136px;
     height: 60px;
     padding: 0;

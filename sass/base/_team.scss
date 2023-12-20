@@ -31,6 +31,7 @@
     margin-top: 80px;
     gap: 30px;
     display: flex;
+    justify-content: center;
 }
 .team-item {
     width: 367px;
@@ -43,6 +44,12 @@
 .team-item-photo {
     border-radius: 12px;
     height: 253px;
+}
+.team-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px;
 }
 .team-item-name {
     color: #FFF;
@@ -83,7 +90,8 @@
     font-weight: 500;
     line-height: 28px;
 }
-.message-btn {   
+.message-btn {  
+    cursor: pointer;
     width: 44px;
     height: 44px; 
     border-radius: 100px;

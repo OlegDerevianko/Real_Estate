@@ -5,33 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Education-Estate</title>
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
     <header class="header">
-        <a href="">
+        <a href="./index.html">
             <div class="logo">
-                <img src="./images/logo.svg" width="48px" height="48px" alt="logo">
-                <img src="./images/estatein.svg" width="102px" height="21px" alt="logo">
+                <svg width="48px" height="48px" aria-hidden="true">
+                    <use href="./images/icons.svg#icon-logo"></use>
+                </svg>
+                <svg width="102px" height="21px" aria-hidden="true">
+                    <use href="./images/icons.svg#icon-estatein"></use>
+                </svg>
             </div>
         </a>
-        <div class="nav-btn">
-            <a href="./index.html" class="btn-link">
-            <button class="btn-item">Home</button>
-            </a>
-            <a href="./about.html" class="btn-link">
-            <button class="btn-item">About Us</button>
-            </a>
-            <a href="" class="btn-link">
-            <button class="btn-item">Properties</button>
-            </a>
-            <a href="" class="btn-link">
-            <button class="btn-item">Services</button>
-            </a>
-        </div>
-        <a href="" class="btn-item">
-        <button class="contact-btn">Contact Us</button>
-        </a>
+        <ul class="nav-list">
+            <li class="nav-item current"><a href="./index.html" class="item-link">Home</a></li>
+            <li class="nav-item"><a href="./about.html" class="item-link">About Us</a></li>
+            <li class="nav-item"><a href="" class="item-link">Properties</a></li>
+            <li class="nav-item"><a href="" class="item-link">Services</a></li>
+        </ul>
+        <form action="new.html">
+            <button class="contact-btn" onclick="">Contact Us</button>
+        </form>
     </header>
     <main>  
         <section class="hero">
@@ -61,13 +57,18 @@
             <div class="hero-bg"></div>
         </section>   
         <section class="subscribe">
+            <h2 class="visually-hidden">Subscribe</h2>
             <ul class="subscribe-list">
                 <li class="subscribe-item">
                     <div class="subscribe-icon-container">
-                        <div class="subscribe-icon-container1">
-                            <svg class="subscribe-icons" width="34px" height="34px" aria-hidden="true">
-                                <use href="./images/icons.svg#icon-home"></use>
-                            </svg>
+                        <div class="boxes">
+                            <div class="boxes1">
+                                <div class="subscribe-icon-container1">
+                                    <svg class="subscribe-icons" width="34px" height="34px" aria-hidden="true">
+                                        <use href="./images/icons.svg#icon-home"></use>
+                                    </svg>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <span class="subscribe-text">Find Your Dream Home</span>
@@ -81,10 +82,14 @@
                 </li>
                 <li class="subscribe-item">
                     <div class="subscribe-icon-container">
-                        <div class="subscribe-icon-container1">
-                            <svg class="subscribe-icons" width="34px" height="34px" aria-hidden="true">
-                                <use href="./images/icons.svg#icon-value"></use>
-                            </svg>
+                        <div class="boxes">
+                            <div class="boxes1">
+                                <div class="subscribe-icon-container1">
+                                    <svg class="subscribe-icons" width="34px" height="34px" aria-hidden="true">
+                                        <use href="./images/icons.svg#icon-value"></use>
+                                    </svg>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <span class="subscribe-text">Unlock Property Value</span>
@@ -98,10 +103,14 @@
                 </li>
                 <li class="subscribe-item">
                     <div class="subscribe-icon-container">
-                        <div class="subscribe-icon-container1">
-                            <svg class="subscribe-icons" width="34px" height="34px" aria-hidden="true">
-                                <use href="./images/icons.svg#icon-management"></use>
-                            </svg>
+                        <div class="boxes">
+                            <div class="boxes1">
+                                <div class="subscribe-icon-container1">
+                                    <svg class="subscribe-icons" width="34px" height="34px" aria-hidden="true">
+                                        <use href="./images/icons.svg#icon-management"></use>
+                                    </svg>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <span class="subscribe-text">Effortless Property Management</span>
@@ -115,10 +124,14 @@
                 </li>
                 <li class="subscribe-item">
                     <div class="subscribe-icon-container">
-                        <div class="subscribe-icon-container1">
-                            <svg class="subscribe-icons" width="34px" height="34px" aria-hidden="true">
-                                <use href="./images/icons.svg#icon-sun"></use>
-                            </svg>
+                        <div class="boxes">
+                            <div class="boxes1">
+                                <div class="subscribe-icon-container1">
+                                    <svg class="subscribe-icons" width="34px" height="34px" aria-hidden="true">
+                                        <use href="./images/icons.svg#icon-sun"></use>
+                                    </svg>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <span class="subscribe-text">Smart Investments, Informed Decisions</span>
@@ -131,7 +144,6 @@
                     </div>
                 </li>
             </ul>
-
         </section> 
         <section class="features">
             <div class="features-container">
@@ -481,8 +493,12 @@
             <div class="footer-subscribe">
                 <a href="">
                     <div class="footer-logo">
-                        <img src="./images/logo.svg" width="48px" height="48px" alt="logo">
-                        <img src="./images/estatein.svg" width="102px" height="21px" alt="logo">
+                        <svg width="48px" height="48px" aria-hidden="true">
+                            <use href="./images/icons.svg#icon-logo"></use>
+                        </svg>
+                        <svg width="102px" height="21px" aria-hidden="true">
+                            <use href="./images/icons.svg#icon-estatein"></use>
+                        </svg>
                     </div>
                 </a>
                 <form class="form-submit" name="signup_form" autocomplete="on" novalidate>
@@ -490,7 +506,7 @@
                             <use href="./images/icons.svg#icon-mail"></use>
                         </svg>
                         <label>
-                            <input type="email" name="email" placeholder="Enter Your Email" />
+                            <input type="email" name="email" placeholder="Enter Your Email">
                         </label>
                         <a href="">
                             <svg class="icon-send" width="30px" height="30px" aria-hidden="true">
@@ -537,7 +553,7 @@
                 </ul>
             </div>
         </div>
-        <section class="footer-end">
+        <div class="footer-end">
             <div class="rights-socials">
                 <div class="rights">
                     <span class="rights-text">@2023 Estatein. All Rights Reserved</span>
@@ -567,7 +583,7 @@
                 </div>
             </div>
 
-        </section>       
+        </div>       
     </footer>
 </body>
 

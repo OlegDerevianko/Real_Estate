@@ -30,6 +30,7 @@
     line-height: 150%;
 }
 .feedback-title-btn {
+    cursor: pointer;
     display: flex;
     padding: 18px 24px;
     align-items: center;
@@ -159,9 +160,6 @@
     font-weight: 500;
     line-height: 150%;
 }
-
-
-
 .feedback-pages {
     display: flex;
     padding-top: 20px;
@@ -190,6 +188,7 @@
     gap: 10px;
 }
 .feedback-btn {
+    cursor: pointer;
     width: 58px;
     height: 58px;
     padding: 14px;
