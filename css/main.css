@@ -1472,6 +1472,16 @@ summary {
   font-weight: 500;
   line-height: 150%; }
 
+.team-item-message input::placeholder {
+  background: var(--Grey-10, #1A1A1A);
+  border: 0px solid;
+  color: #FFF; }
+
+.team-item-message input {
+  background: var(--Grey-10, #1A1A1A);
+  border: 0px solid;
+  color: #FFF; }
+
 .achievements {
   width: 1920px;
   margin: auto;
