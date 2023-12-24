@@ -81,14 +81,12 @@
     border-radius: 100px;
     border: 1px solid #262626;
     background: #1A1A1A;
-}
-.message-text {
-    color:  #FFF;
-    font-family: Urbanist;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 28px;
+    color: #FFF;
+        font-family: Urbanist;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 28px;
 }
 .message-btn {  
     cursor: pointer;
@@ -101,3 +99,18 @@
 .message-icon {
     fill: rgba(255, 255, 255, 1);
 }
+.team-item-message input::placeholder {
+    background: var(--Grey-10, #1A1A1A);
+    border: 1px solid #1A1A1A;
+    color: #FFF;
+}
+
+
+.team-item-message input {
+    background: var(--Grey-10, #1A1A1A);
+    border: 1px solid #1A1A1A;
+    color: #FFF;
+        box-shadow: #703BF7;
+
+}
+

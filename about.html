@@ -27,12 +27,10 @@
             <li class="nav-item"><a href="" class="item-link">Properties</a></li>
             <li class="nav-item"><a href="" class="item-link">Services</a></li>
         </ul>
-            <form action="new.html">
-                <button class="contact-btn" onclick="">Contact Us</button>
-            </form>            
+            <button class="contact-btn" onclick="" contact-modal-open>Contact Us</button>
     </header>
     <main>
-        <section class="about-hero">
+        <section class="about-hero" id="story">
             <div class="about-hero-container">
                 <div class="about-hero-main">
                     <h1 class="about-hero-name">Our Journey</h1>
@@ -59,7 +57,7 @@
             </div>
             
         </section>
-        <section class="values">
+        <section class="values" id="values">
             <div class="values-container">
                 <div class="values-title">
                     <h1 class="values-title-name">Our Values</h1>
@@ -142,7 +140,7 @@
                 </ul>
             </div>      
         </section>
-        <section class="experience">
+        <section class="experience" id="experience">
             <div class="experience-container">                
                 <h1 class="experience-name">Navigating the Estatein Experience</h1>
                 <span class="experience-text">At Estatein, we've designed a straightforward process to help you find and purchase your dream property with ease.
@@ -226,7 +224,7 @@
 
             </div>
         </section>
-        <section class="team">
+        <section class="team" id="team">
             <div class="team-container">
                 <h1 class="team-name">Meet the Estatein Team</h1>
                 <span class="team-text">At Estatein, our success is driven by the dedication and expertise of our team. Get to know the people behind our
@@ -237,18 +235,10 @@
                             <img src="/images/max_mitchell.jpg" alt="Max Mitchell" class="team-img">
                         </div>
                         <span class="team-item-name">Max Mitchell</span>
-                        <p class="team-item-job">Founder</p>
-                        <div class="team-item-message">
-                            <span class="message-text">Say Hello 👋</span>
-                            <button class="message-btn">
-                                <svg class="message-icon" width="24px" height="24px" aria-hidden="true">
-                                    <use href="./images/icons.svg#icon-send"></use>
-                                </svg>
-                            </button>
-                        </div>
-                        <form class="team-item-message" novalidate>                            
+                        <p class="team-item-job">Founder</p>                        
+                        <form class="team-item-message" autocomplete="on" novalidate>                            
                             <label>
-                                <input class="message-input" type="text" name="text" placeholder="Say Hello 👋">
+                                <input class="message-input" type="text" name="text" placeholder="Say Hello 👋" >
                             </label>
                             <button class="message-btn">
                                 <svg class="message-icon" width="24px" height="24px" aria-hidden="true">
@@ -263,14 +253,16 @@
                         </div>
                         <span class="team-item-name">Sarah Johnson</span>
                         <p class="team-item-job">Chief Real Estate Officer</p>
-                        <div class="team-item-message">
-                            <span class="message-text">Say Hello 👋</span>
+                        <form class="team-item-message" autocomplete="on" novalidate>
+                            <label>
+                                <input class="message-input" type="text" name="text" placeholder="Say Hello 👋">
+                            </label>
                             <button class="message-btn">
                                 <svg class="message-icon" width="24px" height="24px" aria-hidden="true">
                                     <use href="./images/icons.svg#icon-send"></use>
                                 </svg>
                             </button>
-                        </div>
+                        </form>
                     </li>
                     <li class="team-item">
                         <div class="team-item-photo">
@@ -278,14 +270,16 @@
                         </div>
                         <span class="team-item-name">David Brown</span>
                         <p class="team-item-job">Head of Property Management</p>
-                        <div class="team-item-message">
-                            <span class="message-text">Say Hello 👋</span>
+                        <form class="team-item-message" autocomplete="on" novalidate>
+                            <label>
+                                <input class="message-input" type="text" name="text" placeholder="Say Hello 👋">
+                            </label>
                             <button class="message-btn">
                                 <svg class="message-icon" width="24px" height="24px" aria-hidden="true">
                                     <use href="./images/icons.svg#icon-send"></use>
                                 </svg>
                             </button>
-                        </div>
+                        </form>
                     </li>
                     <li class="team-item">
                         <div class="team-item-photo">
@@ -293,20 +287,22 @@
                         </div>
                         <span class="team-item-name">Michael Turner</span>
                         <p class="team-item-job">Legal Counsel</p>
-                        <div class="team-item-message">
-                            <span class="message-text">Say Hello 👋</span>
+                        <form class="team-item-message" autocomplete="on" novalidate>
+                            <label>
+                                <input class="message-input" type="text" name="text" placeholder="Say Hello 👋">
+                            </label>
                             <button class="message-btn">
                                 <svg class="message-icon" width="24px" height="24px" aria-hidden="true">
                                     <use href="./images/icons.svg#icon-send"></use>
                                 </svg>
                             </button>
-                        </div>
+                        </form>
                     </li>
                 </ul>
 
             </div>
         </section>
-        <section class="clients">
+        <section class="clients" id="clients">
             <div class="clients-container">
                 <h1 class="clients-name">Our Valued Clients</h1>
                 <span class="clients-text">At Estatein, we have had the privilege of working with a diverse range of clients across various industries. Here are
@@ -451,12 +447,12 @@
                     <li class="links-item"><a href="" class="link-nav">FAQ’s</a></li>
                 </ul>
                 <ul class="links-list">
-                    <li class="links-item"><a href="" class="link-nav-categories">About Us</a></li>
-                    <li class="links-item"><a href="" class="link-nav">Our Story</a></li>
-                    <li class="links-item"><a href="" class="link-nav">Our Works</a></li>
-                    <li class="links-item"><a href="" class="link-nav">How It Works</a></li>
-                    <li class="links-item"><a href="" class="link-nav">Our Team</a></li>
-                    <li class="links-item"><a href="" class="link-nav">Our Clients</a></li>
+                    <li class="links-item"><a href="/about.html" class="link-nav-categories">About Us</a></li>
+                    <li class="links-item"><a href="#story" class="link-nav">Our Story</a></li>
+                    <li class="links-item"><a href="#values" class="link-nav">Our Works</a></li>
+                    <li class="links-item"><a href="#experience" class="link-nav">How It Works</a></li>
+                    <li class="links-item"><a href="#team" class="link-nav">Our Team</a></li>
+                    <li class="links-item"><a href="#clients" class="link-nav">Our Clients</a></li>
                 </ul>
                 <ul class="links-list">
                     <li class="links-item"><a href="" class="link-nav-categories">Properties</a></li>
@@ -511,6 +507,46 @@
 
         </div>
     </footer>
+    <div class="backdrop is-hidden" contact-modal>
+        <div class="contact-modal">
+            <button class="close-btn" contact-modal-close>
+                <svg class="close-btn-icon" width="14px" height="14px" aria-hidden="true">
+                    <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+            <div class="contact-modal-inner">
+                <h3 class="contact-modal-title">Contact Us</h3>
+                <form class="contact-modal-form" name="contact-form" autocomplete="off" novalidate>
+                    <label class="contact-modal-label" for="name">Name</label>
+                    <div class="contact-modal-box">
+                        <input class="contact-modal-input" type="text" name="name" id="name" autofocus>
+                        <svg class="contact-modal-icon" width="14px" height="14px" aria-hidden="true">
+                            <use href="./images/icons.svg#icon-name"></use>
+                        </svg>
+                    </div>
+                    <label class="contact-modal-label" for="tel">Phone Number</label>
+                    <div class="contact-modal-box">
+                        <input class="contact-modal-input" type="tel" name="tel" id="tel">
+                        <svg class="contact-modal-icon" width="14px" height="14px" aria-hidden="true">
+                            <use href="./images/icons.svg#icon-phone"></use>
+                        </svg>
+                    </div>
+                    <label class="contact-modal-label" for="mail">Mail</label>
+                    <div class="contact-modal-box">
+                        <input class="contact-modal-input" type="email" name="mail" id="mail">
+                        <svg class="contact-modal-icon" width="14px" height="14px" aria-hidden="true">
+                            <use href="./images/icons.svg#icon-email"></use>
+                        </svg>
+                    </div>
+                    <button class="contact-send-btn" type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    
+    </div>
+        <script src="./js/contact-modal.js"></script>
+
+
 </body>
 
 </html>

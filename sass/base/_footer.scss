@@ -44,6 +44,10 @@
     /* 133.333% */
     letter-spacing: -0.108px;
 }
+.form-submit-input:focus {
+    outline: none;
+    border: 1px solid rgba(112, 59, 247, 1);
+}
 .form-submit input {
     min-width: 301px;
     border-radius: 4px;

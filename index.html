@@ -25,9 +25,7 @@
             <li class="nav-item"><a href="" class="item-link">Properties</a></li>
             <li class="nav-item"><a href="" class="item-link">Services</a></li>
         </ul>
-        <form action="new.html">
-            <button class="contact-btn" onclick="">Contact Us</button>
-        </form>
+            <button class="contact-btn" onclick="" contact-modal-open>Contact Us</button>
     </header>
     <main>  
         <section class="hero">
@@ -501,12 +499,12 @@
                         </svg>
                     </div>
                 </a>
-                <form class="form-submit" name="signup_form" autocomplete="on" novalidate>
+                <form class="form-submit" name="signup_form" autocomplete="off" novalidate>
                         <svg class="icon-mail" width="24px" height="24px" aria-hidden="true">
                             <use href="./images/icons.svg#icon-mail"></use>
                         </svg>
                         <label>
-                            <input type="email" name="email" placeholder="Enter Your Email">
+                            <input class="form-submit-input" type="email" name="email" placeholder="Enter Your Email">
                         </label>
                         <a href="">
                             <svg class="icon-send" width="30px" height="30px" aria-hidden="true">
@@ -585,6 +583,44 @@
 
         </div>       
     </footer>
+    <div class="backdrop is-hidden" contact-modal>
+        <div class="contact-modal">
+            <button class="close-btn" contact-modal-close>
+                <svg class="close-btn-icon" width="14px" height="14px" aria-hidden="true">
+                    <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+            <div class="contact-modal-inner">
+                <h3 class="contact-modal-title">Contact Us</h3>
+                <form class="contact-modal-form" name="contact-form" autocomplete="off" novalidate>
+                    <label class="contact-modal-label" for="name">Name</label>
+                    <div class="contact-modal-box">
+                        <input class="contact-modal-input" type="text" name="name" id="name" autofocus>
+                        <svg class="contact-modal-icon" width="14px" height="14px" aria-hidden="true">
+                            <use href="./images/icons.svg#icon-name"></use>
+                        </svg>
+                    </div>
+                    <label class="contact-modal-label" for="tel">Phone Number</label>
+                    <div class="contact-modal-box">
+                        <input class="contact-modal-input" type="tel" name="tel" id="tel">
+                        <svg class="contact-modal-icon" width="14px" height="14px" aria-hidden="true">
+                            <use href="./images/icons.svg#icon-phone"></use>
+                        </svg>
+                    </div>
+                    <label class="contact-modal-label" for="mail">Mail</label>
+                    <div class="contact-modal-box">
+                        <input class="contact-modal-input" type="email" name="mail" id="mail">
+                        <svg class="contact-modal-icon" width="14px" height="14px" aria-hidden="true">
+                            <use href="./images/icons.svg#icon-email"></use>
+                        </svg>
+                    </div>
+                    <button class="contact-send-btn" type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+        
+    </div>
+    <script src="./js/contact-modal.js"></script>
 </body>
 
 </html>
