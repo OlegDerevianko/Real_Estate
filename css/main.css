@@ -604,7 +604,7 @@ summary {
   display: flex; }
 
 .features-item {
-  width: 512px;
+  min-width: 512px;
   padding: 40px;
   flex-direction: column;
   align-items: flex-start;
@@ -695,9 +695,9 @@ summary {
 
 .etc-btn {
   cursor: pointer;
-  width: 279px;
+  min-width: 279px;
   display: flex;
-  padding: 18px 24px;
+  padding: 0;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
@@ -744,7 +744,6 @@ summary {
   gap: 10px; }
 
 .pages-btn {
-  cursor: pointer;
   width: 58px;
   height: 58px;
   padding: 14px;
@@ -755,8 +754,35 @@ summary {
 .arrow-left {
   fill: gray; }
 
-.arrow-right {
+.arrow-left:hover {
   fill: white; }
+
+.arrow-left:focus {
+  fill: white; }
+
+.arrow-right {
+  fill: gray; }
+
+.arrow-right:hover {
+  fill: white; }
+
+.arrow-right:focus {
+  fill: white; }
+
+.slider-container {
+  max-width: 1596px;
+  margin: auto;
+  background-color: #141414;
+  overflow: hidden; }
+
+.slider-track {
+  display: flex;
+  margin: 0;
+  transition: 1s; }
+
+.slider-item {
+  margin-right: 30px;
+  min-width: 512px; }
 
 .feedback {
   width: 1920px;
@@ -810,13 +836,16 @@ summary {
   background: #703BF7;
   border: 1px solid #703BF7; }
 
+.feedback-slider-container {
+  overflow: hidden; }
+
 .feedback-list {
   display: flex;
   gap: 30px;
   margin: 80px 0 50px 0; }
 
 .feedback-item {
-  width: 512px;
+  min-width: 512px;
   display: flex;
   padding: 50px;
   gap: 40px;
@@ -943,7 +972,6 @@ summary {
   gap: 10px; }
 
 .feedback-btn {
-  cursor: pointer;
   width: 58px;
   height: 58px;
   padding: 14px;
@@ -954,7 +982,19 @@ summary {
 .arrow-left {
   fill: gray; }
 
+.arrow-left:hover {
+  fill: white; }
+
+.arrow-left:focus {
+  fill: white; }
+
 .arrow-right {
+  fill: gray; }
+
+.arrow-right:hover {
+  fill: white; }
+
+.arrow-right:focus {
   fill: white; }
 
 .question {
@@ -1104,7 +1144,19 @@ summary {
 .arrow-left {
   fill: gray; }
 
+.arrow-left:hover {
+  fill: white; }
+
+.arrow-left:focus {
+  fill: white; }
+
 .arrow-right {
+  fill: gray; }
+
+.arrow-right:hover {
+  fill: white; }
+
+.arrow-right:focus {
   fill: white; }
 
 .join {
@@ -1914,7 +1966,19 @@ summary {
 .arrow-left {
   fill: gray; }
 
+.arrow-left:hover {
+  fill: white; }
+
+.arrow-left:focus {
+  fill: white; }
+
 .arrow-right {
+  fill: gray; }
+
+.arrow-right:hover {
+  fill: white; }
+
+.arrow-right:focus {
   fill: white; }
 
 .backdrop {

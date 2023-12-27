@@ -50,13 +50,16 @@
     background: #703BF7;
     border: 1px solid #703BF7;
 }
+.feedback-slider-container {
+    overflow: hidden;
+}
 .feedback-list {
     display: flex;
     gap: 30px; 
     margin: 80px 0 50px 0;   
 }
 .feedback-item {
-    width: 512px;
+    min-width: 512px;
     display: flex;
     // justify-content: space-between;
     padding: 50px;
@@ -188,7 +191,6 @@
     gap: 10px;
 }
 .feedback-btn {
-    cursor: pointer;
     width: 58px;
     height: 58px;
     padding: 14px;
@@ -199,6 +201,23 @@
 .arrow-left {
     fill: rgba(128, 128, 128, 1);
 }
+
+.arrow-left:hover {
+    fill: rgba(255, 255, 255, 1);
+}
+
+.arrow-left:focus {
+    fill: rgba(255, 255, 255, 1);
+}
+
 .arrow-right {
+    fill: rgba(128, 128, 128, 1);
+}
+
+.arrow-right:hover {
+    fill: rgba(255, 255, 255, 1);
+}
+
+.arrow-right:focus {
     fill: rgba(255, 255, 255, 1);
 }
