@@ -349,7 +349,7 @@ summary {
 .hero-bg {
   width: 358px;
   height: 302px;
-  background-image: linear-gradient(238deg, #2a213f 8.76%, rgba(25, 25, 25, 0) 50.09%), url(/images/hero-bg.jpg);
+  background-image: linear-gradient(238deg, #2a213f 8.76%, rgba(25, 25, 25, 0) 50.09%), url("../images/hero-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover; }
 
@@ -1208,7 +1208,7 @@ summary {
   background-color: #141414;
   border-top: 1px solid #262626;
   border-bottom: 1px solid #262626;
-  background-image: url("/images/abstract.svg"), url("/images/abstract1.svg");
+  background-image: url("../images/abstract.svg"), url("../images/abstract1.svg");
   background-repeat: no-repeat;
   background-size: 522px 284px, 398px 217px;
   background-position: left -21px top -109px, right 0 bottom -25px; }
