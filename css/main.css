@@ -349,7 +349,7 @@ summary {
 .hero-bg {
   width: 358px;
   height: 302px;
-  background-image: linear-gradient(238deg, #2a213f 8.76%, rgba(25, 25, 25, 0) 50.09%), url("../images/hero-bg.jpg");
+  background-image: linear-gradient(238deg, #2a213f 8.76%, rgba(25, 25, 25, 0) 50.09%), url("./images/hero-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover; }
 
