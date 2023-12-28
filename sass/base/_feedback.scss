@@ -1,9 +1,9 @@
 .feedback {
     // width: 1920px;
     max-width: 390px;
-        margin: auto;
-        padding: 40px 16px;
-        background: #141414;
+    margin: auto;
+    padding: 40px 16px;
+    background: #141414;
     // padding-bottom: 150px; 
 }
 .feedback-container {
@@ -52,7 +52,6 @@
     background: #703BF7;
     border: 1px solid #703BF7;
 }
-
 .feedback-list {
     display: flex;
     padding: 0;
@@ -87,7 +86,6 @@
 .feedback-text-container {
     height: 100%;
 }
-
 .feedback-text {
     align-self: stretch;
     color: #FFF;
@@ -95,8 +93,7 @@
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
-    line-height: 150%;
-    
+    line-height: 150%;    
 }
 .feedback-description {
     align-self: stretch;
@@ -141,7 +138,6 @@
     background-repeat: no-repeat;
     background-position: center;
 }
-
 .user-info {
     display: flex;
     flex-direction: column;
@@ -188,7 +184,7 @@
 }
 .feedback-buttons-container {
     display: flex;
-        align-items: center;
+    align-items: center;
     gap: 10px;
 }
 .feedback-btn {
@@ -202,23 +198,18 @@
 .arrow-left {
     fill: rgba(128, 128, 128, 1);
 }
-
 .arrow-left:hover {
     fill: rgba(255, 255, 255, 1);
 }
-
 .arrow-left:focus {
     fill: rgba(255, 255, 255, 1);
 }
-
 .arrow-right {
     fill: rgba(128, 128, 128, 1);
 }
-
 .arrow-right:hover {
     fill: rgba(255, 255, 255, 1);
 }
-
 .arrow-right:focus {
     fill: rgba(255, 255, 255, 1);
 }

@@ -1,59 +1,93 @@
 .join {
-    width: 1920px;
+    max-width: 390px;
+    margin: auto;
+    padding: 50px 16px;
+    // width: 1920px;
     background-color: #141414;
-    padding: 100px 0;
+    // padding: 100px 0;
     border-top: 1px solid #262626;
     border-bottom: 1px solid #262626;
     background-image: 
-        url('/images/abstract.svg'),
+        url('/images/abstract.svg') ,
         url('/images/abstract1.svg');
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size:
+    522px 284px,
+    398px 217px;
     background-position: 
-    left -20px bottom 0px,
-    left 1287px bottom 0px;
+    left -21px top -109px,
+    right 0 bottom -25px;
+    @media screen and (min-width: 1440px) and (max-width: 1920px) {
+        min-width: 1440px;
+        padding: 60px 80px;
+        background-size:
+        474px 278px, 
+        auto;
+        background-position: 
+        left 0 bottom 0,
+        right 0 bottom 0;
+    }
 }
 .join-container {
-    width: 1596px;
+    // width: 1596px;
     margin: auto;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    gap: 250px;
+    gap: 30px;
     align-items: center;
+    @media screen and (min-width: 1440px) and (max-width: 1920px) {
+        gap: 150px;
+        flex-direction: inherit;
+    }
 }
 .join-title-name {
     color: #FFF;
     font-family: Urbanist;
-    font-size: 48px;
+    font-size: 28px;
     font-style: normal;
     font-weight: 600;
     line-height: 150%;
-    margin-bottom: 14px;
+    margin-bottom: 6px;
+    @media screen and (min-width: 1440px) and (max-width: 1920px) {
+        font-size: 38px;
+        margin-bottom: 10px;
+    }
 }
 .join-title-text {
     color: #999;
     font-family: Urbanist;
-    font-size: 18px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 500;
     line-height: 150%;
+    @media screen and (min-width: 1440px) and (max-width: 1920px) {
+        font-size: 16px;
+    }
 }
 .join-title-btn {
     cursor: pointer;
     display: flex;
-    padding: 18px 24px;
+    min-width: 357px;
+    padding: 14px 20px;
     align-items: center;
+    justify-content: center;
     border-radius: 10px;
     border: 1px solid #262626;
     background: #1A1A1A;
     color: #FFF;
     font-family: Urbanist;
-    font-size: 18px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 500;
     line-height: 150%;
     transition-duration: 300ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (min-width: 1440px) and (max-width: 1920px) {
+        border-radius: 8px;
+        min-width: 152px;
+        padding: 14px;
+    }
 }
 .join-title-btn:hover {
     background: #703BF7;

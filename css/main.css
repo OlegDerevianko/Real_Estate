@@ -752,6 +752,9 @@ summary {
 .arrow-right:focus {
   fill: white; }
 
+.slider-container {
+  overflow: hidden; }
+
 .feedback {
   max-width: 390px;
   margin: auto;
@@ -964,52 +967,97 @@ summary {
   fill: white; }
 
 .question {
-  width: 1920px;
-  background: #141414;
-  padding-bottom: 100px; }
+  max-width: 390px;
+  margin: auto;
+  padding: 40px 16px 80px 16px;
+  background: #141414; }
+  @media screen and (min-width: 1440px) and (max-width: 1920px) {
+    .question {
+      min-width: 1440px;
+      padding: 60px 80px 72px 80px; } }
 
 .question-container {
-  width: 1596px;
   margin: auto; }
+  @media screen and (min-width: 1440px) and (max-width: 1920px) {
+    .question-container {
+      min-width: 1280px; } }
 
 .question-title {
   display: flex;
-  justify-content: space-between;
   align-items: end; }
+  @media screen and (min-width: 1440px) and (max-width: 1920px) {
+    .question-title {
+      gap: 150px;
+      align-items: end; } }
 
 .question-title-name {
   color: #FFF;
   font-family: Urbanist;
-  font-size: 48px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 600;
   line-height: 150%;
-  margin-bottom: 14px; }
+  margin-bottom: 6px; }
+  @media screen and (min-width: 1440px) and (max-width: 1920px) {
+    .question-title-name {
+      font-size: 38px; } }
 
 .question-title-text {
   color: #999;
   font-family: Urbanist;
-  font-size: 18px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: 150%; }
+  @media screen and (min-width: 1440px) and (max-width: 1920px) {
+    .question-title-text {
+      font-size: 16px; } }
+
+.question-title-btn1 {
+  cursor: pointer;
+  display: none;
+  padding: 14px 0;
+  border-radius: 8px;
+  border: 1px solid #262626;
+  background: #1A1A1A;
+  color: #FFF;
+  font-family: Urbanist;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); }
+  @media screen and (min-width: 1440px) and (max-width: 1920px) {
+    .question-title-btn1 {
+      display: flex;
+      justify-content: center;
+      min-width: 127px; } }
+
+.question-title-btn1:hover {
+  background: #703BF7;
+  border: 1px solid #703BF7; }
 
 .question-title-btn {
   cursor: pointer;
   display: flex;
-  padding: 18px 24px;
+  padding: 14px 20px;
   align-items: center;
   border-radius: 10px;
   border: 1px solid #262626;
   background: #1A1A1A;
   color: #FFF;
   font-family: Urbanist;
-  font-size: 18px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: 150%;
   transition-duration: 300ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); }
+  @media screen and (min-width: 1440px) and (max-width: 1920px) {
+    .question-title-btn {
+      border-radius: 8px;
+      display: none; } }
 
 .question-title-btn:hover {
   background: #703BF7;
@@ -1017,55 +1065,73 @@ summary {
 
 .question-list {
   display: flex;
-  gap: 30px;
-  margin: 80px 0 50px 0; }
+  margin: 40px 0 30px 0; }
+  @media screen and (min-width: 1440px) and (max-width: 1920px) {
+    .question-list {
+      margin: 60px 0 40px 0;
+      gap: 20px; } }
 
 .question-item {
-  width: 512px;
   display: flex;
-  gap: 30px;
-  padding: 50px;
   flex-direction: column;
-  border-radius: 12px;
+  width: 358px;
+  gap: 20px;
+  padding: 30px;
+  border-radius: 10px;
   border: 1px solid #262626;
   background: #141414; }
+  @media screen and (min-width: 1440px) and (max-width: 1920px) {
+    .question-item {
+      width: 413px;
+      gap: 24px;
+      padding: 40px; } }
 
 .question-text {
   align-self: stretch;
   color: #FFF;
   font-family: Urbanist;
-  font-size: 24px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 600;
-  line-height: 150%;
-  flex-grow: 2; }
+  line-height: 150%; }
+  @media screen and (min-width: 1440px) and (max-width: 1920px) {
+    .question-text {
+      font-size: 20px; } }
 
 .question-description {
   align-self: stretch;
   color: #FFF;
   font-family: Urbanist;
-  font-size: 18px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: 150%; }
+  @media screen and (min-width: 1440px) and (max-width: 1920px) {
+    .question-description {
+      font-size: 16px; } }
 
 .question-item-btn {
   cursor: pointer;
-  width: 134px;
-  height: 60px;
-  padding: 0;
+  min-width: 298px;
+  padding: 14px 20px;
   border-radius: 10px;
   border: 1px solid #262626;
   background: #1A1A1A;
   color: #FFF;
   font-family: Urbanist;
-  font-size: 18px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: 131%;
   letter-spacing: -0.108px;
   transition-duration: 300ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); }
+  @media screen and (min-width: 1440px) and (max-width: 1920px) {
+    .question-item-btn {
+      border-radius: 8px;
+      min-width: 0;
+      max-width: 107px;
+      padding: 14px 0; } }
 
 .question-item-btn:hover {
   background: #703BF7;
@@ -1073,36 +1139,46 @@ summary {
 
 .question-pages {
   display: flex;
-  padding-top: 20px;
+  padding-top: 16px;
   justify-content: space-between;
   align-items: flex-start;
   border-top: 1px solid #262626; }
 
+.question-numbers12 {
+  display: none;
+  color: #999;
+  font-family: Urbanist;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; }
+  @media screen and (min-width: 1440px) and (max-width: 1920px) {
+    .question-numbers12 {
+      font-size: 16px;
+      display: flex; } }
+
 .question-numbers {
   color: #999;
   font-family: Urbanist;
-  font-size: 20px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: 150%; }
-
-.question-numbers1 {
-  color: #FFF;
-  font-family: Urbanist;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 150%; }
+  @media screen and (min-width: 1440px) and (max-width: 1920px) {
+    .question-numbers {
+      font-size: 16px;
+      display: none; } }
 
 .question-buttons-container {
   display: flex;
+  align-items: center;
   gap: 10px; }
 
 .question-btn {
   cursor: pointer;
-  width: 58px;
-  height: 58px;
-  padding: 14px;
+  width: 44px;
+  height: 44px;
+  padding: 10px;
   border-radius: 69px;
   border: 1px solid #262626;
   background: #1A1A1A; }
@@ -1126,105 +1202,144 @@ summary {
   fill: white; }
 
 .join {
-  width: 1920px;
+  max-width: 390px;
+  margin: auto;
+  padding: 50px 16px;
   background-color: #141414;
-  padding: 100px 0;
   border-top: 1px solid #262626;
   border-bottom: 1px solid #262626;
   background-image: url("/images/abstract.svg"), url("/images/abstract1.svg");
   background-repeat: no-repeat;
-  background-size: auto;
-  background-position: left -20px bottom 0px, left 1287px bottom 0px; }
+  background-size: 522px 284px, 398px 217px;
+  background-position: left -21px top -109px, right 0 bottom -25px; }
+  @media screen and (min-width: 1440px) and (max-width: 1920px) {
+    .join {
+      min-width: 1440px;
+      padding: 60px 80px;
+      background-size: 474px 278px,  auto;
+      background-position: left 0 bottom 0, right 0 bottom 0; } }
 
 .join-container {
-  width: 1596px;
   margin: auto;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  gap: 250px;
+  gap: 30px;
   align-items: center; }
+  @media screen and (min-width: 1440px) and (max-width: 1920px) {
+    .join-container {
+      gap: 150px;
+      flex-direction: inherit; } }
 
 .join-title-name {
   color: #FFF;
   font-family: Urbanist;
-  font-size: 48px;
+  font-size: 28px;
   font-style: normal;
   font-weight: 600;
   line-height: 150%;
-  margin-bottom: 14px; }
+  margin-bottom: 6px; }
+  @media screen and (min-width: 1440px) and (max-width: 1920px) {
+    .join-title-name {
+      font-size: 38px;
+      margin-bottom: 10px; } }
 
 .join-title-text {
   color: #999;
   font-family: Urbanist;
-  font-size: 18px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: 150%; }
+  @media screen and (min-width: 1440px) and (max-width: 1920px) {
+    .join-title-text {
+      font-size: 16px; } }
 
 .join-title-btn {
   cursor: pointer;
   display: flex;
-  padding: 18px 24px;
+  min-width: 357px;
+  padding: 14px 20px;
   align-items: center;
+  justify-content: center;
   border-radius: 10px;
   border: 1px solid #262626;
   background: #1A1A1A;
   color: #FFF;
   font-family: Urbanist;
-  font-size: 18px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: 150%;
   transition-duration: 300ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); }
+  @media screen and (min-width: 1440px) and (max-width: 1920px) {
+    .join-title-btn {
+      border-radius: 8px;
+      min-width: 152px;
+      padding: 14px; } }
 
 .join-title-btn:hover {
   background: #703BF7;
   border: 1px solid #703BF7; }
 
 .footer {
-  width: 1920px;
   background: #141414;
-  padding-top: 100px;
+  max-width: 390px;
+  padding-top: 50px;
   margin: auto; }
+  @media screen and (min-width: 1440px) and (max-width: 1920px) {
+    .footer {
+      min-width: 1440px;
+      padding-top: 80px; } }
 
 .footer-container {
   display: flex;
-  justify-content: space-between;
-  width: 1596px;
+  flex-direction: column;
   margin: auto;
-  margin-bottom: 100px;
-  gap: 80px; }
+  padding: 0 16px 90px 16px;
+  gap: 50px; }
+  @media screen and (min-width: 1440px) and (max-width: 1920px) {
+    .footer-container {
+      padding: 0 80px 80px 80px;
+      gap: 80px;
+      flex-direction: inherit; } }
 
 .footer-subscribe {
   display: flex;
   flex-direction: column;
-  width: 538px;
-  gap: 30px; }
+  gap: 20px; }
+  @media screen and (min-width: 1440px) and (max-width: 1920px) {
+    .footer-subscribe {
+      min-width: 326px;
+      gap: 24px; } }
 
 .footer-logo {
   display: flex;
   align-items: center;
-  gap: 10px; }
+  gap: 7px; }
 
 .form-submit {
   display: flex;
   align-items: center;
-  gap: 10px;
-  width: 423px;
-  padding: 18px 24px;
-  border-radius: 12px;
+  gap: 6px;
+  min-width: 358px;
+  padding: 14px 20px;
+  border-radius: 8px;
   border: 1px solid var(--Grey-15, #262626);
   background: var(--Grey-08, #141414); }
+  @media screen and (min-width: 1440px) and (max-width: 1920px) {
+    .form-submit {
+      min-width: 0px;
+      max-width: 305px; } }
 
 .form-submit input::placeholder {
   color: #999;
   font-family: Urbanist;
-  font-size: 18px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: 24px;
-  /* 133.333% */
   letter-spacing: -0.108px; }
 
 .form-submit-input:focus {
@@ -1232,29 +1347,85 @@ summary {
   border: 1px solid #703bf7; }
 
 .form-submit input {
-  min-width: 301px;
+  min-width: 261px;
   border-radius: 4px;
   border: 0px solid;
   background: #141414;
   color: #999999; }
+  @media screen and (min-width: 1440px) and (max-width: 1920px) {
+    .form-submit input {
+      min-width: 209px; } }
 
 .icon-mail {
   fill: #999999; }
 
 .footer-links {
+  position: relative;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  width: 978px; }
+  flex-wrap: wrap; }
+  @media screen and (min-width: 1440px) and (max-width: 1920px) {
+    .footer-links {
+      justify-content: space-between;
+      width: 100%; } }
 
 .links-list {
-  margin: 0; }
+  min-width: 158.5px;
+  margin: 0;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--Grey-15, #262626); }
+  @media screen and (min-width: 1440px) and (max-width: 1920px) {
+    .links-list {
+      min-width: 0;
+      padding-bottom: 0; } }
+
+.links-list:nth-child(odd) {
+  margin-right: 20px;
+  box-shadow: 20px 0 0 0 #141414, 21px 0 0 0 #262626; }
+  @media screen and (min-width: 1440px) and (max-width: 1920px) {
+    .links-list:nth-child(odd) {
+      margin-right: 0;
+      box-shadow: none; } }
+
+.links-list:nth-child(even) {
+  margin-left: 20px;
+  float: left; }
+  @media screen and (min-width: 1440px) and (max-width: 1920px) {
+    .links-list:nth-child(even) {
+      margin-left: 0; } }
+
+.links-list:nth-child(n+3) {
+  margin-top: 20px; }
+  @media screen and (min-width: 1440px) and (max-width: 1920px) {
+    .links-list:nth-child(n+3) {
+      margin-top: 0; } }
+
+.links-list:nth-child(3n) {
+  height: 116px; }
+  @media screen and (min-width: 1440px) and (max-width: 1920px) {
+    .links-list:nth-child(3n) {
+      height: auto; } }
+
+.links-list:nth-child(5n) {
+  position: absolute;
+  padding-top: 20px;
+  margin-top: 0;
+  top: 348px; }
+  @media screen and (min-width: 1440px) and (max-width: 1920px) {
+    .links-list:nth-child(5n) {
+      padding-top: 0;
+      position: unset; } }
 
 .links-item {
-  margin-bottom: 20px; }
+  margin-bottom: 8px; }
+  @media screen and (min-width: 1440px) and (max-width: 1920px) {
+    .links-item {
+      margin-bottom: 16px; } }
 
 .links-item:first-child {
-  margin-bottom: 30px; }
+  margin-bottom: 16px; }
+  @media screen and (min-width: 1440px) and (max-width: 1920px) {
+    .links-item:first-child {
+      margin-bottom: 24px; } }
 
 .links-item:last-child {
   margin-bottom: 0; }
@@ -1262,58 +1433,73 @@ summary {
 .link-nav-categories {
   color: #999;
   font-family: Urbanist;
-  font-size: 20px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 24px;
-  /* 120% */
   letter-spacing: -0.12px; }
+  @media screen and (min-width: 1440px) and (max-width: 1920px) {
+    .link-nav-categories {
+      font-size: 18px; } }
 
 .link-nav {
   color: #FFF;
   font-family: Urbanist;
-  font-size: 18px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: 24px;
-  /* 133.333% */
   letter-spacing: -0.108px; }
+  @media screen and (min-width: 1440px) and (max-width: 1920px) {
+    .link-nav {
+      font-size: 16px; } }
 
 .icon-send {
   fill: white; }
 
 .footer-end {
-  width: 1920px;
+  min-width: 390px;
   margin: auto;
+  padding: 20px 16px;
   background-color: #1A1A1A; }
+  @media screen and (min-width: 1440px) and (max-width: 1920px) {
+    .footer-end {
+      padding: 12px 80px; } }
 
 .rights-socials {
   display: flex;
+  flex-direction: column-reverse;
   justify-content: space-between;
-  width: 1596px;
   margin: auto;
-  padding: 16px 0; }
+  gap: 20px; }
+  @media screen and (min-width: 1440px) and (max-width: 1920px) {
+    .rights-socials {
+      flex-direction: inherit; } }
 
 .rights {
   display: flex;
-  gap: 38px;
+  flex-direction: column;
+  gap: 10px;
   align-items: center; }
+  @media screen and (min-width: 1440px) and (max-width: 1920px) {
+    .rights {
+      gap: 20px;
+      flex-direction: inherit; } }
 
 .rights-text {
   color: #FFF;
   font-family: Urbanist;
-  font-size: 18px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: 24px;
-  /* 133.333% */
   letter-spacing: -0.108px; }
 
 .socials {
   display: flex;
-  padding: 10px 0px;
+  justify-content: center;
   align-items: center;
-  gap: 10px; }
+  gap: 8px; }
 
 .socials-btn {
   cursor: pointer;
@@ -1321,8 +1507,13 @@ summary {
   padding: 0;
   border-radius: 58px;
   background: #141414;
-  width: 52px;
-  height: 52px; }
+  width: 60px;
+  height: 60px; }
+  @media screen and (min-width: 1440px) and (max-width: 1920px) {
+    .socials-btn {
+      width: 40px;
+      height: 40px;
+      padding: 10px; } }
 
 .icon-social {
   fill: white; }

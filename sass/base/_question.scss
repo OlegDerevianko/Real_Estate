@@ -1,50 +1,95 @@
 .question {
-    width: 1920px;
+    max-width: 390px;
+    margin: auto;
+    padding: 40px 16px 80px 16px;
     background: #141414;
-    padding-bottom: 100px;
+    @media screen and (min-width: 1440px) and (max-width: 1920px) {
+        min-width: 1440px;
+        padding: 60px 80px 72px 80px;
+    }
 }
 .question-container {
-    width: 1596px;
     margin: auto;
+    @media screen and (min-width: 1440px) and (max-width: 1920px) {
+        min-width: 1280px;
+    }
 }
 .question-title {
     display: flex;
-    justify-content: space-between;
     align-items: end;
+    @media screen and (min-width: 1440px) and (max-width: 1920px) {
+        gap: 150px;
+        align-items: end;
+    }
 }
 .question-title-name {
     color: #FFF;
     font-family: Urbanist;
-    font-size: 48px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 600;
     line-height: 150%;
-    margin-bottom: 14px;
+    margin-bottom: 6px;
+    @media screen and (min-width: 1440px) and (max-width: 1920px) {
+        font-size: 38px;
+    }
 }
 .question-title-text {
     color: #999;
     font-family: Urbanist;
-    font-size: 18px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 500;
     line-height: 150%;
+    @media screen and (min-width: 1440px) and (max-width: 1920px) {
+        font-size: 16px;
+    }
+}
+.question-title-btn1 {
+    cursor: pointer;
+    display: none; 
+    padding: 14px 0;
+    border-radius: 8px;
+    border: 1px solid #262626;
+    background: #1A1A1A;
+    color: #FFF;
+    font-family: Urbanist;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    transition-duration: 300ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);   
+    @media screen and (min-width: 1440px) and (max-width: 1920px) {
+        display: flex;
+        justify-content: center;
+        min-width: 127px;
+    }
+}
+.question-title-btn1:hover {
+    background: #703BF7;
+    border: 1px solid #703BF7;
 }
 .question-title-btn {
     cursor: pointer;
     display: flex;
-    padding: 18px 24px;
+    padding: 14px 20px;
     align-items: center;
     border-radius: 10px;
     border: 1px solid #262626;
     background: #1A1A1A;
     color: #FFF;
     font-family: Urbanist;
-    font-size: 18px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 500;
     line-height: 150%;
     transition-duration: 300ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (min-width: 1440px) and (max-width: 1920px) {
+        border-radius: 8px;
+        display: none;
+    }
 }
 .question-title-btn:hover {
     background: #703BF7;
@@ -52,55 +97,73 @@
 }
 .question-list {
     display: flex;
-    gap: 30px;
-    margin: 80px 0 50px 0;
+    margin: 40px 0 30px 0;
+    @media screen and (min-width: 1440px) and (max-width: 1920px) {
+        margin: 60px 0 40px 0;
+        gap: 20px;
+    }
 }
 .question-item {
-    width: 512px;
     display: flex;
-    gap: 30px;
-    padding: 50px;
     flex-direction: column;
-    border-radius: 12px;
+    width: 358px;    
+    gap: 20px;
+    padding: 30px;
+    border-radius: 10px;
     border: 1px solid #262626;
     background: #141414;
+    @media screen and (min-width: 1440px) and (max-width: 1920px) {
+        width: 413px;
+        gap: 24px;
+        padding: 40px;
+    }
 }
 .question-text {
     align-self: stretch;
     color: #FFF;
     font-family: Urbanist;
-    font-size: 24px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 600;
     line-height: 150%;
-    flex-grow: 2;
+    @media screen and (min-width: 1440px) and (max-width: 1920px) {
+        font-size: 20px;
+    }
 }
 .question-description {
     align-self: stretch;
     color: #FFF;
     font-family: Urbanist;
-    font-size: 18px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 500;
     line-height: 150%;
+    @media screen and (min-width: 1440px) and (max-width: 1920px) {
+        font-size: 16px;
+    }
 }
 .question-item-btn {
     cursor: pointer;
-    width: 134px;
-    height: 60px;
-    padding: 0;
+    min-width: 298px;
+    padding: 14px 20px;
     border-radius: 10px;
     border: 1px solid #262626;
     background: #1A1A1A;
     color: #FFF;
     font-family: Urbanist;
-    font-size: 18px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 500;
     line-height: 131%;
     letter-spacing: -0.108px;
     transition-duration: 300ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (min-width: 1440px) and (max-width: 1920px) {
+        border-radius: 8px;
+        min-width: 0;
+        max-width: 107px;
+        padding: 14px 0;
+    }
 }
 .question-item-btn:hover {
     background: #703BF7;
@@ -108,36 +171,47 @@
 }
 .question-pages {
     display: flex;
-    padding-top: 20px;
+    padding-top: 16px;
     justify-content: space-between;
     align-items: flex-start;
     border-top: 1px solid #262626;
 }
+.question-numbers12 {
+    display: none;
+    color: #999;
+    font-family: Urbanist;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+
+    @media screen and (min-width: 1440px) and (max-width: 1920px) {
+        font-size: 16px;
+        display: flex;
+    }
+}
 .question-numbers {
     color: #999;
     font-family: Urbanist;
-    font-size: 20px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 500;
     line-height: 150%;
-}
-.question-numbers1 {
-    color: #FFF;
-    font-family: Urbanist;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 150%;
+    @media screen and (min-width: 1440px) and (max-width: 1920px) {
+        font-size: 16px;
+        display: none;
+    }
 }
 .question-buttons-container {
     display: flex;
+    align-items: center;
     gap: 10px;
 }
 .question-btn {
     cursor: pointer;
-    width: 58px;
-    height: 58px;
-    padding: 14px;
+    width: 44px;
+    height: 44px;
+    padding: 10px;
     border-radius: 69px;
     border: 1px solid #262626;
     background: #1A1A1A;
@@ -145,23 +219,18 @@
 .arrow-left {
     fill: rgba(128, 128, 128, 1);
 }
-
 .arrow-left:hover {
     fill: rgba(255, 255, 255, 1);
 }
-
 .arrow-left:focus {
     fill: rgba(255, 255, 255, 1);
 }
-
 .arrow-right {
     fill: rgba(128, 128, 128, 1);
 }
-
 .arrow-right:hover {
     fill: rgba(255, 255, 255, 1);
 }
-
 .arrow-right:focus {
     fill: rgba(255, 255, 255, 1);
 }
