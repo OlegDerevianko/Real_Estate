@@ -1,10 +1,12 @@
 .features {
-    width: 1920px;
+    // width: 1920px;
+    max-width: 390px;
+    margin: auto;
+    padding: 40px 16px;
     background: #141414;
-    padding: 150px 0;
+    // padding: 150px 0;
 }
 .features-container {
-    width: 1596px;
     margin: auto;
 }
 .features-title {
@@ -15,7 +17,7 @@
 .features-title-name {
     color: #FFF;
     font-family: Urbanist;
-    font-size: 48px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 600;
     line-height: 150%;
@@ -24,7 +26,7 @@
 .features-title-text {
     color: #999;
     font-family: Urbanist;
-    font-size: 18px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 500;
     line-height: 150%;
@@ -32,14 +34,14 @@
 .features-title-btn {
     cursor: pointer;
     display: flex;
-    padding: 18px 24px;
+    padding: 14px 20px;
     align-items: center;
     border-radius: 10px;
     border: 1px solid #262626;
     background: #1A1A1A;
     color: #FFF;
     font-family: Urbanist;
-    font-size: 18px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 500;
     line-height: 150%;
@@ -50,31 +52,31 @@
     background: #703BF7;
     border: 1px solid #703BF7;
 }
-
 .features-list {
     padding: 0;
-    margin: 80px 0 50px 0;
-    gap: 30px;    
-    display: flex;
-    
+    margin: 40px 0 30px 0;
+    display: flex;    
 }
 .features-item {
-    min-width: 512px;
-    padding : 40px;
+    max-width: 358px;
+    padding : 24px;
     flex-direction: column;
     align-items: flex-start;
     border-radius: 12px;
     border: 1px solid #262626;
     background: #141414;
+    transition: 3s;
 }
 .features-img {
+    height: 210px;
+    width: 100%;
     border-radius: 10px;
     margin-bottom: 30px;
 }
 .features-name {
     color:#FFF;
     font-family: Urbanist;
-    font-size: 24px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 600;
     line-height: 150%;
@@ -82,22 +84,22 @@
 .features-link {
     color: #FFF;
     font-family: Urbanist;
-    font-size: 18px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 500;
     line-height: 150%;
     text-decoration-line: underline;   
 }
-
 .item-list {
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 10px;
+    gap: 6px;
+    flex-wrap: wrap;
 }
 .list-item {
     display: flex;
-    padding: 8px 14px;
+    padding: 6px 14px;
     align-items: center;
     border-radius: 28px;
     border: 1px solid #262626;
@@ -110,7 +112,7 @@
     margin-left: 4px;
     color: #FFF;
     font-family: Urbanist;
-    font-size: 18px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 500;
     line-height: 150%;
@@ -118,17 +120,17 @@
 .features-text {
     color: #999;
     font-family: Urbanist;
-    font-size: 18px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 500;
     line-height: 150%;
-    margin-top: 6px;
-    margin-bottom: 30px;
+    margin-top: 2px;
+    margin-bottom: 20px;
 }
 .features-price {
     display: flex;
-    gap: 50px;
-    margin-top: 30px;
+    gap: 30px;
+    margin-top: 20px;
 }
 .features-etc {
     gap: 2px;
@@ -136,7 +138,7 @@
 .etc-price {
     color: #999;
     font-family: Urbanist;
-    font-size: 18px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 500;
     line-height: 150%;
@@ -144,24 +146,24 @@
 .etc-text {
     color: #FFF;
     font-family: Urbanist;
-    font-size: 24px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 600;
     line-height: 150%;
 }
 .etc-btn {
     cursor: pointer;
-    min-width: 279px;
+    min-width: 202px;
     display: flex;
-    padding: 0;
+    padding: 14px 20px;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
+    border-radius: 8px;
     background: #1A1A1A;
     border: 1px solid #262626;
     color: #FFF;
     font-family: Urbanist;
-    font-size: 18px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 500;
     line-height: 150%;
@@ -174,15 +176,14 @@
 }
 .features-pages {
     display: flex;
-    padding-top: 20px;
+    padding-top: 16px;
     justify-content: space-between;
-    align-items: flex-start;
     border-top: 1px solid #262626;
 }
 .pages-numbers {
     color: #999;
     font-family: Urbanist;
-    font-size: 20px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 500;
     line-height: 150%;
@@ -190,19 +191,20 @@
 .pages-numbers1 {
     color: #FFF;
     font-family: Urbanist;
-    font-size: 20px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 500;
     line-height: 150%;
 }
 .pages-buttons-container {
     display: flex;
+    align-items: center;
     gap: 10px;
 }
 .pages-btn {
-    width: 58px;
-    height: 58px;
-    padding: 14px;
+    width: 44px;
+    height: 44px;
+    padding: 10px;
     border-radius: 69px;
     border: 1px solid #262626;
     background: #1A1A1A;
@@ -228,20 +230,6 @@
 }
 
 
-.slider-container {
-    max-width: 1596px;
-    margin: auto;
-    background-color:#141414;
-    overflow: hidden;
-}
-.slider-track {
-    // gap: 30px;
-    display: flex;
-    margin: 0;
-    transition: 1s;
-
-}
-.slider-item {
-    margin-right: 30px;
-    min-width: 512px;
+.slider-container {  
+    // overflow: hidden;
 }

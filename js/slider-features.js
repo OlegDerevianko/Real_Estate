@@ -1,11 +1,11 @@
 let position = 0;
-const slidesToShow = 3;
+const slidesToShow = 1;
 const slidesToScroll = 1;
 const container = document.querySelector('.slider-container');
-const track = document.querySelector('.slider-track');
-const btnPrev = document.querySelector('.btn-prev');
-const btnNext = document.querySelector('.btn-next');
-const items = document.querySelectorAll('.slider-item');
+const track = document.querySelector('.feedback-list', '.features-list');
+const btnPrev = document.querySelector('.btn-prev', '.prev-btn');
+const btnNext = document.querySelector('.btn-next', '.next-btn');
+const items = document.querySelectorAll('.feedback-item', '.features-list');
 const itemsCount = items.length;
 const itemWidth = container.clientWidth / slidesToShow;
 const movePosition = slidesToScroll * itemWidth;

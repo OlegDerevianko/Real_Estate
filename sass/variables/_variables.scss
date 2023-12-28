@@ -1,15 +1,24 @@
 body {
     font-family: Urbanist;
-    font-size: 18px;
-    margin: 0;
+    font-size: 14px;
+    background: #141414;
     
     
 }
 
 main {
-    max-width: 1920px;
+    @media screen and (min-width: 390px) {
+        min-width: 390px;
         margin: auto;
-  
+    }
+    @media screen and (min-width: 1440px) {
+        min-width: 1440px;
+    
+    }
+    @media  screen and (max-width: 1920px) {
+        max-width: 1920px;
+        
+    }
 }
 
 p {

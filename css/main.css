@@ -1,11 +1,18 @@
 body {
   font-family: Urbanist;
-  font-size: 18px;
-  margin: 0; }
+  font-size: 14px;
+  background: #141414; }
 
-main {
-  max-width: 1920px;
-  margin: auto; }
+@media screen and (min-width: 390px) {
+  main {
+    min-width: 390px;
+    margin: auto; } }
+@media screen and (min-width: 1440px) {
+  main {
+    min-width: 1440px; } }
+@media screen and (max-width: 1920px) {
+  main {
+    max-width: 1920px; } }
 
 p {
   margin: 0; }
@@ -283,10 +290,10 @@ summary {
   display: list-item; }
 
 .header {
-  max-width: 1920px;
+  max-width: 390px;
   margin: auto;
   background-color: #1A1A1A;
-  padding: 20px 162px;
+  padding: 20px 16px;
   display: flex;
   justify-content: space-between;
   align-items: center; }
@@ -294,64 +301,29 @@ summary {
 .logo {
   display: flex;
   align-items: center;
-  gap: 10px; }
-
-.nav-list {
-  display: flex;
-  margin: 0;
-  gap: 30px; }
+  gap: 6px; }
 
 .nav-item {
+  display: none;
   color: #FFF;
   background-color: #1A1A1A;
   border: 1px solid #1A1A1A;
   padding: 0;
-  align-items: center;
-  display: flex;
-  justify-content: center;
   transition-duration: 300ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); }
 
-.item-link {
-  cursor: pointer;
-  width: 136px;
-  height: 55px;
-  align-items: center;
-  justify-content: center;
+.mobile-menu {
+  padding: 0;
+  background-color: #1A1A1A;
+  border: 0;
   display: flex;
-  color: #FFF;
-  font-family: Urbanist;
-  text-align: center;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 150%; }
+  align-items: center; }
 
-.current {
-  border-radius: 10px;
-  border: 1px solid #262626;
-  background-color: #141414; }
-
-.btn-link {
-  width: 136px;
-  height: 55px;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  color: #FFF;
-  font-family: Urbanist;
-  text-align: center;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 150%; }
-
-.nav-item:hover {
-  border-radius: 10px;
-  border: 1px solid #262626;
-  background-color: #141414;
-  transition-duration: 300ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); }
+.mobile-menu {
+  fill: white; }
 
 .contact-btn {
+  display: none;
   cursor: pointer;
   width: 136px;
   height: 60px;
@@ -368,52 +340,51 @@ summary {
   transition-duration: 300ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); }
 
-.contact-btn:hover {
-  border-radius: 10px;
-  border: 1px solid #262626;
-  background-color: #141414;
-  transition-duration: 300ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); }
-
 .hero {
-  max-width: 1920px;
-  background-size: 920px 814px;
-  background: #141414;
-  display: flex;
-  gap: 80px; }
+  max-width: 390px;
+  margin: auto;
+  padding: 40px 16px;
+  background-color: #141414; }
+
+.hero-bg {
+  width: 358px;
+  height: 302px;
+  background-image: linear-gradient(238deg, #2a213f 8.76%, rgba(25, 25, 25, 0) 50.09%), url(/images/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 .hero-container {
   display: flex;
-  padding-left: 162px;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
-  width: 920px; }
+  align-items: flex-start; }
 
 .hero-name {
   color: #FFF;
   font-family: Urbanist;
-  font-size: 60px;
+  font-size: 28px;
   font-weight: 600;
   line-height: 120%;
-  margin-bottom: 24px; }
+  margin: 16px 0; }
 
 .hero-description {
   color: #999;
   font-family: Urbanist;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 500;
   line-height: 150%; }
 
 .hero-buttons {
   display: flex;
-  gap: 20px;
-  margin: 60px 0; }
+  flex-direction: column;
+  gap: 16px;
+  margin: 40px 0; }
 
 .hero-btn {
+  width: 358px;
   cursor: pointer;
   display: flex;
-  padding: 18px 24px;
+  padding: 14px 20px;
   justify-content: center;
   align-items: center;
   background: #141414;
@@ -421,7 +392,7 @@ summary {
   border: 1px solid #262626;
   color: #FFF;
   font-family: Urbanist;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 500;
   line-height: 150%;
   transition-duration: 300ms;
@@ -433,57 +404,66 @@ summary {
 
 .hero-list {
   display: flex;
-  gap: 20px; }
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 0; }
 
 .hero-item {
-  width: 240px;
-  padding: 16px 24px;
+  display: flex;
+  flex-direction: column;
+  width: 173px;
+  padding: 16px;
   gap: 2px;
-  border-radius: 12px;
+  border-radius: 8px;
   border: 1px solid #262626;
   background: #1A1A1A; }
+
+.hero-item:last-child {
+  flex-grow: 2; }
 
 .hero-numbers {
   color: #FFF;
   font-family: Urbanist;
-  font-size: 40px;
+  font-size: 24px;
   font-weight: 700;
-  line-height: 150%; }
+  line-height: 150%;
+  display: flex;
+  justify-content: center; }
 
 .hero-text {
   color: #999;
+  text-align: center;
   font-family: Urbanist;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 500;
   line-height: 150%; }
 
-.hero-bg {
-  width: 920px;
-  height: 814px;
-  background-image: linear-gradient(238deg, #2a213f 8.76%, rgba(25, 25, 25, 0) 50.09%), url(/images/hero-bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover; }
-
 .subscribe {
-  max-width: 1920px;
+  max-width: 390px;
+  padding: 0 16px 40px 16px;
+  margin: auto;
   background-color: #141414; }
 
 .subscribe-list {
   display: flex;
-  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
   margin: 0;
-  padding: 20px;
-  border: 1px solid #262626; }
+  padding: 9px;
+  border: 1px solid var(--Grey-15, #262626);
+  background: var(--Grey-08, #141414);
+  box-shadow: 0px 0px 0px 6px #191919; }
 
 .subscribe-item {
   position: relative;
   display: flex;
-  width: 455px;
-  padding: 40px 20px;
+  max-width: 164px;
+  padding: 20px 14px;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
-  border-radius: 12px;
+  gap: 14px;
+  border-radius: 10px;
   border: 1px solid #262626;
   background: #1A1A1A; }
 
@@ -491,8 +471,8 @@ summary {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 82px;
-  height: 82px;
+  width: 48px;
+  height: 48px;
   border-radius: 100px;
   background-image: linear-gradient(35deg, #a685fa 10%, rgba(112, 59, 247, 0) 40%, rgba(112, 59, 247, 0) 60%, #a685fa 90%);
   padding: 1px; }
@@ -501,8 +481,8 @@ summary {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 80px;
-  height: 80px;
+  width: 46px;
+  height: 46px;
   border-radius: 100px;
   background: #1A1A1A; }
 
@@ -510,8 +490,8 @@ summary {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 62px;
-  height: 62px;
+  width: 36px;
+  height: 36px;
   border-radius: 100px;
   background-image: linear-gradient(135deg, #a685fa 10%, rgba(112, 59, 247, 0) 40%, rgba(112, 59, 247, 0) 60%, #a685fa 90%);
   padding: 1px; }
@@ -520,8 +500,8 @@ summary {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 60px;
-  height: 60px;
+  width: 34px;
+  height: 34px;
   border-radius: 100px;
   background: #1A1A1A; }
 
@@ -532,7 +512,7 @@ summary {
   color: #FFF;
   text-align: center;
   font-family: Urbanist;
-  font-size: 20px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 600;
   line-height: 150%; }
@@ -546,12 +526,12 @@ summary {
   top: 0; }
 
 .features {
-  width: 1920px;
-  background: #141414;
-  padding: 150px 0; }
+  max-width: 390px;
+  margin: auto;
+  padding: 40px 16px;
+  background: #141414; }
 
 .features-container {
-  width: 1596px;
   margin: auto; }
 
 .features-title {
@@ -562,7 +542,7 @@ summary {
 .features-title-name {
   color: #FFF;
   font-family: Urbanist;
-  font-size: 48px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 600;
   line-height: 150%;
@@ -571,7 +551,7 @@ summary {
 .features-title-text {
   color: #999;
   font-family: Urbanist;
-  font-size: 18px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: 150%; }
@@ -579,14 +559,14 @@ summary {
 .features-title-btn {
   cursor: pointer;
   display: flex;
-  padding: 18px 24px;
+  padding: 14px 20px;
   align-items: center;
   border-radius: 10px;
   border: 1px solid #262626;
   background: #1A1A1A;
   color: #FFF;
   font-family: Urbanist;
-  font-size: 18px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: 150%;
@@ -599,27 +579,29 @@ summary {
 
 .features-list {
   padding: 0;
-  margin: 80px 0 50px 0;
-  gap: 30px;
+  margin: 40px 0 30px 0;
   display: flex; }
 
 .features-item {
-  min-width: 512px;
-  padding: 40px;
+  max-width: 358px;
+  padding: 24px;
   flex-direction: column;
   align-items: flex-start;
   border-radius: 12px;
   border: 1px solid #262626;
-  background: #141414; }
+  background: #141414;
+  transition: 3s; }
 
 .features-img {
+  height: 210px;
+  width: 100%;
   border-radius: 10px;
   margin-bottom: 30px; }
 
 .features-name {
   color: #FFF;
   font-family: Urbanist;
-  font-size: 24px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 600;
   line-height: 150%; }
@@ -627,7 +609,7 @@ summary {
 .features-link {
   color: #FFF;
   font-family: Urbanist;
-  font-size: 18px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: 150%;
@@ -637,11 +619,12 @@ summary {
   margin: 0;
   padding: 0;
   display: flex;
-  gap: 10px; }
+  gap: 6px;
+  flex-wrap: wrap; }
 
 .list-item {
   display: flex;
-  padding: 8px 14px;
+  padding: 6px 14px;
   align-items: center;
   border-radius: 28px;
   border: 1px solid #262626;
@@ -654,7 +637,7 @@ summary {
   margin-left: 4px;
   color: #FFF;
   font-family: Urbanist;
-  font-size: 18px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: 150%; }
@@ -662,17 +645,17 @@ summary {
 .features-text {
   color: #999;
   font-family: Urbanist;
-  font-size: 18px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: 150%;
-  margin-top: 6px;
-  margin-bottom: 30px; }
+  margin-top: 2px;
+  margin-bottom: 20px; }
 
 .features-price {
   display: flex;
-  gap: 50px;
-  margin-top: 30px; }
+  gap: 30px;
+  margin-top: 20px; }
 
 .features-etc {
   gap: 2px; }
@@ -680,7 +663,7 @@ summary {
 .etc-price {
   color: #999;
   font-family: Urbanist;
-  font-size: 18px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: 150%; }
@@ -688,24 +671,24 @@ summary {
 .etc-text {
   color: #FFF;
   font-family: Urbanist;
-  font-size: 24px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 600;
   line-height: 150%; }
 
 .etc-btn {
   cursor: pointer;
-  min-width: 279px;
+  min-width: 202px;
   display: flex;
-  padding: 0;
+  padding: 14px 20px;
   justify-content: center;
   align-items: center;
-  border-radius: 10px;
+  border-radius: 8px;
   background: #1A1A1A;
   border: 1px solid #262626;
   color: #FFF;
   font-family: Urbanist;
-  font-size: 18px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: 150%;
@@ -718,15 +701,14 @@ summary {
 
 .features-pages {
   display: flex;
-  padding-top: 20px;
+  padding-top: 16px;
   justify-content: space-between;
-  align-items: flex-start;
   border-top: 1px solid #262626; }
 
 .pages-numbers {
   color: #999;
   font-family: Urbanist;
-  font-size: 20px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: 150%; }
@@ -734,19 +716,20 @@ summary {
 .pages-numbers1 {
   color: #FFF;
   font-family: Urbanist;
-  font-size: 20px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: 150%; }
 
 .pages-buttons-container {
   display: flex;
+  align-items: center;
   gap: 10px; }
 
 .pages-btn {
-  width: 58px;
-  height: 58px;
-  padding: 14px;
+  width: 44px;
+  height: 44px;
+  padding: 10px;
   border-radius: 69px;
   border: 1px solid #262626;
   background: #1A1A1A; }
@@ -769,28 +752,13 @@ summary {
 .arrow-right:focus {
   fill: white; }
 
-.slider-container {
-  max-width: 1596px;
-  margin: auto;
-  background-color: #141414;
-  overflow: hidden; }
-
-.slider-track {
-  display: flex;
-  margin: 0;
-  transition: 1s; }
-
-.slider-item {
-  margin-right: 30px;
-  min-width: 512px; }
-
 .feedback {
-  width: 1920px;
-  background: #141414;
-  padding-bottom: 150px; }
+  max-width: 390px;
+  margin: auto;
+  padding: 40px 16px;
+  background: #141414; }
 
 .feedback-container {
-  width: 1596px;
   margin: auto; }
 
 .feedback-title {
@@ -801,16 +769,16 @@ summary {
 .feedback-title-name {
   color: #FFF;
   font-family: Urbanist;
-  font-size: 48px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 600;
   line-height: 150%;
-  margin-bottom: 14px; }
+  margin-bottom: 6px; }
 
 .feedback-title-text {
   color: #999;
   font-family: Urbanist;
-  font-size: 18px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: 150%; }
@@ -818,14 +786,14 @@ summary {
 .feedback-title-btn {
   cursor: pointer;
   display: flex;
-  padding: 18px 24px;
+  padding: 14px 20px;
   align-items: center;
   border-radius: 10px;
   border: 1px solid #262626;
   background: #1A1A1A;
   color: #FFF;
   font-family: Urbanist;
-  font-size: 18px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: 150%;
@@ -836,21 +804,18 @@ summary {
   background: #703BF7;
   border: 1px solid #703BF7; }
 
-.feedback-slider-container {
-  overflow: hidden; }
-
 .feedback-list {
   display: flex;
-  gap: 30px;
-  margin: 80px 0 50px 0; }
+  padding: 0;
+  margin: 40px 0 30px 0; }
 
 .feedback-item {
-  min-width: 512px;
+  min-width: 358px;
   display: flex;
-  padding: 50px;
-  gap: 40px;
+  padding: 30px;
+  gap: 24px;
   flex-direction: column;
-  border-radius: 12px;
+  border-radius: 10px;
   border: 1px solid #262626;
   background: #141414; }
 
@@ -858,7 +823,7 @@ summary {
   display: flex;
   margin: 0;
   padding: 0;
-  gap: 10px; }
+  gap: 8px; }
 
 .rate-item {
   padding: 10px;
@@ -870,13 +835,13 @@ summary {
   fill: #ffe500; }
 
 .feedback-text-container {
-  height: 158px; }
+  height: 100%; }
 
 .feedback-text {
   align-self: stretch;
   color: #FFF;
   font-family: Urbanist;
-  font-size: 24px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 600;
   line-height: 150%; }
@@ -885,39 +850,39 @@ summary {
   align-self: stretch;
   color: #FFF;
   font-family: Urbanist;
-  font-size: 18px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: 150%;
-  margin-top: 14px; }
+  margin-top: 6px; }
 
 .feedback-user {
   display: flex;
   align-items: center;
-  gap: 12px; }
+  gap: 10px; }
 
 .feedback-user-wadewarren {
-  width: 60px;
-  height: 60px;
-  border-radius: 60px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
   background-image: url(/images/wade_warren.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
 
 .feedback-user-emeliethomson {
-  width: 60px;
-  height: 60px;
-  border-radius: 60px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
   background-image: url(/images/emelie_thomson.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
 
 .feedback-user-johnmans {
-  width: 60px;
-  height: 60px;
-  border-radius: 60px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
   background-image: url(/images/john_mans.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -930,7 +895,7 @@ summary {
 .user-name {
   color: #FFF;
   font-family: Urbanist;
-  font-size: 20px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 150%;
@@ -939,14 +904,14 @@ summary {
 .user-from {
   color: #999;
   font-family: Urbanist;
-  font-size: 18px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: 150%; }
 
 .feedback-pages {
   display: flex;
-  padding-top: 20px;
+  padding-top: 16px;
   justify-content: space-between;
   align-items: flex-start;
   border-top: 1px solid #262626; }
@@ -954,7 +919,7 @@ summary {
 .feedback-numbers {
   color: #999;
   font-family: Urbanist;
-  font-size: 20px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: 150%; }
@@ -962,19 +927,20 @@ summary {
 .feedback-numbers1 {
   color: #FFF;
   font-family: Urbanist;
-  font-size: 20px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: 150%; }
 
 .feedback-buttons-container {
   display: flex;
+  align-items: center;
   gap: 10px; }
 
 .feedback-btn {
-  width: 58px;
-  height: 58px;
-  padding: 14px;
+  width: 44px;
+  height: 44px;
+  padding: 10px;
   border-radius: 69px;
   border: 1px solid #262626;
   background: #1A1A1A; }
