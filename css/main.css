@@ -2509,7 +2509,6 @@ summary {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); }
 
 .current {
-  width: 100%;
   border-radius: 8px;
   border: 1px solid #262626;
   background-color: #141414; }
