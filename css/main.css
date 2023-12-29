@@ -416,7 +416,6 @@ summary {
   position: absolute;
   top: 0;
   left: 0;
-  overflow-y: scroll;
   z-index: 10;
   background-color: #1A1A1A;
   display: flex;
