@@ -25,14 +25,40 @@
             <li class="nav-item"><a href="" class="item-link">Properties</a></li>
             <li class="nav-item"><a href="" class="item-link">Services</a></li>
         </ul>
-            <button class="mobile-menu">
-                <svg class="mobile-menu-icon" width="28px" height="28px" aria-hidden="true">
-                    <use href="./images/icons.svg#icon-mobile-menu"></use>
-                </svg>
-            </button>
-            <button class="contact-btn">Contact Us</button>
+        <button class="mobile-menu-btn" data-mobile-menu-open>
+            <svg class="mobile-menu-icon" width="28px" height="28px" aria-hidden="true">
+                <use href="./images/icons.svg#icon-mobile-menu"></use>
+            </svg>
+        </button>
+        <button class="contact-btn">Contact Us</button>        
     </header>
     <main>  
+        <nav class="mobile-menu is-hidden" data-mobile-menu>
+            <div class="logo-menu">
+                <div class="logo-menu-icons">
+                    <svg width="34px" height="34px" aria-hidden="true">
+                        <use href="./images/icons.svg#icon-logo"></use>
+                    </svg>
+                    <svg width="72px" height="14px" aria-hidden="true">
+                        <use href="./images/icons.svg#icon-estatein"></use>
+                    </svg>
+                </div>
+                <button class="menu-close-btn" type="button" data-mobile-menu-close>
+                    <svg class="menu-close-icon" width="20px" height="20px" aria-hidden="true">
+                        <use href="./images/icons.svg#icon-close"></use>
+                    </svg>
+                </button>
+            </div>
+            <ul class="nav-list-menu">
+                <li class="nav-item-menu current"><a href="" class="link-item-menu"></a>Home</li>
+                <li class="nav-item-menu "><a href="" class="link-item-menu"></a>About Us</li>
+                <li class="nav-item-menu "><a href="" class="link-item-menu"></a>Properties</li>
+                <li class="nav-item-menu "><a href="" class="link-item-menu"></a>Services</li>
+                <li class="nav-item-menu "><a href="" class="link-item-menu"></a>Contact Us</li>
+            </ul>
+        
+        
+        </nav>
         <section class="hero">
             <div class="hero-bg"></div>
             <div class="hero-container">
@@ -606,6 +632,7 @@
 
         </div>       
     </footer>
+<script src="./js/mobile-menu.js"></script>
 <script src="./js/slider-features.js"></script>
 </body>
 

@@ -54,6 +54,11 @@ p {
   clip: rect(0 0 0 0);
   overflow: hidden; }
 
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none; }
+
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 /*
 Document
@@ -363,17 +368,17 @@ summary {
   transition-duration: 300ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); }
 
-.mobile-menu {
+.mobile-menu-btn {
   padding: 0;
   background-color: #1A1A1A;
   border: 0;
   display: flex;
   align-items: center; }
   @media screen and (min-width: 1440px) and (max-width: 1920px) {
-    .mobile-menu {
+    .mobile-menu-btn {
       display: none; } }
 
-.mobile-menu {
+.mobile-menu-btn {
   fill: white; }
 
 .contact-btn {
@@ -2435,6 +2440,79 @@ summary {
 
 .arrow-right:focus {
   fill: white; }
+
+.mobile-menu {
+  min-width: 390px;
+  margin: auto;
+  padding: 20px 16px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: scroll;
+  z-index: 10;
+  background-color: #1A1A1A;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 8px;
+  border-bottom: 1px solid var(--Grey-15, #262626); }
+
+.logo-menu {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #999; }
+
+.logo-menu-icons {
+  display: flex;
+  align-items: center;
+  gap: 7px; }
+
+.menu-close-btn {
+  padding: 0;
+  background-color: #1A1A1A;
+  border: 0;
+  display: flex;
+  align-items: center; }
+
+.menu-close-icon {
+  fill: #FFF; }
+
+.nav-list-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  padding-left: 20px;
+  padding-bottom: 40px;
+  gap: 20px; }
+
+.nav-item-menu {
+  cursor: pointer;
+  padding: 12px 20px;
+  align-items: center;
+  display: flex;
+  color: #FFF;
+  font-family: Urbanist;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 150%;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); }
+
+.nav-item-menu:hover {
+  border-radius: 8px;
+  border: 1px solid #262626;
+  background-color: #141414;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); }
+
+.current {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #262626;
+  background-color: #141414; }
 
 .backdrop {
   position: fixed;

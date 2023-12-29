@@ -76,7 +76,7 @@
     transition-duration: 300ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.mobile-menu {
+.mobile-menu-btn {
     padding: 0;
     background-color: #1A1A1A;
     border: 0;
@@ -86,7 +86,7 @@
         display: none;
     }
 }
-.mobile-menu {
+.mobile-menu-btn {
     fill: rgba(255, 255, 255, 1);
 }
 .contact-btn {

@@ -1,0 +1,82 @@
+
+
+.mobile-menu {
+    min-width: 390px;
+    margin: auto;
+    padding: 20px 16px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: scroll;
+    z-index: 10;
+    background-color: #1A1A1A;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 8px;
+    border-bottom: 1px solid var(--Grey-15, #262626);
+}
+.logo-menu {
+    display: flex;
+    justify-content: space-between;    
+    padding-bottom: 20px;
+    border-bottom: 1px solid #999;
+}
+
+.logo-menu-icons {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+.menu-close-btn {
+    padding: 0;
+    background-color: #1A1A1A;
+    border: 0;
+    display: flex;
+    align-items: center;
+}
+.menu-close-icon {
+    fill: #FFF;
+}
+.nav-list-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    padding-left: 20px;
+    padding-bottom: 40px;
+    gap: 20px;
+}
+.nav-item-menu {
+    cursor: pointer;
+        padding: 12px 20px;
+        align-items: center;
+        display: flex;
+        color: #FFF;
+        font-family: Urbanist;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 150%;
+    // align-items: center;
+    // display: flex;
+    // justify-content: center;
+    transition-duration: 300ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);   
+}
+.link-item-menu {
+ 
+}
+.nav-item-menu:hover {
+    border-radius: 8px;
+    border: 1px solid #262626;
+    background-color: #141414;
+    transition-duration: 300ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.current {
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #262626;
+    background-color: #141414;
+}
