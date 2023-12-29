@@ -7,6 +7,14 @@
     background-color: #141414;
     // display: flex;
     // gap: 80px;
+    @media screen and (min-width: 1440px) and (max-width: 1920px) {
+        padding: 0 0 0 80px;
+        min-width: 1440px;
+        display: flex;
+        justify-content: start;
+        flex-direction: row-reverse;
+        gap: 60px;
+    }
 }
 .hero-bg {
     width: 358px;
@@ -16,6 +24,10 @@
             rgba(25, 25, 25, 0) 50.09%), url(../images/hero-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    @media screen and (min-width: 1440px) and (max-width: 1920px) {
+        min-width: 690px;
+        height: 622px;
+    }
 }
 .hero-container {
     display: flex;
@@ -24,6 +36,9 @@
     justify-content: center;
     align-items: flex-start;
     // width: 920px;
+    @media screen and (min-width: 1440px) and (max-width: 1920px) {
+        padding: 98px 0;
+    }
 }
 .hero-name {
     color: #FFF;
@@ -32,6 +47,11 @@
     font-weight: 600;
     line-height: 120%;
     margin: 16px 0;
+    @media screen and (min-width: 1440px) and (max-width: 1920px) {
+        font-size: 46px;
+        margin: 0;
+        margin-bottom: 20px;
+    }
 }
 .hero-description {
     color: #999;
@@ -39,12 +59,19 @@
     font-size: 14px;
     font-weight: 500;
     line-height: 150%;
+    @media screen and (min-width: 1440px) and (max-width: 1920px) {
+        font-size: 16px;
+    }
 }
 .hero-buttons {
     display: flex;
     flex-direction: column;
     gap: 16px;
     margin: 40px 0;
+    @media screen and (min-width: 1440px) and (max-width: 1920px) {
+        flex-direction:unset;
+        margin: 50px 0;
+    }
 }
 .hero-btn {
     width: 358px;    
@@ -63,6 +90,9 @@
     line-height: 150%;
     transition-duration: 300ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (min-width: 1440px) and (max-width: 1920px) {
+        width: auto;
+    }
 }
 .hero-btn:hover {
     background: #703BF7;
@@ -73,6 +103,10 @@
     flex-wrap: wrap;
     gap: 12px;
     margin: 0;
+    @media screen and (min-width: 1440px) and (max-width: 1920px) {
+        gap: 16px;
+        flex-wrap: nowrap;
+    }
 }
 .hero-item {
     display: flex;
@@ -83,6 +117,11 @@
     border-radius: 8px;
     border: 1px solid #262626;
     background: #1A1A1A;
+    @media screen and (min-width: 1440px) and (max-width: 1920px) {
+        padding: 14px 20px;
+        border-radius: 10px;
+        min-width: 192px;
+    }
 }
 .hero-item:last-child {
     flex-grow: 2;
@@ -95,6 +134,10 @@
     line-height: 150%;
     display: flex;
     justify-content: center;
+    @media screen and (min-width: 1440px) and (max-width: 1920px) {
+        font-size: 30px;
+        justify-content: start;
+    }
 }
 .hero-text {
     color: #999;
@@ -103,5 +146,9 @@
     font-size: 14px;
     font-weight: 500;
     line-height: 150%;
+    @media screen and (min-width: 1440px) and (max-width: 1920px) {
+        font-size: 16px;
+        text-align: start;
+    }
 }
 
