@@ -751,11 +751,18 @@ summary {
   max-width: 390px;
   margin: auto;
   padding: 40px 16px;
-  background: #141414; }
+  background: #141414;
+  background-image: url(/images/frame1.svg), url(/images/frame2.svg), url(/images/frame3.svg);
+  background-repeat: no-repeat;
+  background-size: 20px 20px, 12px 12px, 6px 6px;
+  background-position: top 20px left 8px, top 25px left 32px, top 28px left 48px; }
   @media screen and (min-width: 1440px) and (max-width: 1920px) {
     .features {
       min-width: 1440px;
-      padding: 60px 80px; } }
+      padding: 60px 80px;
+      background-image: url(/images/frame1.svg), url(/images/frame2.svg), url(/images/frame3.svg);
+      background-repeat: no-repeat;
+      background-position: top 30px left 70px, top 35px left 99px, top 39px left 118px; } }
 
 .features-container {
   margin: auto; }
@@ -1069,11 +1076,18 @@ summary {
   max-width: 390px;
   margin: auto;
   padding: 40px 16px;
-  background: #141414; }
+  background: #141414;
+  background-image: url(/images/frame1.svg), url(/images/frame2.svg), url(/images/frame3.svg);
+  background-repeat: no-repeat;
+  background-size: 20px 20px, 12px 12px, 6px 6px;
+  background-position: top 20px left 8px, top 25px left 32px, top 28px left 48px; }
   @media screen and (min-width: 1440px) and (max-width: 1920px) {
     .feedback {
       min-width: 1440px;
-      padding: 60px 80px; } }
+      padding: 60px 80px;
+      background-image: url(/images/frame1.svg), url(/images/frame2.svg), url(/images/frame3.svg);
+      background-repeat: no-repeat;
+      background-position: top 30px left 70px, top 35px left 99px, top 39px left 118px; } }
 
 .feedback-container {
   margin: auto; }
@@ -1344,11 +1358,19 @@ summary {
   max-width: 390px;
   margin: auto;
   padding: 40px 16px 80px 16px;
-  background: #141414; }
+  background: #141414;
+  background-image: url(/images/frame1.svg), url(/images/frame2.svg), url(/images/frame3.svg);
+  background-repeat: no-repeat;
+  background-size: 20px 20px, 12px 12px, 6px 6px;
+  background-position: top 20px left 8px, top 25px left 32px, top 28px left 48px; }
   @media screen and (min-width: 1440px) and (max-width: 1920px) {
     .question {
       min-width: 1440px;
-      padding: 60px 80px 72px 80px; } }
+      padding: 60px 80px 72px 80px;
+      background-image: url(/images/frame1.svg), url(/images/frame2.svg), url(/images/frame3.svg);
+      background-repeat: no-repeat;
+      background-size: 24px 24px, 14px 14px, 7px 7px;
+      background-position: top 30px left 70px, top 35px left 99px, top 39px left 118px; } }
 
 .question-container {
   margin: auto; }
@@ -1892,6 +1914,34 @@ summary {
 
 .icon-social {
   fill: white; }
+
+.facebook-btn:hover {
+  background-color: #3b5998; }
+
+.facebook-btn:hover > .facebook-icon {
+  background-color: #3b5998;
+  fill: white; }
+
+.linkedin-btn:hover {
+  background-color: white; }
+
+.linkedin-btn:hover > .linkedin-icon {
+  background-color: white;
+  fill: #00acee; }
+
+.twitter-btn:hover {
+  background-color: white; }
+
+.twitter-btn:hover > .twitter-icon {
+  background-color: white;
+  fill: #00acee; }
+
+.youtube-btn:hover {
+  background-color: white; }
+
+.youtube-btn:hover > .youtube-icon {
+  background-color: white;
+  fill: red; }
 
 .about-hero {
   max-width: 1920px;

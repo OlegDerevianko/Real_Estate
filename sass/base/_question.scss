@@ -3,9 +3,36 @@
     margin: auto;
     padding: 40px 16px 80px 16px;
     background: #141414;
+    background-image:
+            url(/images/frame1.svg),
+            url(/images/frame2.svg),
+            url(/images/frame3.svg);
+        background-repeat: no-repeat;
+        background-size: 
+        20px 20px,
+        12px 12px,
+        6px 6px;
+        background-position:
+            top 20px left 8px,
+                top 25px left 32px,
+                top 28px left 48px;
     @media screen and (min-width: 1440px) and (max-width: 1920px) {
         min-width: 1440px;
         padding: 60px 80px 72px 80px;
+        background-image: 
+            url(/images/frame1.svg),
+            url(/images/frame2.svg),
+            url(/images/frame3.svg);
+        background-repeat: no-repeat;
+        background-size: 
+        24px 24px,
+        14px 14px,
+        7px 7px;
+        background-position:
+            top 30px left 70px,
+            top 35px left 99px,
+            top 39px left 118px;
+            
     }
 }
 .question-container {
