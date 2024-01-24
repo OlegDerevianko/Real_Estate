@@ -33,8 +33,7 @@
     }
 }
 .features-container {
-    margin: auto;
-    
+    margin: auto;    
 }
 .features-title {
     display: flex;
@@ -322,27 +321,20 @@
     border-radius: 69px;
     border: 1px solid #262626;
     background: #1A1A1A;
+    cursor: pointer;
 }
 .arrow-left {
     fill: rgba(128, 128, 128, 1);
 }
-.arrow-left:hover {
-    fill: rgba(255, 255, 255, 1);
-}
-.arrow-left:focus {
+.pages-btn:hover .arrow-left {
     fill: rgba(255, 255, 255, 1);
 }
 .arrow-right {
     fill: rgba(128, 128, 128, 1);
 }
-.arrow-right:hover {
+.pages-btn:hover .arrow-right {
     fill: rgba(255, 255, 255, 1);
 }
-.arrow-right:focus {
-    fill: rgba(255, 255, 255, 1);
-}
-
-
 .slider-container {  
     overflow: hidden;
 }

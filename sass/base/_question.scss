@@ -31,8 +31,7 @@
         background-position:
             top 30px left 70px,
             top 35px left 99px,
-            top 39px left 118px;
-            
+            top 39px left 118px;            
     }
 }
 .question-container {
@@ -211,7 +210,6 @@
     font-style: normal;
     font-weight: 500;
     line-height: 150%;
-
     @media screen and (min-width: 1440px) and (max-width: 1920px) {
         font-size: 16px;
         display: flex;
@@ -246,18 +244,12 @@
 .arrow-left {
     fill: rgba(128, 128, 128, 1);
 }
-.arrow-left:hover {
-    fill: rgba(255, 255, 255, 1);
-}
-.arrow-left:focus {
+.question-btn:hover .arrow-left {
     fill: rgba(255, 255, 255, 1);
 }
 .arrow-right {
     fill: rgba(128, 128, 128, 1);
 }
-.arrow-right:hover {
-    fill: rgba(255, 255, 255, 1);
-}
-.arrow-right:focus {
+.question-btn:hover .arrow-right {
     fill: rgba(255, 255, 255, 1);
 }

@@ -332,6 +332,18 @@ summary {
     .nav-item {
       display: flex; } }
 
+.nav-item:hover {
+  border-radius: 8px;
+  border: 1px solid #262626;
+  background-color: #141414;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); }
+
+.current {
+  border-radius: 8px;
+  border: 1px solid #262626;
+  background-color: #141414; }
+
 .item-link {
   cursor: pointer;
   padding: 12px 20px;
@@ -345,11 +357,6 @@ summary {
   font-weight: 500;
   line-height: 150%; }
 
-.current {
-  border-radius: 8px;
-  border: 1px solid #262626;
-  background-color: #141414; }
-
 .btn-link {
   padding: 12px 20px;
   align-items: center;
@@ -361,13 +368,6 @@ summary {
   font-size: 14px;
   font-weight: 500;
   line-height: 150%; }
-
-.nav-item:hover {
-  border-radius: 8px;
-  border: 1px solid #262626;
-  background-color: #141414;
-  transition-duration: 300ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); }
 
 .mobile-menu-btn {
   padding: 0;
@@ -416,13 +416,15 @@ summary {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 10;
+  z-index: 1000;
   background-color: #1A1A1A;
   display: flex;
   flex-direction: column;
   gap: 20px;
   border-radius: 8px;
-  border-bottom: 1px solid var(--Grey-15, #262626); }
+  border-bottom: 1px solid var(--Grey-15, #262626);
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); }
 
 .logo-menu {
   display: flex;
@@ -450,7 +452,6 @@ summary {
   flex-direction: column;
   justify-content: center;
   margin: 0;
-  padding-left: 20px;
   padding-bottom: 40px;
   gap: 20px; }
 
@@ -465,20 +466,19 @@ summary {
   font-size: 14px;
   font-weight: 500;
   line-height: 150%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #1A1A1A;
   transition-duration: 300ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); }
 
 .nav-item-menu:hover {
   border-radius: 8px;
-  border: 1px solid #262626;
+  border: 1px solid #141414;
   background-color: #141414;
   transition-duration: 300ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); }
-
-.current {
-  border-radius: 8px;
-  border: 1px solid #262626;
-  background-color: #141414; }
 
 .hero {
   max-width: 390px;
@@ -1049,24 +1049,19 @@ summary {
   padding: 10px;
   border-radius: 69px;
   border: 1px solid #262626;
-  background: #1A1A1A; }
+  background: #1A1A1A;
+  cursor: pointer; }
 
 .arrow-left {
   fill: gray; }
 
-.arrow-left:hover {
-  fill: white; }
-
-.arrow-left:focus {
+.pages-btn:hover .arrow-left {
   fill: white; }
 
 .arrow-right {
   fill: gray; }
 
-.arrow-right:hover {
-  fill: white; }
-
-.arrow-right:focus {
+.pages-btn:hover .arrow-right {
   fill: white; }
 
 .slider-container {
@@ -1201,15 +1196,32 @@ summary {
   display: flex;
   margin: 0;
   padding: 0;
-  gap: 8px; }
+  gap: 8px;
+  flex-direction: row-reverse;
+  justify-content: start; }
 
 .rate-item {
   padding: 10px;
   border-radius: 100px;
   border: 1px solid #262626;
-  background: #1A1A1A; }
+  background: #1A1A1A;
+  cursor: pointer; }
 
 .icon-star {
+  fill: #999999;
+  transition: 0.2s; }
+
+.rate-item:hover .icon-star {
+  fill: #ffe500; }
+
+.rate-item:hover ~ .rate-item .icon-star {
+  fill: #ffe500; }
+
+.feedback-rate[data-total-value="1"] .rate-item:nth-child(n + 5) .icon-star,
+.feedback-rate[data-total-value="2"] .rate-item:nth-child(n + 4) .icon-star,
+.feedback-rate[data-total-value="3"] .rate-item:nth-child(n + 3) .icon-star,
+.feedback-rate[data-total-value="4"] .rate-item:nth-child(n + 2) .icon-star,
+.feedback-rate[data-total-value="5"] .rate-item:nth-child(n + 1) .icon-star {
   fill: #ffe500; }
 
 .feedback-text-container {
@@ -1334,24 +1346,19 @@ summary {
   padding: 10px;
   border-radius: 69px;
   border: 1px solid #262626;
-  background: #1A1A1A; }
+  background: #1A1A1A;
+  cursor: pointer; }
 
 .arrow-left {
   fill: gray; }
 
-.arrow-left:hover {
-  fill: white; }
-
-.arrow-left:focus {
+.feedback-btn:hover .arrow-left {
   fill: white; }
 
 .arrow-right {
   fill: gray; }
 
-.arrow-right:hover {
-  fill: white; }
-
-.arrow-right:focus {
+.feedback-btn:hover .arrow-right {
   fill: white; }
 
 .question {
@@ -1582,19 +1589,13 @@ summary {
 .arrow-left {
   fill: gray; }
 
-.arrow-left:hover {
-  fill: white; }
-
-.arrow-left:focus {
+.question-btn:hover .arrow-left {
   fill: white; }
 
 .arrow-right {
   fill: gray; }
 
-.arrow-right:hover {
-  fill: white; }
-
-.arrow-right:focus {
+.question-btn:hover .arrow-right {
   fill: white; }
 
 .join {
@@ -1914,34 +1915,6 @@ summary {
 
 .icon-social {
   fill: white; }
-
-.facebook-btn:hover {
-  background-color: #3b5998; }
-
-.facebook-btn:hover > .facebook-icon {
-  background-color: #3b5998;
-  fill: white; }
-
-.linkedin-btn:hover {
-  background-color: white; }
-
-.linkedin-btn:hover > .linkedin-icon {
-  background-color: white;
-  fill: #00acee; }
-
-.twitter-btn:hover {
-  background-color: white; }
-
-.twitter-btn:hover > .twitter-icon {
-  background-color: white;
-  fill: #00acee; }
-
-.youtube-btn:hover {
-  background-color: white; }
-
-.youtube-btn:hover > .youtube-icon {
-  background-color: white;
-  fill: red; }
 
 .about-hero {
   max-width: 1920px;

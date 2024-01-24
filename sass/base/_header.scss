@@ -1,4 +1,7 @@
 .header {
+    // position: sticky;
+    // top: 0;
+    // z-index: 1000;
     position: relative;
     max-width: 390px;
     margin: auto;
@@ -24,7 +27,7 @@
 .nav-list {
     display: flex;
     margin: 0;    
-}
+}  
 .nav-item {
     display: none;
     color: #FFF;
@@ -40,6 +43,22 @@
         display: flex;
     }
 }
+.nav-item:hover {
+    border-radius: 8px;
+    border: 1px solid #262626;
+    background-color: #141414;
+    transition-duration: 300ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.current {
+    border-radius: 8px;
+    border: 1px solid #262626;
+    background-color: #141414;
+    // @media screen and (min-width: 1440px) and (max-width: 1920px) {
+    //     border: 1px solid #262626;
+
+    // }
+}  
 .item-link {
     cursor: pointer;
     padding: 12px 20px;
@@ -53,11 +72,6 @@
     font-weight: 500;
     line-height: 150%;    
 }
-.current {
-    border-radius: 8px;
-    border: 1px solid #262626;
-    background-color: #141414;
-}
 .btn-link {
     padding: 12px 20px;
     align-items: center;
@@ -70,13 +84,7 @@
     font-weight: 500;
     line-height: 150%;
 }
-.nav-item:hover {
-    border-radius: 8px;
-    border: 1px solid #262626;
-    background-color: #141414;
-    transition-duration: 300ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+
 .mobile-menu-btn {
     padding: 0;
     background-color: #1A1A1A;
@@ -124,13 +132,15 @@
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 10;
+    z-index: 1000;
     background-color: #1A1A1A;
     display: flex;
     flex-direction: column;
     gap: 20px;
     border-radius: 8px;
-    border-bottom: 1px solid var(--Grey-15, #262626);
+    border-bottom: 1px solid var(--Grey-15, #262626);       
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .logo-menu {
     display: flex;
@@ -158,8 +168,7 @@
     flex-direction: column;
     justify-content: center;
     margin: 0;
-    padding-left: 20px;
-    padding-bottom: 40px;
+        padding-bottom: 40px;
     gap: 20px;
 }
 .nav-item-menu {
@@ -173,21 +182,22 @@
     font-size: 14px;
     font-weight: 500;
     line-height: 150%;
-    // align-items: center;
-    // display: flex;
-    // justify-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #1A1A1A;
     transition-duration: 300ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-item-menu:hover {
     border-radius: 8px;
-    border: 1px solid #262626;
+    border: 1px solid #141414;
     background-color: #141414;
     transition-duration: 300ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.current {
-    border-radius: 8px;
-    border: 1px solid #262626;
-    background-color: #141414;
-}
+// .current {
+//     border-radius: 8px;
+//     border: 0 solid #262626;
+//     background-color: #141414;
+// }
