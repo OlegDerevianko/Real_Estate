@@ -1,45 +1,39 @@
-let position = 0;
-const slidesToShow = 1;
-const slidesToScroll = 1;
-const container = document.querySelector('.slider-container');
-const track = document.querySelector('.slider-track');
-const btnPrev = document.querySelector('.btn-prev');
-const btnNext = document.querySelector('.btn-next');
-const items = document.querySelectorAll('.slider-item');
-const itemsCount = items.length;
-const itemWidth = container.clientWidth / slidesToShow;
-const movePosition = slidesToScroll * itemWidth;
-
-items.forEach((item) => {
-    item.computedStyleMap.minWidth = `${itemWidth}px`;
-});
+const swiper = new Swiper('.mySwiper', {    
     
-btnNext.addEventListener('click', () => {
-    const itemsLeft = itemsCount - (Math.abs(position) + slidesToShow * itemWidth) / itemWidth;
+    loop: true,
+    breakpoints: {
+        600: {
+            slidesPerView: 1,
+            spaceBetween: 0
+        },        
+        1200: {
+            slidesPerView: 3,
+            spaceBetween: 0
+        }
+    },
+    
+    pagination: {
+    el: '.pagination',
+    type: "fraction",
+    formatFractionCurrent: function (number) {
+        return ('0' + number).slice(-2);
+    },
+    formatFractionTotal: function (number) {
+        return ('0' + number).slice(-2);
+    },
+    renderFraction: function (currentClass, totalClass) {
+        return '<span class="' + currentClass + '"></span>' + ' of ' + '<span class="' + totalClass + '"></span>';
+    }},
+    
 
-    position -= itemsLeft >= slidesToScroll ? movePosition : itemsLeft * itemWidth;
+    navigation: {
+    nextEl: '.button-next',
+    prevEl: '.button-prev',
+    }
+    });
 
-    setPosition();
-    checkBtns();
-});
-
-btnPrev.addEventListener('click', () => {
-    const itemsLeft = Math.abs(position) / itemWidth;
-
-    position += itemsLeft >= slidesToScroll ? movePosition : itemsLeft * itemWidth;
-
-    setPosition();
-    checkBtns();
-});
-
-const setPosition = () => {
-    track.style.transform = `translateX(${position}px)`;
-};
-
-const checkBtns = () => {
-    btnPrev.disabled = position === 0;
-    btnNext.disabled = position <= -(itemsCount - slidesToShow) * itemWidth;
-};
-
-checkBtns();
-
+    
+    // And if we need scrollbar
+    // scrollbar: {
+    //   el: '.swiper-scrollbar',
+    // },  
