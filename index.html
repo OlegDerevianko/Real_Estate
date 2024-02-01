@@ -499,15 +499,15 @@
                     </div>
                     <div class="features-pages">
                         <button class="features-title-btn">View All Properties</button>  
-                        <div class="pagination pages-numbers "></div>
+                        <div class="pages-numbers"></div>
                         <div class="pages-buttons-container">
-                            <button class="button-prev pages-btn">                                    
+                            <button class="features-button-prev pages-btn">                                    
                                 <svg class="arrow-left" width="24px" height="24px" aria-hidden="true">
                                     <use href="./images/icons.svg#icon-arrow-left"></use>
                                 </svg>
                             </button>
-                            <span class="pages-numbers1 pagination"></span>
-                            <button class="button-next pages-btn">
+                            <span class="pages-numbers1"></span>
+                            <button class="features-button-next pages-btn">
                                 <svg class="arrow-right" width="24px" height="24px" aria-hidden="true">
                                     <use href="./images/icons.svg#icon-arrow-right"></use>
                                 </svg>
@@ -526,9 +526,9 @@
                     </div>    
                     <button class="feedback-title-btn1">View All Testimonials</button>
                 </div>
-                    <div class="slider-container">
-                        <ul class="feedback-list">
-                            <li class="feedback-item">
+                    <div class="slider-container swiper feedback-swiper">
+                        <ul class="feedback-list swiper-wrapper">
+                            <li class="feedback-item swiper-slide">
                                 <ul class="feedback-rate" data-total-value="0">
                                     <li class="rate-item" data-item-value="5">
                                         <svg class="icon-star" width="18px" height="18px" aria-hidden="true">
@@ -570,7 +570,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="feedback-item">
+                            <li class="feedback-item swiper-slide">
                                 <ul class="feedback-rate" data-total-value="0">
                                     <li class="rate-item" data-item-value="5">
                                         <svg class="icon-star" width="18px" height="18px" aria-hidden="true">
@@ -613,7 +613,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="feedback-item">
+                            <li class="feedback-item swiper-slide">
                                 <ul class="feedback-rate" data-total-value="0">
                                     <li class="rate-item" data-item-value="5">
                                         <svg class="icon-star" width="18px" height="18px" aria-hidden="true">
@@ -655,20 +655,404 @@
                                         <span class="user-from">USA, Nevada</span>
                                     </div>
                                 </div>
-                            </li>                        
+                            </li> 
+                            <li class="feedback-item swiper-slide">
+                                <ul class="feedback-rate" data-total-value="0">
+                                    <li class="rate-item" data-item-value="5">
+                                        <svg class="icon-star" width="18px" height="18px" aria-hidden="true">
+                                            <use href="./images/icons.svg#icon-star"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="rate-item" data-item-value="4">
+                                        <svg class="icon-star" width="18px" height="18px" aria-hidden="true">
+                                            <use href="./images/icons.svg#icon-star"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="rate-item" data-item-value="3">
+                                        <svg class="icon-star" width="18px" height="18px" aria-hidden="true">
+                                            <use href="./images/icons.svg#icon-star"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="rate-item" data-item-value="2">
+                                        <svg class="icon-star" width="18px" height="18px" aria-hidden="true">
+                                            <use href="./images/icons.svg#icon-star"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="rate-item" data-item-value="1">
+                                        <svg class="icon-star" width="18px" height="18px" aria-hidden="true">
+                                            <use href="./images/icons.svg#icon-star"></use>
+                                        </svg>
+                                    </li>
+                                </ul>
+                                <div class="feedback-text-container">
+                                    <span class="feedback-text">Exceptional Service!</span>
+                                    <p class="feedback-description">Our experience with Estatein was outstanding. Their team's dedication and
+                                        professionalism made finding our dream home a
+                                        breeze. Highly recommended!</p>
+                                </div>
+                                <div class="feedback-user">
+                                    <div class="feedback-user-wadewarren"></div>
+                                    <div class="user-info">
+                                        <span class="user-name">Wade Warren</span>
+                                        <span class="user-from">USA, California</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="feedback-item swiper-slide">
+                                <ul class="feedback-rate" data-total-value="0">
+                                    <li class="rate-item" data-item-value="5">
+                                        <svg class="icon-star" width="18px" height="18px" aria-hidden="true">
+                                            <use href="./images/icons.svg#icon-star"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="rate-item" data-item-value="4">
+                                        <svg class="icon-star" width="18px" height="18px" aria-hidden="true">
+                                            <use href="./images/icons.svg#icon-star"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="rate-item" data-item-value="3">
+                                        <svg class="icon-star" width="18px" height="18px" aria-hidden="true">
+                                            <use href="./images/icons.svg#icon-star"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="rate-item" data-item-value="2">
+                                        <svg class="icon-star" width="18px" height="18px" aria-hidden="true">
+                                            <use href="./images/icons.svg#icon-star"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="rate-item" data-item-value="1">
+                                        <svg class="icon-star" width="18px" height="18px" aria-hidden="true">
+                                            <use href="./images/icons.svg#icon-star"></use>
+                                        </svg>
+                                    </li>
+                                </ul>
+                                <div class="feedback-text-container">
+                                    <span class="feedback-text">Efficient and Reliable</span>
+                                    <p class="feedback-description">Estatein provided us with top-notch service. They helped us sell our
+                                        property quickly
+                                        and at a great price. We couldn't
+                                        be happier with the results.</p>
+                                </div>
+                                <div class="feedback-user">
+                                    <div class="feedback-user-emeliethomson"></div>
+                                    <div class="user-info">
+                                        <span class="user-name">Emelie Thomson</span>
+                                        <span class="user-from">USA, Florida</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="feedback-item swiper-slide">
+                                <ul class="feedback-rate" data-total-value="0">
+                                    <li class="rate-item" data-item-value="5">
+                                        <svg class="icon-star" width="18px" height="18px" aria-hidden="true">
+                                            <use href="./images/icons.svg#icon-star"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="rate-item" data-item-value="4">
+                                        <svg class="icon-star" width="18px" height="18px" aria-hidden="true">
+                                            <use href="./images/icons.svg#icon-star"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="rate-item" data-item-value="3">
+                                        <svg class="icon-star" width="18px" height="18px" aria-hidden="true">
+                                            <use href="./images/icons.svg#icon-star"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="rate-item" data-item-value="2">
+                                        <svg class="icon-star" width="18px" height="18px" aria-hidden="true">
+                                            <use href="./images/icons.svg#icon-star"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="rate-item" data-item-value="1">
+                                        <svg class="icon-star" width="18px" height="18px" aria-hidden="true">
+                                            <use href="./images/icons.svg#icon-star"></use>
+                                        </svg>
+                                    </li>
+                                </ul>
+                                <div class="feedback-text-container">
+                                    <span class="feedback-text">Trusted Advisors</span>
+                                    <p class="feedback-description">The Estatein team guided us through the entire buying process. Their
+                                        knowledge and
+                                        commitment to our needs were
+                                        impressive. Thank you for your support!</p>
+                                </div>
+                                <div class="feedback-user">
+                                    <div class="feedback-user-johnmans"></div>
+                                    <div class="user-info">
+                                        <span class="user-name">John Mans</span>
+                                        <span class="user-from">USA, Nevada</span>
+                                    </div>
+                                </div>
+                            </li>  
+                            <li class="feedback-item swiper-slide">
+                                <ul class="feedback-rate" data-total-value="0">
+                                    <li class="rate-item" data-item-value="5">
+                                        <svg class="icon-star" width="18px" height="18px" aria-hidden="true">
+                                            <use href="./images/icons.svg#icon-star"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="rate-item" data-item-value="4">
+                                        <svg class="icon-star" width="18px" height="18px" aria-hidden="true">
+                                            <use href="./images/icons.svg#icon-star"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="rate-item" data-item-value="3">
+                                        <svg class="icon-star" width="18px" height="18px" aria-hidden="true">
+                                            <use href="./images/icons.svg#icon-star"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="rate-item" data-item-value="2">
+                                        <svg class="icon-star" width="18px" height="18px" aria-hidden="true">
+                                            <use href="./images/icons.svg#icon-star"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="rate-item" data-item-value="1">
+                                        <svg class="icon-star" width="18px" height="18px" aria-hidden="true">
+                                            <use href="./images/icons.svg#icon-star"></use>
+                                        </svg>
+                                    </li>
+                                </ul>
+                                <div class="feedback-text-container">
+                                    <span class="feedback-text">Exceptional Service!</span>
+                                    <p class="feedback-description">Our experience with Estatein was outstanding. Their team's dedication and
+                                        professionalism made finding our dream home a
+                                        breeze. Highly recommended!</p>
+                                </div>
+                                <div class="feedback-user">
+                                    <div class="feedback-user-wadewarren"></div>
+                                    <div class="user-info">
+                                        <span class="user-name">Wade Warren</span>
+                                        <span class="user-from">USA, California</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="feedback-item swiper-slide">
+                                <ul class="feedback-rate" data-total-value="0">
+                                    <li class="rate-item" data-item-value="5">
+                                        <svg class="icon-star" width="18px" height="18px" aria-hidden="true">
+                                            <use href="./images/icons.svg#icon-star"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="rate-item" data-item-value="4">
+                                        <svg class="icon-star" width="18px" height="18px" aria-hidden="true">
+                                            <use href="./images/icons.svg#icon-star"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="rate-item" data-item-value="3">
+                                        <svg class="icon-star" width="18px" height="18px" aria-hidden="true">
+                                            <use href="./images/icons.svg#icon-star"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="rate-item" data-item-value="2">
+                                        <svg class="icon-star" width="18px" height="18px" aria-hidden="true">
+                                            <use href="./images/icons.svg#icon-star"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="rate-item" data-item-value="1">
+                                        <svg class="icon-star" width="18px" height="18px" aria-hidden="true">
+                                            <use href="./images/icons.svg#icon-star"></use>
+                                        </svg>
+                                    </li>
+                                </ul>
+                                <div class="feedback-text-container">
+                                    <span class="feedback-text">Efficient and Reliable</span>
+                                    <p class="feedback-description">Estatein provided us with top-notch service. They helped us sell our
+                                        property quickly
+                                        and at a great price. We couldn't
+                                        be happier with the results.</p>
+                                </div>
+                                <div class="feedback-user">
+                                    <div class="feedback-user-emeliethomson"></div>
+                                    <div class="user-info">
+                                        <span class="user-name">Emelie Thomson</span>
+                                        <span class="user-from">USA, Florida</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="feedback-item swiper-slide">
+                                <ul class="feedback-rate" data-total-value="0">
+                                    <li class="rate-item" data-item-value="5">
+                                        <svg class="icon-star" width="18px" height="18px" aria-hidden="true">
+                                            <use href="./images/icons.svg#icon-star"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="rate-item" data-item-value="4">
+                                        <svg class="icon-star" width="18px" height="18px" aria-hidden="true">
+                                            <use href="./images/icons.svg#icon-star"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="rate-item" data-item-value="3">
+                                        <svg class="icon-star" width="18px" height="18px" aria-hidden="true">
+                                            <use href="./images/icons.svg#icon-star"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="rate-item" data-item-value="2">
+                                        <svg class="icon-star" width="18px" height="18px" aria-hidden="true">
+                                            <use href="./images/icons.svg#icon-star"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="rate-item" data-item-value="1">
+                                        <svg class="icon-star" width="18px" height="18px" aria-hidden="true">
+                                            <use href="./images/icons.svg#icon-star"></use>
+                                        </svg>
+                                    </li>
+                                </ul>
+                                <div class="feedback-text-container">
+                                    <span class="feedback-text">Trusted Advisors</span>
+                                    <p class="feedback-description">The Estatein team guided us through the entire buying process. Their
+                                        knowledge and
+                                        commitment to our needs were
+                                        impressive. Thank you for your support!</p>
+                                </div>
+                                <div class="feedback-user">
+                                    <div class="feedback-user-johnmans"></div>
+                                    <div class="user-info">
+                                        <span class="user-name">John Mans</span>
+                                        <span class="user-from">USA, Nevada</span>
+                                    </div>
+                                </div>
+                            </li> 
+                            <li class="feedback-item swiper-slide">
+                                <ul class="feedback-rate" data-total-value="0">
+                                    <li class="rate-item" data-item-value="5">
+                                        <svg class="icon-star" width="18px" height="18px" aria-hidden="true">
+                                            <use href="./images/icons.svg#icon-star"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="rate-item" data-item-value="4">
+                                        <svg class="icon-star" width="18px" height="18px" aria-hidden="true">
+                                            <use href="./images/icons.svg#icon-star"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="rate-item" data-item-value="3">
+                                        <svg class="icon-star" width="18px" height="18px" aria-hidden="true">
+                                            <use href="./images/icons.svg#icon-star"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="rate-item" data-item-value="2">
+                                        <svg class="icon-star" width="18px" height="18px" aria-hidden="true">
+                                            <use href="./images/icons.svg#icon-star"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="rate-item" data-item-value="1">
+                                        <svg class="icon-star" width="18px" height="18px" aria-hidden="true">
+                                            <use href="./images/icons.svg#icon-star"></use>
+                                        </svg>
+                                    </li>
+                                </ul>
+                                <div class="feedback-text-container">
+                                    <span class="feedback-text">Exceptional Service!</span>
+                                    <p class="feedback-description">Our experience with Estatein was outstanding. Their team's dedication and
+                                        professionalism made finding our dream home a
+                                        breeze. Highly recommended!</p>
+                                </div>
+                                <div class="feedback-user">
+                                    <div class="feedback-user-wadewarren"></div>
+                                    <div class="user-info">
+                                        <span class="user-name">Wade Warren</span>
+                                        <span class="user-from">USA, California</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="feedback-item swiper-slide">
+                                <ul class="feedback-rate" data-total-value="0">
+                                    <li class="rate-item" data-item-value="5">
+                                        <svg class="icon-star" width="18px" height="18px" aria-hidden="true">
+                                            <use href="./images/icons.svg#icon-star"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="rate-item" data-item-value="4">
+                                        <svg class="icon-star" width="18px" height="18px" aria-hidden="true">
+                                            <use href="./images/icons.svg#icon-star"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="rate-item" data-item-value="3">
+                                        <svg class="icon-star" width="18px" height="18px" aria-hidden="true">
+                                            <use href="./images/icons.svg#icon-star"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="rate-item" data-item-value="2">
+                                        <svg class="icon-star" width="18px" height="18px" aria-hidden="true">
+                                            <use href="./images/icons.svg#icon-star"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="rate-item" data-item-value="1">
+                                        <svg class="icon-star" width="18px" height="18px" aria-hidden="true">
+                                            <use href="./images/icons.svg#icon-star"></use>
+                                        </svg>
+                                    </li>
+                                </ul>
+                                <div class="feedback-text-container">
+                                    <span class="feedback-text">Efficient and Reliable</span>
+                                    <p class="feedback-description">Estatein provided us with top-notch service. They helped us sell our
+                                        property quickly
+                                        and at a great price. We couldn't
+                                        be happier with the results.</p>
+                                </div>
+                                <div class="feedback-user">
+                                    <div class="feedback-user-emeliethomson"></div>
+                                    <div class="user-info">
+                                        <span class="user-name">Emelie Thomson</span>
+                                        <span class="user-from">USA, Florida</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="feedback-item swiper-slide">
+                                <ul class="feedback-rate" data-total-value="0">
+                                    <li class="rate-item" data-item-value="5">
+                                        <svg class="icon-star" width="18px" height="18px" aria-hidden="true">
+                                            <use href="./images/icons.svg#icon-star"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="rate-item" data-item-value="4">
+                                        <svg class="icon-star" width="18px" height="18px" aria-hidden="true">
+                                            <use href="./images/icons.svg#icon-star"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="rate-item" data-item-value="3">
+                                        <svg class="icon-star" width="18px" height="18px" aria-hidden="true">
+                                            <use href="./images/icons.svg#icon-star"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="rate-item" data-item-value="2">
+                                        <svg class="icon-star" width="18px" height="18px" aria-hidden="true">
+                                            <use href="./images/icons.svg#icon-star"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="rate-item" data-item-value="1">
+                                        <svg class="icon-star" width="18px" height="18px" aria-hidden="true">
+                                            <use href="./images/icons.svg#icon-star"></use>
+                                        </svg>
+                                    </li>
+                                </ul>
+                                <div class="feedback-text-container">
+                                    <span class="feedback-text">Trusted Advisors</span>
+                                    <p class="feedback-description">The Estatein team guided us through the entire buying process. Their
+                                        knowledge and
+                                        commitment to our needs were
+                                        impressive. Thank you for your support!</p>
+                                </div>
+                                <div class="feedback-user">
+                                    <div class="feedback-user-johnmans"></div>
+                                    <div class="user-info">
+                                        <span class="user-name">John Mans</span>
+                                        <span class="user-from">USA, Nevada</span>
+                                    </div>
+                                </div>
+                            </li>                         
                         </ul>
                     </div>
                 <div class="feedback-pages">
-                    <span class="feedback-numbers1">01 of 10</span>
-                    <button class="feedback-title-btn">View All Testimonials</button>                    
+                    <button class="feedback-title-btn">View All Testimonials</button> 
+                    <div class="feedback-numbers"></div>                   
                     <div class="feedback-buttons-container">
-                        <button class="feedback-btn">
+                        <button class="feedback-button-prev feedback-btn">
                             <svg class="arrow-left" width="24px" height="24px" aria-hidden="true">
                                 <use href="./images/icons.svg#icon-arrow-left"></use>
                             </svg>
                         </button>
-                        <span class="feedback-numbers">01 of 10</span>
-                        <button class="feedback-btn">
+                        <span class="feedback-numbers1">01 of 10</span>
+                        <button class="feedback-button-next feedback-btn">
                             <svg class="arrow-right" width="24px" height="24px" aria-hidden="true">
                                 <use href="./images/icons.svg#icon-arrow-right"></use>
                             </svg>
@@ -687,21 +1071,165 @@
                     </div>
                     <button class="question-title-btn1">View All FAQ’s</button>
                 </div>
-                <div class="slider-container">
-                    <ul class="question-list">
-                        <li class="question-item">
+                <div class="slider-container swiper question-swiper">
+                    <ul class="question-list swiper-wrapper">
+                        <li class="question-item swiper-slide">
                             <span class="question-text">How do I search for properties on Estatein?</span>
                             <p class="question-description">Learn how to use our user-friendly search tools to find properties that match
                                 your criteria.</p>
                             <button class="question-item-btn">Read More</button>
                         </li>
-                        <li class="question-item">
+                        <li class="question-item swiper-slide">
                             <span class="question-text">What documents do I need to sell my property through Estatein?</span>
                             <p class="question-description">Find out about the necessary documentation for listing your property with us.
                             </p>
                             <button class="question-item-btn">Read More</button>
                         </li>
-                        <li class="question-item">
+                        <li class="question-item swiper-slide">
+                            <span class="question-text">How can I contact an Estatein agent?</span>
+                            <p class="question-description">Discover the different ways you can get in touch with our experienced agents.
+                            </p>
+                            <button class="question-item-btn">Read More</button>
+                        </li>
+                        <li class="question-item swiper-slide">
+                            <span class="question-text">How do I search for properties on Estatein?</span>
+                            <p class="question-description">Learn how to use our user-friendly search tools to find properties that match
+                                your criteria.</p>
+                            <button class="question-item-btn">Read More</button>
+                        </li>
+                        <li class="question-item swiper-slide">
+                            <span class="question-text">What documents do I need to sell my property through Estatein?</span>
+                            <p class="question-description">Find out about the necessary documentation for listing your property with us.
+                            </p>
+                            <button class="question-item-btn">Read More</button>
+                        </li>
+                        <li class="question-item swiper-slide">
+                            <span class="question-text">How can I contact an Estatein agent?</span>
+                            <p class="question-description">Discover the different ways you can get in touch with our experienced agents.
+                            </p>
+                            <button class="question-item-btn">Read More</button>
+                        </li>
+                        <li class="question-item swiper-slide">
+                            <span class="question-text">How do I search for properties on Estatein?</span>
+                            <p class="question-description">Learn how to use our user-friendly search tools to find properties that match
+                                your criteria.</p>
+                            <button class="question-item-btn">Read More</button>
+                        </li>
+                        <li class="question-item swiper-slide">
+                            <span class="question-text">What documents do I need to sell my property through Estatein?</span>
+                            <p class="question-description">Find out about the necessary documentation for listing your property with us.
+                            </p>
+                            <button class="question-item-btn">Read More</button>
+                        </li>
+                        <li class="question-item swiper-slide">
+                            <span class="question-text">How can I contact an Estatein agent?</span>
+                            <p class="question-description">Discover the different ways you can get in touch with our experienced agents.
+                            </p>
+                            <button class="question-item-btn">Read More</button>
+                        </li>
+                        <li class="question-item swiper-slide">
+                            <span class="question-text">How do I search for properties on Estatein?</span>
+                            <p class="question-description">Learn how to use our user-friendly search tools to find properties that match
+                                your criteria.</p>
+                            <button class="question-item-btn">Read More</button>
+                        </li>
+                        <li class="question-item swiper-slide">
+                            <span class="question-text">What documents do I need to sell my property through Estatein?</span>
+                            <p class="question-description">Find out about the necessary documentation for listing your property with us.
+                            </p>
+                            <button class="question-item-btn">Read More</button>
+                        </li>
+                        <li class="question-item swiper-slide">
+                            <span class="question-text">How can I contact an Estatein agent?</span>
+                            <p class="question-description">Discover the different ways you can get in touch with our experienced agents.
+                            </p>
+                            <button class="question-item-btn">Read More</button>
+                        </li>
+                        <li class="question-item swiper-slide">
+                            <span class="question-text">How do I search for properties on Estatein?</span>
+                            <p class="question-description">Learn how to use our user-friendly search tools to find properties that match
+                                your criteria.</p>
+                            <button class="question-item-btn">Read More</button>
+                        </li>
+                        <li class="question-item swiper-slide">
+                            <span class="question-text">What documents do I need to sell my property through Estatein?</span>
+                            <p class="question-description">Find out about the necessary documentation for listing your property with us.
+                            </p>
+                            <button class="question-item-btn">Read More</button>
+                        </li>
+                        <li class="question-item swiper-slide">
+                            <span class="question-text">How can I contact an Estatein agent?</span>
+                            <p class="question-description">Discover the different ways you can get in touch with our experienced agents.
+                            </p>
+                            <button class="question-item-btn">Read More</button>
+                        </li>
+                        <li class="question-item swiper-slide">
+                            <span class="question-text">How do I search for properties on Estatein?</span>
+                            <p class="question-description">Learn how to use our user-friendly search tools to find properties that match
+                                your criteria.</p>
+                            <button class="question-item-btn">Read More</button>
+                        </li>
+                        <li class="question-item swiper-slide">
+                            <span class="question-text">What documents do I need to sell my property through Estatein?</span>
+                            <p class="question-description">Find out about the necessary documentation for listing your property with us.
+                            </p>
+                            <button class="question-item-btn">Read More</button>
+                        </li>
+                        <li class="question-item swiper-slide">
+                            <span class="question-text">How can I contact an Estatein agent?</span>
+                            <p class="question-description">Discover the different ways you can get in touch with our experienced agents.
+                            </p>
+                            <button class="question-item-btn">Read More</button>
+                        </li>
+                        <li class="question-item swiper-slide">
+                            <span class="question-text">How do I search for properties on Estatein?</span>
+                            <p class="question-description">Learn how to use our user-friendly search tools to find properties that match
+                                your criteria.</p>
+                            <button class="question-item-btn">Read More</button>
+                        </li>
+                        <li class="question-item swiper-slide">
+                            <span class="question-text">What documents do I need to sell my property through Estatein?</span>
+                            <p class="question-description">Find out about the necessary documentation for listing your property with us.
+                            </p>
+                            <button class="question-item-btn">Read More</button>
+                        </li>
+                        <li class="question-item swiper-slide">
+                            <span class="question-text">How can I contact an Estatein agent?</span>
+                            <p class="question-description">Discover the different ways you can get in touch with our experienced agents.
+                            </p>
+                            <button class="question-item-btn">Read More</button>
+                        </li>
+                        <li class="question-item swiper-slide">
+                            <span class="question-text">How do I search for properties on Estatein?</span>
+                            <p class="question-description">Learn how to use our user-friendly search tools to find properties that match
+                                your criteria.</p>
+                            <button class="question-item-btn">Read More</button>
+                        </li>
+                        <li class="question-item swiper-slide">
+                            <span class="question-text">What documents do I need to sell my property through Estatein?</span>
+                            <p class="question-description">Find out about the necessary documentation for listing your property with us.
+                            </p>
+                            <button class="question-item-btn">Read More</button>
+                        </li>
+                        <li class="question-item swiper-slide">
+                            <span class="question-text">How can I contact an Estatein agent?</span>
+                            <p class="question-description">Discover the different ways you can get in touch with our experienced agents.
+                            </p>
+                            <button class="question-item-btn">Read More</button>
+                        </li>
+                        <li class="question-item swiper-slide">
+                            <span class="question-text">How do I search for properties on Estatein?</span>
+                            <p class="question-description">Learn how to use our user-friendly search tools to find properties that match
+                                your criteria.</p>
+                            <button class="question-item-btn">Read More</button>
+                        </li>
+                        <li class="question-item swiper-slide">
+                            <span class="question-text">What documents do I need to sell my property through Estatein?</span>
+                            <p class="question-description">Find out about the necessary documentation for listing your property with us.
+                            </p>
+                            <button class="question-item-btn">Read More</button>
+                        </li>
+                        <li class="question-item swiper-slide">
                             <span class="question-text">How can I contact an Estatein agent?</span>
                             <p class="question-description">Discover the different ways you can get in touch with our experienced agents.
                             </p>
@@ -710,16 +1238,16 @@
                     </ul>
                 </div>                
                 <div class="question-pages">
-                    <span class="question-numbers12">01 of 10</span>
                     <button class="question-title-btn">View All FAQ’s</button>
+                    <div class="question-numbers "></div>
                     <div class="question-buttons-container">
-                        <button class="question-btn">
+                        <button class="question-button-prev question-btn">
                             <svg class="arrow-left" width="24px" height="24px" aria-hidden="true">
                                 <use href="./images/icons.svg#icon-arrow-left"></use>
                             </svg>
                         </button>
-                        <span class="question-numbers">01 of 10</span>
-                        <button class="question-btn">
+                        <span class="question-numbers1 ">01 of 10</span>
+                        <button class="question-button-next question-btn">
                             <svg class="arrow-right" width="24px" height="24px" aria-hidden="true">
                                 <use href="./images/icons.svg#icon-arrow-right"></use>
                             </svg>

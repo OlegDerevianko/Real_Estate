@@ -126,7 +126,7 @@
     margin: 40px 0 30px 0;
     @media screen and (min-width: 1440px) and (max-width: 1920px) {
         margin: 60px 0 40px 0;
-        gap: 20px;
+        // gap: 20px;
     }
 }
 .question-item {
@@ -202,7 +202,7 @@
     align-items: flex-start;
     border-top: 1px solid #262626;
 }
-.question-numbers12 {
+.question-numbers {
     display: none;
     color: #999;
     font-family: Urbanist;
@@ -213,9 +213,10 @@
     @media screen and (min-width: 1440px) and (max-width: 1920px) {
         font-size: 16px;
         display: flex;
+        gap: 5px;
     }
 }
-.question-numbers {
+.question-numbers1 {
     color: #999;
     font-family: Urbanist;
     font-size: 14px;

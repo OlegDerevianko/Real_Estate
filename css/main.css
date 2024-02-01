@@ -871,9 +871,8 @@ summary {
   transition: 3s; }
   @media screen and (min-width: 1440px) and (max-width: 1920px) {
     .features-item {
-      min-width: 413px;
-      padding: 30px;
-      margin-right: 20px; } }
+      min-width: 413.333px;
+      padding: 30px; } }
 
 .features-img {
   height: 210px;
@@ -1016,19 +1015,19 @@ summary {
   justify-content: space-between;
   border-top: 1px solid #262626; }
 
-.swiper-pagination-fraction {
-  color: #999; }
-
-.pagination {
+.pages-numbers {
   display: none;
+  color: #999;
   font-family: Urbanist;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: 150%; }
   @media screen and (min-width: 1440px) and (max-width: 1920px) {
-    .pagination {
-      display: flex; } }
+    .pages-numbers {
+      display: flex;
+      gap: 5px;
+      font-size: 16px; } }
 
 .swiper-pagination-current {
   color: #FFF; }
@@ -1180,7 +1179,6 @@ summary {
   margin: 40px 0 30px 0; }
   @media screen and (min-width: 1440px) and (max-width: 1920px) {
     .feedback-list {
-      gap: 20px;
       margin: 60px 0 40px 0; } }
 
 .feedback-item {
@@ -1317,19 +1315,7 @@ summary {
   align-items: flex-start;
   border-top: 1px solid #262626; }
 
-.feedback-numbers {
-  color: #999;
-  font-family: Urbanist;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 150%; }
-  @media screen and (min-width: 1440px) and (max-width: 1920px) {
-    .feedback-numbers {
-      display: none; } }
-
 .feedback-numbers1 {
-  display: none;
   color: #999;
   font-family: Urbanist;
   font-size: 14px;
@@ -1338,8 +1324,21 @@ summary {
   line-height: 150%; }
   @media screen and (min-width: 1440px) and (max-width: 1920px) {
     .feedback-numbers1 {
+      display: none; } }
+
+.feedback-numbers {
+  display: none;
+  color: #999;
+  font-family: Urbanist;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; }
+  @media screen and (min-width: 1440px) and (max-width: 1920px) {
+    .feedback-numbers {
       font-size: 16px;
-      display: flex; } }
+      display: flex;
+      gap: 5px; } }
 
 .feedback-buttons-container {
   display: flex;
@@ -1477,8 +1476,7 @@ summary {
   margin: 40px 0 30px 0; }
   @media screen and (min-width: 1440px) and (max-width: 1920px) {
     .question-list {
-      margin: 60px 0 40px 0;
-      gap: 20px; } }
+      margin: 60px 0 40px 0; } }
 
 .question-item {
   display: flex;
@@ -1553,7 +1551,7 @@ summary {
   align-items: flex-start;
   border-top: 1px solid #262626; }
 
-.question-numbers12 {
+.question-numbers {
   display: none;
   color: #999;
   font-family: Urbanist;
@@ -1562,11 +1560,12 @@ summary {
   font-weight: 500;
   line-height: 150%; }
   @media screen and (min-width: 1440px) and (max-width: 1920px) {
-    .question-numbers12 {
+    .question-numbers {
       font-size: 16px;
-      display: flex; } }
+      display: flex;
+      gap: 5px; } }
 
-.question-numbers {
+.question-numbers1 {
   color: #999;
   font-family: Urbanist;
   font-size: 14px;
@@ -1574,7 +1573,7 @@ summary {
   font-weight: 500;
   line-height: 150%; }
   @media screen and (min-width: 1440px) and (max-width: 1920px) {
-    .question-numbers {
+    .question-numbers1 {
       font-size: 16px;
       display: none; } }
 

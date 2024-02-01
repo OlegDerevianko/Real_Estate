@@ -1,4 +1,4 @@
-const swiper = new Swiper('.mySwiper', {    
+new Swiper('.mySwiper', {    
     
     loop: true,
     breakpoints: {
@@ -6,14 +6,14 @@ const swiper = new Swiper('.mySwiper', {
             slidesPerView: 1,
             spaceBetween: 0
         },        
-        1200: {
+        1440: {
             slidesPerView: 3,
-            spaceBetween: 0
+            spaceBetween: 20
         }
-    },
-    
+    },    
+
     pagination: {
-    el: '.pagination',
+    el: '.pages-numbers',
     type: "fraction",
     formatFractionCurrent: function (number) {
         return ('0' + number).slice(-2);
@@ -24,16 +24,78 @@ const swiper = new Swiper('.mySwiper', {
     renderFraction: function (currentClass, totalClass) {
         return '<span class="' + currentClass + '"></span>' + ' of ' + '<span class="' + totalClass + '"></span>';
     }},
-    
 
     navigation: {
-    nextEl: '.button-next',
-    prevEl: '.button-prev',
+    nextEl: '.features-button-next',
+    prevEl: '.features-button-prev',
+    }
+    });
+
+new Swiper('.feedback-swiper', {    
+    
+    loop: true,
+    breakpoints: {
+        600: {
+            slidesPerView: 1,
+            spaceBetween: 0
+        },        
+        1440: {
+            slidesPerView: 3,
+            spaceBetween: 20
+        }
+    },   
+
+    pagination: {
+    el: '.feedback-numbers',
+    type: "fraction",
+    formatFractionCurrent: function (number) {
+        return ('0' + number).slice(-2);
+    },
+    formatFractionTotal: function (number) {
+        return ('0' + number).slice(-2);
+    },
+    renderFraction: function (currentClass, totalClass) {
+        return '<span class="' + currentClass + '"></span>' + ' of ' + '<span class="' + totalClass + '"></span>';
+    }},         
+
+    navigation: {
+    nextEl: '.feedback-button-next',
+    prevEl: '.feedback-button-prev',
+    }
+    });
+
+new Swiper('.question-swiper', {    
+    
+    loop: true,
+    breakpoints: {
+        600: {
+            slidesPerView: 1,
+            spaceBetween: 0
+        },        
+        1440: {
+            slidesPerView: 3,
+            spaceBetween: 20
+        }
+    },   
+
+    pagination: {
+    el: '.question-numbers',
+    type: "fraction",
+    formatFractionCurrent: function (number) {
+        return ('0' + number).slice(-2);
+    },
+    formatFractionTotal: function (number) {
+        return ('0' + number).slice(-2);
+    },
+    renderFraction: function (currentClass, totalClass) {
+        return '<span class="' + currentClass + '"></span>' + ' of ' + '<span class="' + totalClass + '"></span>';
+    }},         
+
+    navigation: {
+    nextEl: '.question-button-next',
+    prevEl: '.question-button-prev',
     }
     });
 
     
-    // And if we need scrollbar
-    // scrollbar: {
-    //   el: '.swiper-scrollbar',
-    // },  
+    
