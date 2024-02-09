@@ -1,14 +1,36 @@
 {
   "name": "education-estate",
-  "version": "1.0.0",
-  "main": "index.js",
+  "version": "2.0.0",
+  "description": "",
+  "homepage": "https://olegderevyanko.github.io/Education-Estate",
   "scripts": {
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel *.html",
+    "build": "parcel build *.html --public-url /Education-Estate/"
   },
-  "author": "Alexander Repeta <mycoolemail@mail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OlegDerevyanko/Education-Estate.git"
+  },
+  "keywords": [],
+  "author": "Oleg Derevyanko <azru2508@gmail.com>",
   "license": "ISC",
   "keywords": [],
-  "devDependencies": {},
-  "description": ""
+  "description": "",
+  
+  "dependencies": {
+    "jquery": "^3.6.0",
+    "menu": "^0.2.5",
+    "modern-normalize": "^1.1.0",
+    "slick": "^1.12.2",
+    "slick-carousel": "^1.8.1",
+    "slider": "^1.0.4",
+    "top": "^0.2.3"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.6.0",
+    "parcel": "^2.6.0",
+    "parcel-reporter-clean-dist": "^1.0.4",
+    "posthtml-include": "^1.7.4"
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead"
 }
