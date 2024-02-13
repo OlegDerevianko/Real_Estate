@@ -1025,8 +1025,7 @@ summary {
   line-height: 150%; }
   @media screen and (min-width: 1440px) and (max-width: 1920px) {
     .pages-numbers {
-      display: flex;
-      gap: 5px;
+      display: block;
       font-size: 16px; } }
 
 .swiper-pagination-current {
@@ -1336,9 +1335,8 @@ summary {
   line-height: 150%; }
   @media screen and (min-width: 1440px) and (max-width: 1920px) {
     .feedback-numbers {
-      font-size: 16px;
-      display: flex;
-      gap: 5px; } }
+      display: block;
+      font-size: 16px; } }
 
 .feedback-buttons-container {
   display: flex;
@@ -1561,9 +1559,8 @@ summary {
   line-height: 150%; }
   @media screen and (min-width: 1440px) and (max-width: 1920px) {
     .question-numbers {
-      font-size: 16px;
-      display: flex;
-      gap: 5px; } }
+      display: block;
+      font-size: 16px; } }
 
 .question-numbers1 {
   color: #999;
@@ -2540,5 +2537,3 @@ summary {
 
 .arrow-right:focus {
   fill: white; }
-
-/*# sourceMappingURL=main.css.map */
