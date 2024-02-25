@@ -2,7 +2,7 @@
     max-width: 390px;
     margin: auto;
     padding: 40px 16px 80px 16px;
-    background: #141414;
+    background-color: var(--bg-primary-color);
     background-image:
             url(../images/frame1.svg),
             url(../images/frame2.svg),
@@ -33,223 +33,297 @@
             top 35px left 99px,
             top 39px left 118px;            
     }
-}
-.question-container {
-    margin: auto;
-    @media screen and (min-width: 1440px) and (max-width: 1920px) {
-        min-width: 1280px;
+    @media screen and (min-width: 1920px) {
+        min-width: 1920px;
+        padding: 75px 162px;
+        background-image: 
+            url(../images/frame1.svg),
+            url(../images/frame2.svg),
+            url(../images/frame3.svg);
+        background-size:
+            30px 30px,
+            18px 18px,
+            8.4px 8.4px;
+        background-repeat: no-repeat;
+        background-position:
+            top 30px left 142px,
+            top 35px left 178px,
+            top 39px left 202px; 
+        } 
+    &__container {
+        margin: auto;        
     }
-}
-.question-title {
-    display: flex;
-    align-items: end;
-    @media screen and (min-width: 1440px) and (max-width: 1920px) {
-        gap: 150px;
+    &__title {
+        display: flex;
         align-items: end;
+        @media screen and (min-width: 1440px) and (max-width: 1920px) {
+            gap: 150px;
+        }
+        @media screen and (min-width: 1920px) {
+            gap: 200px;
+        } 
     }
-}
-.question-title-name {
-    color: #FFF;
-    font-family: Urbanist;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 150%;
-    margin-bottom: 6px;
-    @media screen and (min-width: 1440px) and (max-width: 1920px) {
-        font-size: 38px;
+    &__title-name {
+        color: var(--absolute-white);        
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 150%;
+        margin-bottom: 6px;
+        @media screen and (min-width: 1440px) and (max-width: 1920px) {
+            font-size: 38px;
+            margin-bottom: 10px;
+        }
+        @media screen and (min-width: 1920px) {
+            font-size: 48px;
+            margin-bottom: 14px;
+        } 
     }
-}
-.question-title-text {
-    color: #999;
-    font-family: Urbanist;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 150%;
-    @media screen and (min-width: 1440px) and (max-width: 1920px) {
-        font-size: 16px;
+    &__title-text {
+        color: var(--text-second-color);        
+        line-height: 150%;
+        @media screen and (min-width: 1440px) and (max-width: 1920px) {
+            font-size: 16px;
+        }
+        @media screen and (min-width: 1920px) {
+            font-size: 18px;
+        }
     }
-}
-.question-title-btn1 {
-    cursor: pointer;
-    display: none; 
-    padding: 14px 0;
-    border-radius: 8px;
-    border: 1px solid #262626;
-    background: #1A1A1A;
-    color: #FFF;
-    font-family: Urbanist;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 150%;
-    transition-duration: 300ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);   
-    @media screen and (min-width: 1440px) and (max-width: 1920px) {
+    &__title-btn1 {
+        cursor: pointer;
+        display: none; 
+        padding: 14px 20px;
+        border-radius: 8px;
+        border: 1px solid var(--border-primary-color);
+        background-color: var(--bg-second-color);
+        color: var(--absolute-white);        
+        font-family: Urbanist;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 150%;
+        transition-duration: 300ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);   
+        @media screen and (min-width: 1440px) and (max-width: 1920px) {
+            display: flex;
+            justify-content: center;
+            border-radius: 10px;
+            width: 170px;
+        }
+        @media screen and (min-width: 1920px) {
+            display: flex;
+            justify-content: center;
+            width: 170px;
+            font-size: 18px;
+        }
+    }
+    &__title-btn1:hover {
+        background-color: var(--btn-second-color);
+        border: 1px solid var(--border-second-color);
+    }
+    &__title-btn {
+        cursor: pointer;
+        display: flex;
+        padding: 14px 20px;
+        align-items: center;
+        border-radius: 10px;
+        border: 1px solid var(--border-primary-color);
+        background-color: var(--bg-second-color);
+        color: var(--absolute-white);        
+        font-family: Urbanist;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 150%;
+        transition-duration: 300ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @media screen and (min-width: 1440px) and (max-width: 1920px) {
+            border-radius: 8px;
+            display: none;
+        }
+        @media screen and (min-width: 1920px) {
+            display: none;
+        }
+    }
+    &__title-btn:hover {
+        background-color: var(--btn-second-color);
+        border: 1px solid var(--border-second-color);
+    }
+    &__list {
+        display: flex;
+        margin: 40px 0 30px 0;
+        @media screen and (min-width: 1440px) and (max-width: 1920px) {
+            margin: 60px 0 40px 0;
+        }
+        @media screen and (min-width: 1920px) {
+            margin: 80px 0 50px 0;
+        }
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        width: 358px;    
+        gap: 20px;
+        padding: 30px;
+        border-radius: 10px;
+        border: 1px solid var(--border-primary-color);
+        background-color: var(--bg-primary-color);
+        @media screen and (min-width: 1440px) and (max-width: 1920px) {
+            width: 413px;
+            gap: 24px;
+            padding: 40px;
+        }
+        @media screen and (min-width: 1920px) {
+            width: 512px;
+            gap: 30px;
+            padding: 50px;
+        }
+    }
+    &__text {
+        align-self: stretch;
+        color: var(--absolute-white);        
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 150%;
+        @media screen and (min-width: 1440px) and (max-width: 1920px) {
+            font-size: 20px;
+        }
+        @media screen and (min-width: 1920px) {
+            font-size: 20px;
+            flex-grow: 1;
+        }
+    }
+    &__description {
+        align-self: stretch;
+        color: var(--absolute-white);        
+        line-height: 150%;
+        @media screen and (min-width: 1440px) and (max-width: 1920px) {
+            font-size: 16px;
+        }
+        @media screen and (min-width: 1920px) {
+            font-size: 18px;
+        }
+    }
+    &__item-btn {
+        cursor: pointer;
+        min-width: 298px;
+        padding: 14px 20px;
+        border-radius: 10px;
+        border: 1px solid var(--border-primary-color);
+        background-color: var(--bg-primary-color);
+        color: var(--absolute-white);
+        font-family: Urbanist;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 131%;
+        letter-spacing: -0.108px;
+        transition-duration: 300ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @media screen and (min-width: 1440px) and (max-width: 1920px) {
+            border-radius: 8px;
+            min-width: 0;
+            max-width: 107px;
+            padding: 14px 0;
+        }
+        @media screen and (min-width: 1920px) {
+            border-radius: 10px;
+            min-width: 0;
+            max-width: 134px;
+            font-size: 18px;
+        }
+    }
+    &__item-btn:hover {
+        background-color: var(--btn-second-color);
+        border: 1px solid var(--border-second-color);
+    }
+    &__pagination {
+        display: flex;
+        padding-top: 16px;
+        justify-content: space-between;
+        align-items: flex-start;
+        border-top: 1px solid var(--border-primary-color);
+        @media screen and (min-width: 1920px) {
+            padding-top: 20px;
+        }  
+    }
+    &__pagination-numbers {
+        display: none;
+        color: var(--text-second-color);        
+        line-height: 150%;
+        @media screen and (min-width: 1440px) and (max-width: 1920px) {
+            display: block;
+            font-size: 16px;  
+        }
+        @media screen and (min-width: 1920px) {
+            display: block;
+            font-size: 20px; 
+        }
+    }
+    &__pagination-numbers1 {
+        color: var(--text-second-color);
+        line-height: 150%;
+        @media screen and (min-width: 1440px) and (max-width: 1920px) {
+            font-size: 16px;
+            display: none;
+        }
+        @media screen and (min-width: 1920px) {
+            display: none;
+        } 
+    }
+    &__btns-container {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    &__button-prev {
         display: flex;
         justify-content: center;
-        min-width: 127px;
+        align-items: center;
+        cursor: pointer;
+        width: 44px;
+        height: 44px;
+        padding: 10px;
+        border-radius: 69px;
+        border: 1px solid var(--border-primary-color);
+        background-color: var(--bg-second-color);    
+        @media screen and (min-width: 1920px) {
+            width: 58px;
+            height: 58px;
+        }    
+    }
+    &__button-next {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        width: 44px;
+        height: 44px;
+        padding: 10px;
+        border-radius: 69px;
+        border: 1px solid var(--border-primary-color);
+        background-color: var(--bg-second-color);
+        @media screen and (min-width: 1920px) {
+            width: 58px;
+            height: 58px;
+        }
+    }
+    &__arrow-left {
+        fill: var(--grey-50);
+        @media screen and (min-width: 1920px) {
+            width: 30px;
+            height: 30px;
+        } 
+    }
+    &__button-prev:hover &__arrow-left {
+        fill: var(--absolute-white);
+    }
+    &__arrow-right {
+        fill: var(--grey-50);
+        @media screen and (min-width: 1920px) {
+            width: 30px;
+            height: 30px;
+        } 
+    }
+    &__button-next:hover &__arrow-right {
+        fill: var(--absolute-white);
     }
 }
-.question-title-btn1:hover {
-    background: #703BF7;
-    border: 1px solid #703BF7;
-}
-.question-title-btn {
-    cursor: pointer;
-    display: flex;
-    padding: 14px 20px;
-    align-items: center;
-    border-radius: 10px;
-    border: 1px solid #262626;
-    background: #1A1A1A;
-    color: #FFF;
-    font-family: Urbanist;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 150%;
-    transition-duration: 300ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    @media screen and (min-width: 1440px) and (max-width: 1920px) {
-        border-radius: 8px;
-        display: none;
-    }
-}
-.question-title-btn:hover {
-    background: #703BF7;
-    border: 1px solid #703BF7;
-}
-.question-list {
-    display: flex;
-    margin: 40px 0 30px 0;
-    @media screen and (min-width: 1440px) and (max-width: 1920px) {
-        margin: 60px 0 40px 0;
-        // gap: 20px;
-    }
-}
-.question-item {
-    display: flex;
-    flex-direction: column;
-    width: 358px;    
-    gap: 20px;
-    padding: 30px;
-    border-radius: 10px;
-    border: 1px solid #262626;
-    background: #141414;
-    @media screen and (min-width: 1440px) and (max-width: 1920px) {
-        width: 413px;
-        gap: 24px;
-        padding: 40px;
-    }
-}
-.question-text {
-    align-self: stretch;
-    color: #FFF;
-    font-family: Urbanist;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 150%;
-    @media screen and (min-width: 1440px) and (max-width: 1920px) {
-        font-size: 20px;
-    }
-}
-.question-description {
-    align-self: stretch;
-    color: #FFF;
-    font-family: Urbanist;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 150%;
-    @media screen and (min-width: 1440px) and (max-width: 1920px) {
-        font-size: 16px;
-    }
-}
-.question-item-btn {
-    cursor: pointer;
-    min-width: 298px;
-    padding: 14px 20px;
-    border-radius: 10px;
-    border: 1px solid #262626;
-    background: #1A1A1A;
-    color: #FFF;
-    font-family: Urbanist;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 131%;
-    letter-spacing: -0.108px;
-    transition-duration: 300ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    @media screen and (min-width: 1440px) and (max-width: 1920px) {
-        border-radius: 8px;
-        min-width: 0;
-        max-width: 107px;
-        padding: 14px 0;
-    }
-}
-.question-item-btn:hover {
-    background: #703BF7;
-    border: 1px solid #703BF7;
-}
-.question-pages {
-    display: flex;
-    padding-top: 16px;
-    justify-content: space-between;
-    align-items: flex-start;
-    border-top: 1px solid #262626;
-}
-.question-numbers {
-    display: none;
-    color: #999;
-    font-family: Urbanist;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 150%;
-    @media screen and (min-width: 1440px) and (max-width: 1920px) {
-        display: block;
-        font-size: 16px;  
-    }
-}
-.question-numbers1 {
-    color: #999;
-    font-family: Urbanist;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 150%;
-    @media screen and (min-width: 1440px) and (max-width: 1920px) {
-        font-size: 16px;
-        display: none;
-    }
-}
-.question-buttons-container {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-.question-btn {
-    cursor: pointer;
-    width: 44px;
-    height: 44px;
-    padding: 10px;
-    border-radius: 69px;
-    border: 1px solid #262626;
-    background: #1A1A1A;
-}
-.arrow-left {
-    fill: rgba(128, 128, 128, 1);
-}
-.question-btn:hover .arrow-left {
-    fill: rgba(255, 255, 255, 1);
-}
-.arrow-right {
-    fill: rgba(128, 128, 128, 1);
-}
-.question-btn:hover .arrow-right {
-    fill: rgba(255, 255, 255, 1);
-}
+
+

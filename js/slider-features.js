@@ -1,4 +1,4 @@
-new Swiper('.mySwiper', {    
+new  Swiper('.features__swiper', {    
     
     loop: true,
     breakpoints: {
@@ -9,11 +9,15 @@ new Swiper('.mySwiper', {
         1440: {
             slidesPerView: 3,
             spaceBetween: 20
+        },
+        1920: {
+            slidesPerView: 3,
+            spaceBetween: 30
         }
     },    
 
     pagination: {
-    el: '.pages-numbers',
+    el: '.features__pagination-numbers1',
     type: "fraction",
     formatFractionCurrent: function (number) {
         return ('0' + number).slice(-2);
@@ -23,15 +27,18 @@ new Swiper('.mySwiper', {
     },
     renderFraction: function (currentClass, totalClass) {
         return '<span class="' + currentClass + '"></span>' + ' of ' + '<span class="' + totalClass + '"></span>';
-    }},
+    }},    
+    
 
     navigation: {
-    nextEl: '.features-button-next',
-    prevEl: '.features-button-prev',
-    }
-    });
+    nextEl: '.features__button-next',
+    prevEl: '.features__button-prev',    
+    }    
+    });  
+    
+    
 
-new Swiper('.feedback-swiper', {    
+new Swiper('.feedback__swiper', {    
     
     loop: true,
     breakpoints: {
@@ -42,11 +49,15 @@ new Swiper('.feedback-swiper', {
         1440: {
             slidesPerView: 3,
             spaceBetween: 20
+        },
+        1920: {
+            slidesPerView: 3,
+            spaceBetween: 30
         }
     },   
 
     pagination: {
-    el: '.feedback-numbers',
+    el: '.feedback__pagination-numbers',
     type: "fraction",
     formatFractionCurrent: function (number) {
         return ('0' + number).slice(-2);
@@ -59,12 +70,12 @@ new Swiper('.feedback-swiper', {
     }},         
 
     navigation: {
-    nextEl: '.feedback-button-next',
-    prevEl: '.feedback-button-prev',
+    nextEl: '.feedback__button-next',
+    prevEl: '.feedback__button-prev',
     }
     });
 
-new Swiper('.question-swiper', {    
+new Swiper('.question__swiper', {    
     
     loop: true,
     breakpoints: {
@@ -75,11 +86,15 @@ new Swiper('.question-swiper', {
         1440: {
             slidesPerView: 3,
             spaceBetween: 20
+        },
+        1920: {
+            slidesPerView: 3,
+            spaceBetween: 30
         }
     },   
 
     pagination: {
-    el: '.question-numbers',
+    el: '.question__pagination-numbers',
     type: "fraction",
     formatFractionCurrent: function (number) {
         return ('0' + number).slice(-2);
@@ -92,8 +107,8 @@ new Swiper('.question-swiper', {
     }},         
 
     navigation: {
-    nextEl: '.question-button-next',
-    prevEl: '.question-button-prev',
+    nextEl: '.question__button-next',
+    prevEl: '.question__button-prev',
     }
     });
 

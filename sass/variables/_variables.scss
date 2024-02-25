@@ -1,9 +1,53 @@
 body {
     font-family: Urbanist;
     font-size: 14px;
-    background: #141414;
+    font-style: normal;
+    font-weight: 500;
+    background-color: var(--bg-primary-color);
+}
+:root {
+    --font-family: "Urbanist", sans-serif;
+    --second-family: "Inter", sans-serif;
+
+    --absolute-white: #fff;
+    --absolute-black: #000;
+
+    --bg-primary-color: #141414;
+    --bg-second-color: #1A1A1A;
+
+    --text-second-color: #999;
+
+    --btn-primary-color: #262626;
+    --btn-second-color: #703bf7;
+
+
+    --logo-color: #703bf7;
+
+    --border-primary-color: #262626;
+    --border-second-color: #703bf7;
+    --border-third-color: #1A1A1A;
     
-    
+    --box-shadow-color: #191919;
+
+    --rating-star-color: #FFE500;
+    --icon-primary-color: #a685fa;
+
+
+    --purple-65: #8254f8;
+    --purple-70: #946cf9;
+    --purple-90: #dbcefd;
+    --purple-95: #ede7fe;
+    --purple-97: #f4f0fe;
+    --purple-99: #fbfaff;
+    --white-90: #e4e4e7;
+    --white-95: #f1f1f3;
+    --white-97: #f7f7f8;
+    --white-99: #fcfcfd;
+
+    --grey-20: #333;
+    --grey-30: #4d4d4d;
+    --grey-40: #666;
+    --grey-50: #808080;
 }
 
 main {
@@ -15,8 +59,8 @@ main {
         min-width: 1440px;
     
     }
-    @media  screen and (max-width: 1920px) {
-        max-width: 1920px;
+    @media  screen and (min-width: 1920px) {
+        min-width: 1920px;
         
     }
 }
@@ -29,13 +73,11 @@ a {
     list-style-type: none;
     text-decoration: none;
     font-style: normal;
-
 }
 
 address {
     text-decoration: none;
     font-style: normal;
-
 }
 
 li {
