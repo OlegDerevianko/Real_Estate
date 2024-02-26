@@ -7,27 +7,75 @@
     <title>About</title>
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.css">
 </head>
 
 <body>
     <header class="header">
         <a href="./index.html">
-            <div class="logo">
-                <svg width="48px" height="48px" aria-hidden="true">
+            <div class="header__logo">
+                <svg class="header__logo-img" aria-hidden="true">
                     <use href="./images/icons.svg#icon-logo"></use>
                 </svg>
-                <svg width="102px" height="21px" aria-hidden="true">
+                <svg class="header__logo-text" aria-hidden="true">
                     <use href="./images/icons.svg#icon-estatein"></use>
                 </svg>
             </div>
         </a>
-        <ul class="nav-list">
-            <li class="nav-item"><a href="./index.html" class="item-link">Home</a></li>          
-            <li class="nav-item current"><a href="./about.html" class="item-link">About Us</a></li>
-            <li class="nav-item"><a href="" class="item-link">Properties</a></li>
-            <li class="nav-item"><a href="" class="item-link">Services</a></li>
+        <ul class="header__nav-list">
+            <li class="header__nav-item">
+                <a href="./index.html" class="header__nav-link">Home</a>
+            </li>
+            <li class="header__nav-item header__current">
+                <a href="./about.html" class="header__nav-link">About Us</a>
+            </li>
+            <li class="header__nav-item">
+                <a href="" class="header__nav-link">Properties</a>
+            </li>
+            <li class="header__nav-item">
+                <a href="" class="header__nav-link">Services</a>
+            </li>
         </ul>
-            <button class="contact-btn">Contact Us</button>
+        <button class="header__mobile-menu-btn" data-mobile-menu-open>
+            <svg class="header__mobile-menu-icon" width="28px" height="28px" aria-hidden="true">
+                <use href="./images/icons.svg#icon-mobile-menu"></use>
+            </svg>
+        </button>
+        <button class="header__contact-btn">Contact Us</button>   
+        <nav class="header__mobile-menu is-hidden" data-mobile-menu>
+            <div class="header__logo-mobile">
+                <div class="header__logo-mobile-icons">
+                    <svg width="34px" height="34px" aria-hidden="true">
+                        <use href="./images/icons.svg#icon-logo"></use>
+                    </svg>
+                    <svg width="72px" height="14px" aria-hidden="true">
+                        <use href="./images/icons.svg#icon-estatein"></use>
+                    </svg>
+                </div>
+                <button class="header__mobile-close-btn" type="button" data-mobile-menu-close>
+                    <svg class="header__mobile-close-icon" width="20px" height="20px" aria-hidden="true">
+                        <use href="./images/icons.svg#icon-close"></use>
+                    </svg>
+                </button>
+            </div>
+            <ul class="header__mobile-nav-list">
+                <li class="header__mobile-nav-item">
+                    <a href="./index.html" class="header__mobile-nav-link"></a>Home
+                </li>
+                <li class="header__mobile-nav-item header__current ">
+                    <a href="./about.html" class="header__mobile-nav-link"></a>About Us
+                </li>
+                <li class="header__mobile-nav-item">
+                    <a href="./about.html" class="header__mobile-nav-link"></a>Properties
+                </li>
+                <li class="header__mobile-nav-item">
+                    <a href="" class="header__mobile-nav-link"></a>Services
+                </li>
+                <li class="header__mobile-nav-item">
+                    <a href="" class="header__mobile-nav-link"></a>Contact Us
+                </li>
+            </ul>   
+        </nav>
     </header>
     <main>
         <section class="about-hero" id="story">
@@ -396,117 +444,121 @@
             </div>
         </section>
         <section class="join">
-            <div class="join-container">
+            <div class="join__container">
                 <div>
-                    <h1 class="join-title-name">Start Your Real Estate Journey Today</h1>
-                    <p class="join-title-text">Your dream property is just a click away. Whether you're looking for a
+                    <h1 class="join__title-name">Start Your Real Estate Journey Today</h1>
+                    <p class="join__title-text">Your dream property is just a click away. Whether you're looking for a
                         new home, a strategic investment, or expert real
                         estate advice, Estatein is <br> here to assist you every step of the way. Take the first step
                         towards your real estate goals
                         and explore our available properties or get in touch <br> with our team for personalized
                         assistance.</p>
                 </div>
-                <button class="join-title-btn">Explore Properties</button>
+                <button class="join__title-btn">Explore Properties</button>
             </div>
         </section>
     </main>
     <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-subscribe">
+        <div class="footer__container">
+            <div class="footer__subscribe">
                 <a href="">
-                    <div class="footer-logo">
-                        <svg width="48px" height="48px" aria-hidden="true">
+                    <div class="footer__logo">
+                        <svg class="footer__logo-img" aria-hidden="true">
                             <use href="./images/icons.svg#icon-logo"></use>
                         </svg>
-                        <svg width="102px" height="21px" aria-hidden="true">
+                        <svg class="footer__logo-text" aria-hidden="true">
                             <use href="./images/icons.svg#icon-estatein"></use>
                         </svg>
                     </div>
                 </a>
-                <form class="form-submit" name="signup_form" autocomplete="on" novalidate>
-                    <svg class="icon-mail" width="24px" height="24px" aria-hidden="true">
-                        <use href="./images/icons.svg#icon-mail"></use>
-                    </svg>
-                    <label>
-                        <input type="email" name="email" placeholder="Enter Your Email">
-                    </label>
-                    <a href="">
-                        <svg class="icon-send" width="30px" height="30px" aria-hidden="true">
-                            <use href="./images/icons.svg#icon-send"></use>
+                <form class="footer__submit" name="signup_form" autocomplete="off" novalidate>
+                        <svg class="footer__icon-mail" width="20px" height="20px" aria-hidden="true">
+                            <use href="./images/icons.svg#icon-mail"></use>
                         </svg>
-                    </a>
+                        <label>
+                            <input class="footer__input" type="email" name="email" placeholder="Enter Your Email">
+                        </label>
+                        <a href="">
+                            <svg class="footer__icon-send" width="24px" height="24px" aria-hidden="true">
+                                <use href="./images/icons.svg#icon-send"></use>
+                            </svg>
+                        </a>                                     
                 </form>
             </div>
-            <div class="footer-links">
-                <ul class="links-list">
-                    <li class="links-item"><a href="" class="link-nav-categories">Home</a></li>
-                    <li class="links-item"><a href="" class="link-nav">Hero Section</a></li>
-                    <li class="links-item"><a href="" class="link-nav">Features</a></li>
-                    <li class="links-item"><a href="" class="link-nav">Properties</a></li>
-                    <li class="links-item"><a href="" class="link-nav">Testimonials</a></li>
-                    <li class="links-item"><a href="" class="link-nav">FAQ’s</a></li>
+            <div class="footer__links">
+                <ul class="footer__links-list">
+                    <li class="footer__links-item"><a href="" class="footer__link-nav-categories">Home</a></li>
+                    <li class="footer__links-item"><a href="" class="footer__link-nav">Hero Section</a></li>
+                    <li class="footer__links-item"><a href="" class="footer__link-nav">Features</a></li>
+                    <li class="footer__links-item"><a href="" class="footer__link-nav">Properties</a></li>
+                    <li class="footer__links-item"><a href="" class="footer__link-nav">Testimonials</a></li>
+                    <li class="footer__links-item"><a href="" class="footer__link-nav">FAQ’s</a></li>
                 </ul>
-                <ul class="links-list">
-                    <li class="links-item"><a href="/about.html" class="link-nav-categories">About Us</a></li>
-                    <li class="links-item"><a href="#story" class="link-nav">Our Story</a></li>
-                    <li class="links-item"><a href="#values" class="link-nav">Our Works</a></li>
-                    <li class="links-item"><a href="#experience" class="link-nav">How It Works</a></li>
-                    <li class="links-item"><a href="#team" class="link-nav">Our Team</a></li>
-                    <li class="links-item"><a href="#clients" class="link-nav">Our Clients</a></li>
+                <ul class="footer__links-list">
+                    <li class="footer__links-item"><a href="" class="footer__link-nav-categories">About Us</a></li>
+                    <li class="footer__links-item"><a href="" class="footer__link-nav">Our Story</a></li>
+                    <li class="footer__links-item"><a href="" class="footer__link-nav">Our Works</a></li>
+                    <li class="footer__links-item"><a href="" class="footer__link-nav">How It Works</a></li>
+                    <li class="footer__links-item"><a href="" class="footer__link-nav">Our Team</a></li>
+                    <li class="footer__links-item"><a href="" class="footer__link-nav">Our Clients</a></li>
                 </ul>
-                <ul class="links-list">
-                    <li class="links-item"><a href="" class="link-nav-categories">Properties</a></li>
-                    <li class="links-item"><a href="" class="link-nav">Portfolio</a></li>
-                    <li class="links-item"><a href="" class="link-nav">Categories</a></li>
+                <ul class="footer__links-list">
+                    <li class="footer__links-item"><a href="" class="footer__link-nav-categories">Properties</a></li>
+                    <li class="footer__links-item"><a href="" class="footer__link-nav">Portfolio</a></li>
+                    <li class="footer__links-item"><a href="" class="footer__link-nav">Categories</a></li>                    
                 </ul>
-                <ul class="links-list">
-                    <li class="links-item"><a href="" class="link-nav-categories">Services</a></li>
-                    <li class="links-item"><a href="" class="link-nav">Valuation Mastery</a></li>
-                    <li class="links-item"><a href="" class="link-nav">Strategic Marketing</a></li>
-                    <li class="links-item"><a href="" class="link-nav">Negotiation Wizardry</a></li>
-                    <li class="links-item"><a href="" class="link-nav">Closing Success</a></li>
-                    <li class="links-item"><a href="" class="link-nav">Property Management</a></li>
-
+                <ul class="footer__links-list">
+                    <li class="footer__links-item"><a href="" class="footer__link-nav-categories">Services</a></li>
+                    <li class="footer__links-item"><a href="" class="footer__link-nav">Valuation Mastery</a></li>
+                    <li class="footer__links-item"><a href="" class="footer__link-nav">Strategic Marketing</a></li>
+                    <li class="footer__links-item"><a href="" class="footer__link-nav">Negotiation Wizardry</a></li>
+                    <li class="footer__links-item"><a href="" class="footer__link-nav">Closing Success</a></li>
+                    <li class="footer__links-item"><a href="" class="footer__link-nav">Property Management</a></li>                    
                 </ul>
-                <ul class="links-list">
-                    <li class="links-item"><a href="" class="link-nav-categories">Contact Us</a></li>
-                    <li class="links-item"><a href="" class="link-nav">Contact Form</a></li>
-                    <li class="links-item"><a href="" class="link-nav">Our Offices</a></li>
+                <ul class="footer__links-list">
+                    <li class="footer__links-item"><a href="" class="footer__link-nav-categories">Contact Us</a></li>
+                    <li class="footer__links-item"><a href="" class="footer__link-nav">Contact Form</a></li>
+                    <li class="footer__links-item"><a href="" class="footer__link-nav">Our Offices</a></li>
                 </ul>
             </div>
         </div>
-        <div class="footer-end">
-            <div class="rights-socials">
-                <div class="rights">
-                    <span class="rights-text">@2023 Estatein. All Rights Reserved</span>
-                    <span class="rights-text">Terms & Conditions</span>
+        <div class="footer__end">
+            <div class="footer__rights-socials">
+                <div class="footer__rights">
+                    <span class="footer__rights-text">@2023 Estatein. All Rights Reserved</span>
+                    <a class="footer__rights-text" href="">Terms & Conditions</a>
                 </div>
-                <div class="socials">
-                    <button class="socials-btn">
-                        <svg class="icon-social" width="24px" height="24px" aria-hidden="true">
+                <div class="footer__socials">
+                    <button class="footer__socials-btn">
+                        <svg class="footer__socials-icon" width="20px" height="20px" aria-hidden="true">
                             <use href="./images/icons.svg#icon-facebook"></use>
                         </svg>
                     </button>
-                    <button class="socials-btn">
-                        <svg class="icon-social" width="24px" height="24px" aria-hidden="true">
+                    <button class="footer__socials-btn">
+                        <svg class="footer__socials-icon" width="20px" height="20px" aria-hidden="true">
                             <use href="./images/icons.svg#icon-linkedin"></use>
                         </svg>
                     </button>
-                    <button class="socials-btn">
-                        <svg class="icon-social" width="24px" height="24px" aria-hidden="true">
+                    <button class="footer__socials-btn">
+                        <svg class="footer__socials-icon" width="20px" height="20px" aria-hidden="true">
                             <use href="./images/icons.svg#icon-twitter"></use>
                         </svg>
                     </button>
-                    <button class="socials-btn">
-                        <svg class="icon-social" width="24px" height="24px" aria-hidden="true">
+                    <button class="footer__socials-btn">
+                        <svg class="footer__socials-icon" width="20px" height="20px" aria-hidden="true">
                             <use href="./images/icons.svg#icon-youtube"></use>
                         </svg>
                     </button>
                 </div>
             </div>
 
-        </div>
-    </footer>   
+        </div>       
+    </footer> 
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="./js/mobile-menu.js"></script>
+<script src="./js/slider-features.js"></script>
+<script src="./js/rating.js"></script>
 
 </body>
 
