@@ -111,6 +111,42 @@ new Swiper('.question__swiper', {
     prevEl: '.question__button-prev',
     }
     });
+new  Swiper('.clients__swiper', {    
+    
+    loop: true,
+    breakpoints: {
+        600: {
+            slidesPerView: 1,
+            spaceBetween: 0
+        },        
+        1440: {
+            slidesPerView: 2,
+            spaceBetween: 40
+        },
+        1920: {
+            slidesPerView: 2,
+            spaceBetween: 50
+        }
+    },    
 
+    pagination: {
+    el: '.clients__pagination-numbers1',
+    type: "fraction",
+    formatFractionCurrent: function (number) {
+        return ('0' + number).slice(-2);
+    },
+    formatFractionTotal: function (number) {
+        return ('0' + number).slice(-2);
+    },
+    renderFraction: function (currentClass, totalClass) {
+        return '<span class="' + currentClass + '"></span>' + ' of ' + '<span class="' + totalClass + '"></span>';
+    }},    
+    
+
+    navigation: {
+    nextEl: '.clients__btn-next',
+    prevEl: '.clients__btn-prev',    
+    }    
+    });  
     
     

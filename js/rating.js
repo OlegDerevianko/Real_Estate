@@ -1,4 +1,4 @@
-const ratingItemsList = document.querySelectorAll('.rate-item');
+const ratingItemsList = document.querySelectorAll('.feedback__rate-item');
 const ratingItemsArray = Array.prototype.slice.call(ratingItemsList);
 
 ratingItemsArray.forEach(item => item.addEventListener('click', () => {

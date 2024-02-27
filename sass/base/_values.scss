@@ -1,102 +1,195 @@
 .values {
-    width: 1920px;
+    max-width: 390px;
+    padding: 40px 16px;
     margin: auto;
-    background-color: #141414;
-    padding-bottom: 150px;
-}
-.values-container {
-    width: 1596px;
+    background-color: var(--bg-primary-color);
+    @media screen and (min-width: 1440px) and (max-width: 1919px) {
+        min-width: 1440px;
+        padding: 60px 80px;
+    }
+    @media screen and (min-width: 1920px) {
+        min-width: 1920px;
+        padding: 75px 162px;
+    } 
+&__container {
     margin: auto;
-    gap: 80px;
+    gap: 40px;
     display: flex;
+    flex-direction: column;
+    @media screen and (min-width: 1440px) and (max-width: 1919px) {
+        gap: 60px;
+        flex-direction: inherit;
+    }
+    @media screen and (min-width: 1920px) {
+        gap: 80px;
+        flex-direction: inherit;
+    } 
 }
-.values-title {
+&__title {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 14px;
-    width: 517px;
+    gap: 8px;
+    @media screen and (min-width: 1440px) and (max-width: 1919px) {
+        gap: 10px;
+        width: 413px;
+    }
+    @media screen and (min-width: 1920px) {
+        gap: 14px;
+        width: 517px;
+    } 
 }
-.values-title-name {
+&__title-name {
     margin: 0;
-    color: #FFF;
-    font-family: Urbanist;
-    font-size: 48px;
-    font-style: normal;
+    color: var(--absolute-white);
+    font-size: 28px;
     font-weight: 600;
-    line-height: 150%
-}
-.values-title-text {
-    color: #999;
-    font-family: Urbanist;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
     line-height: 150%;
+    @media screen and (min-width: 1440px) and (max-width: 1919px) {
+        font-size: 38px;
+    }
+    @media screen and (min-width: 1920px) {
+        font-size: 48px;
+    } 
 }
-.values-list {
+&__title-text {
+    color: var(--text-second-color);
+    line-height: 150%;
+    @media screen and (min-width: 1440px) and (max-width: 1919px) {
+        font-size: 16px;
+    }
+    @media screen and (min-width: 1920px) {
+        font-size: 18px;
+    } 
+}
+&__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 999px;
     margin: 0;
-    padding: 60px;
+    gap: 20px;
+    padding: 24px;
     border-radius: 12px;
-    border: 1px solid #262626;
-    background: #141414;
-    box-shadow: 0px 0px 0px 10px #191919;
+    border: 1px solid var(--border-primary-color);
+    background-color: var(--bg-primary-color);
+    box-shadow: 0px 0px 0px 6px var(--box-shadow-color);
+    @media screen and (min-width: 1440px) and (max-width: 1919px) {
+        width: 807px;
+        gap: 0;
+        padding: 50px;
+        box-shadow: 0px 0px 0px 8px var(--box-shadow-color);
+    }
+    @media screen and (min-width: 1920px) {
+        width: 999px;
+        gap: 0;
+        padding: 60px;
+        box-shadow: 0px 0px 0px 10px var(--box-shadow-color);
+    } 
 }
-.values-item {
+&__item {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    width: 410px;
-}
-.values-item:nth-child(2n+1) {
-    padding-right: 30px;
-    border-right: 1px solid #262626;
-}
-.values-item:nth-child(2n) {
-    padding-left: 30px;
-}
-.values-item:nth-child(-n+2) {
-    padding-bottom: 30px;
-    border-bottom: 1px solid #262626;
-}
-.values-item:nth-child(n+3) {
-    padding-top: 30px;
-}
-.values-item-container {
-    display: flex;
     gap: 14px;
-    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border-primary-color);
+    @media screen and (min-width: 1440px) and (max-width: 1919px) {
+        gap: 16px;   
+        padding-bottom: 0;
+        border-bottom: 0;
+        width: 329px;
+    }
+    @media screen and (min-width: 1920px) {
+        width: 410px;
+        gap: 20px;
+        padding-bottom: 0;
+        border-bottom: 0;
+    } 
 }
-.values-icon-container {
-    width: 74px;
-    height: 74px;
+&__item:last-child {
+        padding-bottom: 0;
+        border-bottom: 0;    
+}
+&__item:nth-child(2n+1) {
+    @media screen and (min-width: 1440px) and (max-width: 1919px) {
+        padding-right: 20px;
+        border-right: 1px solid var(--border-primary-color);
+    }
+    @media screen and (min-width: 1920px) {
+        padding-right: 30px;
+        border-right: 1px solid var(--border-primary-color);
+    } 
+}
+&__item:nth-child(2n) {
+    @media screen and (min-width: 1440px) and (max-width: 1919px) {
+        padding-left: 20px;
+    }
+    @media screen and (min-width: 1920px) {
+        padding-left: 30px;
+    } 
+}
+&__item:nth-child(-n+2) {
+    @media screen and (min-width: 1440px) and (max-width: 1919px) {
+        padding-bottom: 20px;
+        border-bottom: 1px solid var(--border-primary-color);
+    }
+    @media screen and (min-width: 1920px) {
+        padding-bottom: 30px;
+        border-bottom: 1px solid var(--border-primary-color);
+    } 
+}
+&__item:nth-child(n+3) {
+    @media screen and (min-width: 1440px) and (max-width: 1919px) {
+        padding-top: 20px;
+    }
+    @media screen and (min-width: 1920px) {
+        padding-top: 30px;
+    } 
+}
+&__item-container {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    @media screen and (min-width: 1920px) {
+        gap: 14px;
+    } 
+}
+&__icon-container {
+    width: 52px;
+    height: 52px;
     border-radius: 52px;
-    border: 1px solid #703BF7;
+    border: 1px solid var(--icon-second-color);
     background: #141414;
     display: flex;
     justify-content: center;
     align-items: center;
+    @media screen and (min-width: 1920px) {
+        width: 74px;
+        height: 74px;
+    } 
 }
-.values-icon {
-    fill: #703BF7;
+&__icon {
+    fill: var(--icon-primary-color);
+    @media screen and (min-width: 1920px) {
+        width: 34px;
+        height: 34px;
+    }
 }
-.values-icon-text {
-    color: #FFF;
-    font-family: Urbanist;
-    font-size: 24px;
-    font-style: normal;
+&__icon-text {
+    color: var(--absolute-white);
+    font-size: 18px;
     font-weight: 600;
     line-height: 150%;
+    @media screen and (min-width: 1920px) {
+        font-size: 24px;
+    } 
 }
-.values-text {
-    color: #999;
-    font-family: Urbanist;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
+&__text {
+    color: var(--text-second-color);
     line-height: 150%;
+    @media screen and (min-width: 1440px) and (max-width: 1919px) {        
+    }
+    @media screen and (min-width: 1920px) {
+        font-size: 18px;
+    } 
+}
 }
