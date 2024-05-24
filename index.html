@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./css/swiper-bundle.css">
 
 </head>
-<body>
+<body id="top">
     <header class="header">
         <a href="./index.html">
             <div class="header__logo">
@@ -22,62 +22,45 @@
             </div>
         </a>
         <ul class="header__nav-list">
-            <li class="header__nav-item header__current">
+            <li class="header__nav-item  header__current">
                 <a href="./index.html" class="header__nav-link">Home</a>
             </li>
             <li class="header__nav-item">
                 <a href="./about.html" class="header__nav-link">About Us</a>
             </li>
             <li class="header__nav-item">
-                <a href="" class="header__nav-link">Properties</a>
+                <a href="./properties.html" class="header__nav-link">Properties</a>
             </li>
             <li class="header__nav-item">
                 <a href="" class="header__nav-link">Services</a>
             </li>
         </ul>
-        <button class="header__mobile-menu-btn" data-mobile-menu-open>
-            <svg class="header__mobile-menu-icon" width="28px" height="28px" aria-hidden="true">
-                <use href="./images/icons.svg#icon-mobile-menu"></use>
-            </svg>
-        </button>
+        <div class="header__menu-icon">
+            <div class="header__menu-icon-line"></div>
+        </div>        
         <button class="header__contact-btn">Contact Us</button>   
-        <nav class="header__mobile-menu is-hidden" data-mobile-menu>
-            <div class="header__logo-mobile">
-                <div class="header__logo-mobile-icons">
-                    <svg width="34px" height="34px" aria-hidden="true">
-                        <use href="./images/icons.svg#icon-logo"></use>
-                    </svg>
-                    <svg width="72px" height="14px" aria-hidden="true">
-                        <use href="./images/icons.svg#icon-estatein"></use>
-                    </svg>
-                </div>
-                <button class="header__mobile-close-btn" type="button" data-mobile-menu-close>
-                    <svg class="header__mobile-close-icon" width="20px" height="20px" aria-hidden="true">
-                        <use href="./images/icons.svg#icon-close"></use>
-                    </svg>
-                </button>
-            </div>
+        <div class="header__mobile-nav">
             <ul class="header__mobile-nav-list">
-                <li class="header__mobile-nav-item header__current ">
-                    <a href="./index.html" class="header__mobile-nav-link"></a>Home
+                <li class="header__mobile-nav-item header__current">
+                    <a href="./index.html" class="header__mobile-nav-link">Home</a>
                 </li>
                 <li class="header__mobile-nav-item">
-                    <a href="./about.html" class="header__mobile-nav-link"></a>About Us
+                    <a href="./about.html" class="header__mobile-nav-link">About Us</a>
                 </li>
                 <li class="header__mobile-nav-item">
-                    <a href="./about.html" class="header__mobile-nav-link"></a>Properties
+                    <a href="./properties.html" class="header__mobile-nav-link">Properties</a>
                 </li>
                 <li class="header__mobile-nav-item">
-                    <a href="" class="header__mobile-nav-link"></a>Services
+                    <a href="#" class="header__mobile-nav-link">Services</a>
                 </li>
                 <li class="header__mobile-nav-item">
-                    <a href="" class="header__mobile-nav-link"></a>Contact Us
+                    <a href="#" class="header__mobile-nav-link">Contact Us</a>
                 </li>
-            </ul>   
-        </nav>
+            </ul>  
+        </div>        
     </header>
-    <main>  
-        <section class="hero">
+    <main class="main">  
+        <section class="hero" id="hero">
             <div class="hero__bg"></div>
             <div class="hero__container">
                 <h1 class="hero__name">Discover Your Dream Property with Estatein</h1>
@@ -85,7 +68,7 @@
                 dreams.</p>
                 <div class="hero__buttons">
                     <button class="hero__btn">Learn More</button>
-                    <button class="hero__btn">Browse Properties</button>
+                    <a href="./properties.html"><button class="hero__btn">Browse Properties</button></a>
                 </div>
                 <ul class="hero__list">
                     <li class="hero__item">
@@ -104,7 +87,7 @@
             </div>
             
         </section>   
-        <section class="subscribe">
+        <section class="subscribe" id="subscribe">
             <h2 class="visually-hidden">Subscribe</h2>
             <ul class="subscribe__list">
                 <li class="subscribe__item">
@@ -193,7 +176,7 @@
                 </li>
             </ul>
         </section> 
-        <section class="features">
+        <section class="features" id="features">
             <div class="features__container">
                 <div class="features__title">
                     <div>
@@ -534,7 +517,7 @@
                     </div>                   
             </div>               
         </section>    
-        <section class="feedback">
+        <section class="feedback" id="feedback">
             <div class="feedback__container">
                 <div class="feedback__title">
                     <div>
@@ -951,7 +934,7 @@
                 </div>        
             </div>        
         </section>
-        <section class="question">
+        <section class="question" id="question">
             <div class="question__container">
                 <div class="question__title">
                     <div>
@@ -1074,7 +1057,7 @@
                 </div>
             </div>
         </section>
-        <section class="join">
+        <section class="join" id="join">
                 <div class="join__container">
                     <div>
                         <h1 class="join__title-name">Start Your Real Estate Journey Today</h1>
@@ -1115,20 +1098,20 @@
             </div>
             <div class="footer__links">
                 <ul class="footer__links-list">
-                    <li class="footer__links-item"><a href="" class="footer__link-nav-categories">Home</a></li>
-                    <li class="footer__links-item"><a href="" class="footer__link-nav">Hero Section</a></li>
-                    <li class="footer__links-item"><a href="" class="footer__link-nav">Features</a></li>
-                    <li class="footer__links-item"><a href="" class="footer__link-nav">Properties</a></li>
-                    <li class="footer__links-item"><a href="" class="footer__link-nav">Testimonials</a></li>
-                    <li class="footer__links-item"><a href="" class="footer__link-nav">FAQ’s</a></li>
+                    <li class="footer__links-item"><a href="#top" class="footer__link-nav-categories">Home</a></li>
+                    <li class="footer__links-item"><a href="#hero" class="footer__link-nav">Hero Section</a></li>
+                    <li class="footer__links-item"><a href="#features" class="footer__link-nav">Features</a></li>
+                    <li class="footer__links-item"><a href="#features" class="footer__link-nav">Properties</a></li>
+                    <li class="footer__links-item"><a href="#feedback" class="footer__link-nav">Testimonials</a></li>
+                    <li class="footer__links-item"><a href="#question" class="footer__link-nav">FAQ’s</a></li>
                 </ul>
                 <ul class="footer__links-list">
-                    <li class="footer__links-item"><a href="" class="footer__link-nav-categories">About Us</a></li>
-                    <li class="footer__links-item"><a href="" class="footer__link-nav">Our Story</a></li>
-                    <li class="footer__links-item"><a href="" class="footer__link-nav">Our Works</a></li>
-                    <li class="footer__links-item"><a href="" class="footer__link-nav">How It Works</a></li>
-                    <li class="footer__links-item"><a href="" class="footer__link-nav">Our Team</a></li>
-                    <li class="footer__links-item"><a href="" class="footer__link-nav">Our Clients</a></li>
+                    <li class="footer__links-item"><a href="about.html#about" class="footer__link-nav-categories">About Us</a></li>
+                    <li class="footer__links-item"><a href="about.html#story" class="footer__link-nav">Our Story</a></li>
+                    <li class="footer__links-item"><a href="about.html#achievements" class="footer__link-nav">Our Works</a></li>
+                    <li class="footer__links-item"><a href="about.html#experience" class="footer__link-nav">How It Works</a></li>
+                    <li class="footer__links-item"><a href="about.html#team" class="footer__link-nav">Our Team</a></li>
+                    <li class="footer__links-item"><a href="about.html#clients" class="footer__link-nav">Our Clients</a></li>
                 </ul>
                 <ul class="footer__links-list">
                     <li class="footer__links-item"><a href="" class="footer__link-nav-categories">Properties</a></li>
@@ -1154,7 +1137,7 @@
             <div class="footer__rights-socials">
                 <div class="footer__rights">
                     <span class="footer__rights-text">@2023 Estatein. All Rights Reserved</span>
-                    <a class="footer__rights-text" href="">Terms & Conditions</a>
+                    <a class="footer__rights-text-link" href="">Terms & Conditions</a>
                 </div>
                 <div class="footer__socials">
                     <button class="footer__socials-btn">
@@ -1185,7 +1168,7 @@
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="./js/mobile-menu.js"></script>
-<script src="./js/slider-features.js"></script>
+<script src="./js/slider-swiper.js"></script>
 <script src="./js/rating.js"></script>
 
 

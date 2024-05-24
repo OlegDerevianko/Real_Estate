@@ -17,7 +17,7 @@
   ],
   "liveSassCompile.settings.generateMap": true,
   "liveSassCompile.settings.autoprefix": ["> 1%", "last 2 versions"],
-  "liveServer.settings.port": 5502,
+  "liveServer.settings.port": 5504,
   "editor.fontSize": 14,
   "editor.fontLigatures": false
 }

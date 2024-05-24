@@ -54,19 +54,20 @@
         }
     }
     &__item {
+        width: 358px;
         padding: 24px;
         border-radius: 10px;
         border: 1px solid var(--border-primary-color);
         background-color: var(--bg-primary-color);
         box-shadow: 0px 0px 0px 6px var(--box-shadow-color);
         @media screen and (min-width: 1440px) and (max-width: 1919px){
-            width: 619px;
+            min-width: 619px;
             padding: 40px;
             border-radius: 12px;
             box-shadow: 0px 0px 0px 8px var(--box-shadow-color);
         }
         @media screen and (min-width: 1920px) {
-            width: 773px;
+            min-width: 773px;
             padding: 50px;
             border-radius: 12px;
             box-shadow: 0px 0px 0px 8px var(--box-shadow-color);
@@ -280,6 +281,7 @@
         color: var(--text-second-color);
         font-size: 14px;
         line-height: 150%;
+        text-align: center;
         @media screen and (min-width: 1440px) and (max-width: 1919px){
             font-size: 16px;
             display: none;

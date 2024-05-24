@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./css/swiper-bundle.css">
 </head>
 
-<body>
+<body id="about">
     <header class="header">
         <a href="./index.html">
             <div class="header__logo">
@@ -30,57 +30,40 @@
                 <a href="./about.html" class="header__nav-link">About Us</a>
             </li>
             <li class="header__nav-item">
-                <a href="" class="header__nav-link">Properties</a>
+                <a href="./properties.html" class="header__nav-link">Properties</a>
             </li>
             <li class="header__nav-item">
                 <a href="" class="header__nav-link">Services</a>
             </li>
         </ul>
-        <button class="header__mobile-menu-btn" data-mobile-menu-open>
-            <svg class="header__mobile-menu-icon" width="28px" height="28px" aria-hidden="true">
-                <use href="./images/icons.svg#icon-mobile-menu"></use>
-            </svg>
-        </button>
+        <div class="header__menu-icon">
+            <div class="header__menu-icon-line"></div>
+        </div>        
         <button class="header__contact-btn">Contact Us</button>   
-        <nav class="header__mobile-menu is-hidden" data-mobile-menu>
-            <div class="header__logo-mobile">
-                <div class="header__logo-mobile-icons">
-                    <svg width="34px" height="34px" aria-hidden="true">
-                        <use href="./images/icons.svg#icon-logo"></use>
-                    </svg>
-                    <svg width="72px" height="14px" aria-hidden="true">
-                        <use href="./images/icons.svg#icon-estatein"></use>
-                    </svg>
-                </div>
-                <button class="header__mobile-close-btn" type="button" data-mobile-menu-close>
-                    <svg class="header__mobile-close-icon" width="20px" height="20px" aria-hidden="true">
-                        <use href="./images/icons.svg#icon-close"></use>
-                    </svg>
-                </button>
-            </div>
+        <div class="header__mobile-nav">
             <ul class="header__mobile-nav-list">
                 <li class="header__mobile-nav-item">
-                    <a href="./index.html" class="header__mobile-nav-link"></a>Home
+                    <a href="./index.html" class="header__mobile-nav-link">Home</a>
                 </li>
-                <li class="header__mobile-nav-item header__current ">
-                    <a href="./about.html" class="header__mobile-nav-link"></a>About Us
-                </li>
-                <li class="header__mobile-nav-item">
-                    <a href="./about.html" class="header__mobile-nav-link"></a>Properties
+                <li class="header__mobile-nav-item header__current">
+                    <a href="./about.html" class="header__mobile-nav-link">About Us</a>
                 </li>
                 <li class="header__mobile-nav-item">
-                    <a href="" class="header__mobile-nav-link"></a>Services
+                    <a href="./properties.html" class="header__mobile-nav-link">Properties</a>
                 </li>
                 <li class="header__mobile-nav-item">
-                    <a href="" class="header__mobile-nav-link"></a>Contact Us
+                    <a href="#" class="header__mobile-nav-link">Services</a>
                 </li>
-            </ul>   
-        </nav>
+                <li class="header__mobile-nav-item">
+                    <a href="#" class="header__mobile-nav-link">Contact Us</a>
+                </li>
+            </ul>  
+        </div> 
     </header>
-    <main>
+    <main class="main">
         <section class="about" id="story">
                 <div class="about__hero-bg">
-                    <img class="about__hero-img" src="./images/about-hero-bg.jpg">
+                    <img class="about__hero-img" src="./images/about-hero-bg.jpg" alt="">
                 </div>
                 <div class="about__hero-container">
                     <h1 class="about__hero-name">Our Journey</h1>
@@ -682,15 +665,15 @@
             </div>
             <div class="footer__links">
                 <ul class="footer__links-list">
-                    <li class="footer__links-item"><a href="" class="footer__link-nav-categories">Home</a></li>
-                    <li class="footer__links-item"><a href="" class="footer__link-nav">Hero Section</a></li>
-                    <li class="footer__links-item"><a href="" class="footer__link-nav">Features</a></li>
-                    <li class="footer__links-item"><a href="" class="footer__link-nav">Properties</a></li>
-                    <li class="footer__links-item"><a href="" class="footer__link-nav">Testimonials</a></li>
-                    <li class="footer__links-item"><a href="" class="footer__link-nav">FAQ’s</a></li>
+                    <li class="footer__links-item"><a href="index.html#top" class="footer__link-nav-categories">Home</a></li>
+                    <li class="footer__links-item"><a href="index.html#hero" class="footer__link-nav">Hero Section</a></li>
+                    <li class="footer__links-item"><a href="index.html#features" class="footer__link-nav">Features</a></li>
+                    <li class="footer__links-item"><a href="index.html#features" class="footer__link-nav">Properties</a></li>
+                    <li class="footer__links-item"><a href="index.html#feedback" class="footer__link-nav">Testimonials</a></li>
+                    <li class="footer__links-item"><a href="index.html#question" class="footer__link-nav">FAQ’s</a></li>
                 </ul>
                 <ul class="footer__links-list">
-                    <li class="footer__links-item"><a href="" class="footer__link-nav-categories">About Us</a></li>
+                    <li class="footer__links-item"><a href="#about" class="footer__link-nav-categories">About Us</a></li>
                     <li class="footer__links-item"><a href="#story" class="footer__link-nav">Our Story</a></li>
                     <li class="footer__links-item"><a href="#achievements" class="footer__link-nav">Our Works</a></li>
                     <li class="footer__links-item"><a href="#experience" class="footer__link-nav">How It Works</a></li>
@@ -721,7 +704,7 @@
             <div class="footer__rights-socials">
                 <div class="footer__rights">
                     <span class="footer__rights-text">@2023 Estatein. All Rights Reserved</span>
-                    <a class="footer__rights-text" href="">Terms & Conditions</a>
+                    <a class="footer__rights-text-link" href="">Terms & Conditions</a>
                 </div>
                 <div class="footer__socials">
                     <button class="footer__socials-btn">
@@ -752,7 +735,7 @@
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="./js/mobile-menu.js"></script>
-<script src="./js/slider-features.js"></script>
+<script src="./js/slider-swiper.js"></script>
 <script src="./js/rating.js"></script>
 
 </body>

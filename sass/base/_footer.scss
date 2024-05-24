@@ -227,6 +227,9 @@
             font-size: 20px;
         }
     }
+    &__link-nav-categories:hover {
+        text-decoration: underline;
+    }
     &__link-nav {
         color: var(--absolute-white);        
         line-height: 24px;
@@ -237,6 +240,9 @@
         @media screen and (min-width: 1920px) {
             font-size: 18px;
         }
+    }
+    &__link-nav:hover {
+        text-decoration: underline;
     }
     &__end {
         min-width: 390px;
@@ -284,6 +290,17 @@
         @media screen and (min-width: 1920px) {
             font-size: 18px;
         }
+    }
+    &__rights-text-link {
+        color: var(--absolute-white);        
+        line-height: 24px;
+        letter-spacing: -0.108px;
+        @media screen and (min-width: 1920px) {
+            font-size: 18px;
+        }
+    }
+    &__rights-text-link:hover {
+        text-decoration: underline;
     }
     &__socials {
         display: flex;

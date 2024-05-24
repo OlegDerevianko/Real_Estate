@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estate Property</title>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.css">
+
+</head>
+<body id="top">
+    <header class="header">
+        <a href="./index.html">
+            <div class="header__logo">
+                <svg class="header__logo-img" aria-hidden="true">
+                    <use href="./images/icons.svg#icon-logo"></use>
+                </svg>
+                <svg class="header__logo-text" aria-hidden="true">
+                    <use href="./images/icons.svg#icon-estatein"></use>
+                </svg>
+            </div>
+        </a>
+        <ul class="header__nav-list">
+            <li class="header__nav-item">
+                <a href="./index.html" class="header__nav-link">Home</a>
+            </li>
+            <li class="header__nav-item">
+                <a href="./about.html" class="header__nav-link">About Us</a>
+            </li>
+            <li class="header__nav-item">
+                <a href="./properties.html" class="header__nav-link header__current">Properties</a>
+            </li>
+            <li class="header__nav-item">
+                <a href="" class="header__nav-link">Services</a>
+            </li>
+        </ul>
+        <div class="header__menu-icon">
+            <div class="header__menu-icon-line"></div>
+        </div>        
+        <button class="header__contact-btn">Contact Us</button>   
+        <div class="header__mobile-nav">
+            <ul class="header__mobile-nav-list">
+                <li class="header__mobile-nav-item">
+                    <a href="./index.html" class="header__mobile-nav-link">Home</a>
+                </li>
+                <li class="header__mobile-nav-item">
+                    <a href="./about.html" class="header__mobile-nav-link">About Us</a>
+                </li>
+                <li class="header__mobile-nav-item header__current">
+                    <a href="./properties.html" class="header__mobile-nav-link">Properties</a>
+                </li>
+                <li class="header__mobile-nav-item">
+                    <a href="#" class="header__mobile-nav-link">Services</a>
+                </li>
+                <li class="header__mobile-nav-item">
+                    <a href="#" class="header__mobile-nav-link">Contact Us</a>
+                </li>
+            </ul>  
+        </div>        
+    </header>
+    <main class="main">  
+        <section class="properties" id="properties">
+            <div class="properties__title">
+                <h1 class="properties__name">Find Your Dream Property</h1>
+                <p class="properties__description">Welcome to Estatein, where your dream property awaits in every corner of our beautiful world. Explore our curated selection of properties, each offering a unique story and a chance to redefine your life. With categories to suit every dreamer, your journey </p> 
+            </div>     
+            <div class="properties__container">
+                <div class="properties__search">
+                    <input class="properties__search-input" type="search" name="" placeholder="Search For A Property">
+                    <button class="properties__search-btn">
+                        <svg class="properties__search-icon" width="20px" height="20px" aria-hidden="true">
+                            <use href="./images/icons.svg#icon-loop"></use>
+                        </svg>
+                        <span>Find Property</span>
+                    </button>
+                </div>
+                <ul class="properties__inputs">
+                    <li class="properties__inputs-item">
+                        <svg class="properties__inputs-icon" width="20px" height="20px" aria-hidden="true">
+                            <use href="./images/icons.svg#icon-location"></use>
+                        </svg>
+                        <input class="properties__inputs-input" type="text" placeholder="Location">
+                        <button class="properties__inputs-btn">
+                            <svg class="properties__inputs-btn-icon" width="20px" height="20px" aria-hidden="true">
+                            <use href="./images/icons.svg#icon-arrow-down"></use>
+                        </svg>
+                        </button>
+                    </li>
+                    <li class="properties__inputs-item">
+                        <svg class="properties__inputs-icon" width="20px" height="20px" aria-hidden="true">
+                            <use href="./images/icons.svg#icon-home1"></use>
+                        </svg>
+                        <input class="properties__inputs-input" type="text" placeholder="Property Type">
+                        <button class="properties__inputs-btn">
+                            <svg class="properties__inputs-btn-icon" width="20px" height="20px" aria-hidden="true">
+                            <use href="./images/icons.svg#icon-arrow-down"></use>
+                        </svg>
+                        </button>
+                    </li>
+                    <li class="properties__inputs-item">
+                        <svg class="properties__inputs-icon" width="20px" height="20px" aria-hidden="true">
+                            <use href="./images/icons.svg#icon-pricing"></use>
+                        </svg>
+                        <input class="properties__inputs-input" type="text" placeholder="Pricing Range">
+                        <button class="properties__inputs-btn">
+                            <svg class="properties__inputs-btn-icon" width="20px" height="20px" aria-hidden="true">
+                            <use href="./images/icons.svg#icon-arrow-down"></use>
+                        </svg>
+                        </button>
+                    </li>
+                    <li class="properties__inputs-item">
+                        <svg class="properties__inputs-icon" width="20px" height="20px" aria-hidden="true">
+                            <use href="./images/icons.svg#icon-size"></use>
+                        </svg>
+                        <input class="properties__inputs-input" type="text" placeholder="Property Size">
+                        <button class="properties__inputs-btn">
+                            <svg class="properties__inputs-btn-icon" width="20px" height="20px" aria-hidden="true">
+                            <use href="./images/icons.svg#icon-arrow-down"></use>
+                        </svg>
+                        </button>
+                    </li>
+                    <li class="properties__inputs-item">
+                        <svg class="properties__inputs-icon" width="20px" height="20px" aria-hidden="true">
+                            <use href="./images/icons.svg#icon-year"></use>
+                        </svg>
+                        <input class="properties__inputs-input" type="text" placeholder="Build Year">
+                        <button class="properties__inputs-btn">
+                            <svg class="properties__inputs-btn-icon" width="20px" height="20px" aria-hidden="true">
+                            <use href="./images/icons.svg#icon-arrow-down"></use>
+                        </svg>
+                        </button>
+                    </li>
+                </ul>
+            </div>       
+        </section>           
+        <section class="makeit">
+            <div class="makeit__title">
+                <h1 class="makeit__title-name">Let's Make it Happen</h1>
+                <p class="makeit__title-text">Ready to take the first step toward your dream property? Fill out the form below, and our real estate wizards will work their magic to find your perfect match. Don't wait; let's embark on this exciting journey together. </p>
+            </div>
+            <div class="makeit__inputs">
+                <form action="">
+                    First Name
+                    <div class="makeit__input-box">
+                        <input class="makeit__inputs-input" type="text" placeholder="Enter First Name">                         
+                    </div>             
+                </form>
+                <form action="">
+                    Last Name
+                    <div class="makeit__input-box">
+                        <input class="makeit__inputs-input" type="text" placeholder="Enter Last Name">                         
+                    </div>             
+                </form>
+                <form action="">
+                    Email
+                    <div class="makeit__input-box">
+                        <input class="makeit__inputs-input" type="text" placeholder="Enter your Email">                        
+                    </div>             
+                </form>
+                <form action="">
+                    Phone
+                    <div class="makeit__input-box">
+                        <input class="makeit__inputs-input" type="text" placeholder="Enter Phone Number">                          
+                    </div>             
+                </form>
+                <form action="">
+                    Preferred Location
+                    <div class="makeit__input-box">
+                        <input class="makeit__inputs-input" type="text" placeholder="Select Location">
+                        <button class="makeit__inputs-btn">
+                            <svg class="makeit__inputs-btn-icon" width="20px" height="20px" aria-hidden="true">
+                            <use href="./images/icons.svg#icon-arrow-down"></use>
+                            </svg>
+                        </button>   
+                    </div>             
+                </form>
+                <form action="">
+                    Property Type
+                    <div class="makeit__input-box">
+                        <input class="makeit__inputs-input" type="text" placeholder="Select Property Type">
+                        <button class="makeit__inputs-btn">
+                            <svg class="makeit__inputs-btn-icon" width="20px" height="20px" aria-hidden="true">
+                            <use href="./images/icons.svg#icon-arrow-down"></use>
+                            </svg>
+                        </button>   
+                    </div>             
+                </form>
+                <form action="">
+                    No. of Bathrooms
+                    <div class="makeit__input-box">
+                        <input class="makeit__inputs-input" type="text" placeholder="Select no. of Bedrooms">
+                        <button class="makeit__inputs-btn">
+                            <svg class="makeit__inputs-btn-icon" width="20px" height="20px" aria-hidden="true">
+                            <use href="./images/icons.svg#icon-arrow-down"></use>
+                            </svg>
+                        </button>   
+                    </div>             
+                </form>
+                <form action="">
+                    No. of Bedrooms
+                    <div class="makeit__input-box">
+                        <input class="makeit__inputs-input" type="text" placeholder="Select no. of Bedrooms">
+                        <button class="makeit__inputs-btn">
+                            <svg class="makeit__inputs-btn-icon" width="20px" height="20px" aria-hidden="true">
+                            <use href="./images/icons.svg#icon-arrow-down"></use>
+                            </svg>
+                        </button>   
+                    </div>             
+                </form>
+                <form action="">
+                    Budget
+                    <div class="makeit__input-box">
+                        <input class="makeit__inputs-input" type="text" placeholder="Location">
+                        <button class="makeit__inputs-btn">
+                            <svg class="makeit__inputs-btn-icon" width="20px" height="20px" aria-hidden="true">
+                            <use href="./images/icons.svg#icon-arrow-down"></use>
+                            </svg>
+                        </button>   
+                    </div>             
+                </form>
+                <form class="makeit__contact-form">
+                    Preferred Contact Method
+                    <div class="makeit__contact-input-box">
+                        <svg class="makeit__contact-input-icon" width="20px" height="20px" aria-hidden="true">
+                            <use href="./images/icons.svg#icon-phone1"></use>
+                        </svg>
+                        <input class="makeit__inputs-input" type="tel" placeholder="Enter Your Number">
+                        <svg width="10px" height="10px" aria-hidden="true">
+                            <use href="./images/icons.svg#icon-squar1"></use>
+                        </svg>
+                    </div>   
+                    <div class="makeit__contact-input-box">
+                        <svg class="makeit__contact-input-icon" width="20px" height="20px" aria-hidden="true">
+                            <use href="./images/icons.svg#icon-email1"></use>
+                        </svg>
+                        <input class="makeit__inputs-input" type="email" placeholder="Enter Your Email">
+                        <svg width="10px" height="10px" aria-hidden="true">
+                            <use href="./images/icons.svg#icon-squar"></use>
+                        </svg>
+                    </div>              
+                </form>
+                <form action="">
+                    Message
+                    <div class="makeit__input-box">
+                        <textarea class="makeit__inputs-input" cols="200" rows="3" placeholder="Enter your Message here.."></textarea>                      
+                    </div>             
+                </form>
+                <form class="makeit__form-checkbox" action="">
+                    <label class="makeit__label-checkbox">I agree with <a href="">Terms of Use</a> and <a href="">Privacy Policy</a>
+                        <input type="checkbox" checked="checked">
+                        <span class="makeit__checkmark-checkbox"></span>
+                    </label>                            
+                </form>
+                <button class="makeit__search-btn">Send Your Message</button>
+            </div>
+        </section>
+        <section class="features" id="features">
+            <div class="features__container">
+                <div class="features__title">
+                    <div>
+                        <h1 class="features__title-name">Featured Properties</h1>
+                        <p class="features__title-text">Explore our handpicked selection of featured properties. Each listing
+                        offers a glimpse into
+                        exceptional homes and
+                        investments available through Estatein. </p>
+                    </div>
+                    <button class="features__title-btn1">View All Properties</button>
+                </div>
+                    <div class="features__swiper swiper">
+                        <ul class="features__list swiper-wrapper">
+                            <li class="features__item swiper-slide">
+                                <img class="features__img" src="./images/serenity_villa-min.jpg" alt="Seaside Serenity Villa">
+                                <span class="features__name">Seaside Serenity Villa</span>
+                                <p class="features__text">A stunning 4-bedroom, 3-bathroom villa in a peaceful suburban neighborhood...
+                                    <a href="" class="features__link">Read More</a>
+                                </p>
+                                <ul class="features__item-list">
+                                    <li class="features__list-item">
+                                        <svg class="features__item-icon" width="22px" height="17px" aria-hidden="true">
+                                            <use href="./images/icons.svg#icon-badroom"></use>
+                                        </svg>
+                                        <span class="features__item-name">4-Bedroom</span>
+                                    </li>
+                                    <li class="features__list-item">
+                                        <svg class="features__item-icon" width="21px" height="21px" aria-hidden="true">
+                                            <use href="./images/icons.svg#icon-bathroom"></use>
+                                        </svg>
+                                        <span class="features__item-name">3-Bathroom</span>
+                                    </li>
+                                    <li class="features__list-item">
+                                        <svg class="features__item-icon" width="20px" height="20px" aria-hidden="true">
+                                            <use href="./images/icons.svg#icon-villa"></use>
+                                        </svg>
+                                        <span class="features__item-name">Villa</span>
+                                    </li>
+                                </ul>
+                                <div class="features__price">
+                                    <div class="features__price-title">
+                                        <span class="features__price-text">Price</span>
+                                        <p class="features__price-sum">$550,000</p>
+                                    </div>
+                                    <button class="features__price-btn">View Property Details</button>
+                                </div>
+                            </li>
+                            <li class="features__item swiper-slide">
+                                    <img class="features__img" src="./images/metropolitan-min.jpg" alt="Metropolitan Haven">
+                                    <span class="features__name">Metropolitan Haven</span>
+                                    <p class="features__text">A chic and fully-furnished 2-bedroom apartment with panoramic city views...
+                                        <a href="" class="features__link">Read More</a>
+                                    </p>
+                                    <ul class="features__item-list">
+                                        <li class="features__list-item">
+                                            <svg class="features__item-icon" width="22px" height="17px" aria-hidden="true">
+                                                <use href="./images/icons.svg#icon-badroom"></use>
+                                            </svg>
+                                            <span class="features__item-name">2-Bedroom</span>
+                                        </li>
+                                        <li class="features__list-item">
+                                            <svg class="features__item-icon" width="21px" height="21px" aria-hidden="true">
+                                                <use href="./images/icons.svg#icon-bathroom"></use>
+                                            </svg>
+                                            <span class="features__item-name">2-Bathroom</span>
+                                        </li>
+                                        <li class="features__list-item">
+                                            <svg class="features__item-icon" width="20px" height="20px" aria-hidden="true">
+                                                <use href="./images/icons.svg#icon-villa"></use>
+                                            </svg>
+                                            <span class="features__item-name">Villa</span>
+                                        </li>
+                                    </ul>
+                                    <div class="features__price">
+                                        <div class="features__price-title">
+                                            <span class="features__price-text">Price</span>
+                                            <p class="features__price-sum">$550,000</p>
+                                        </div>
+                                        <button class="features__price-btn">View Property Details</button>
+                                    </div>
+                            </li>
+                            <li class="features__item swiper-slide">
+                                    <img class="features__img" src="./images/rustic_cottage-min.jpg" alt="Rustic Retreat Cottage">
+                                    <span class="features__name">Rustic Retreat Cottage</span>
+                                    <p class="features__text">An elegant 3-bedroom, 2.5-bathroom townhouse in a gated community...
+                                        <a href="" class="features__link">Read More</a>
+                                    </p>
+                                    <ul class="features__item-list">
+                                        <li class="features__list-item">
+                                            <svg class="features__item-icon" width="22px" height="17px" aria-hidden="true">
+                                                <use href="./images/icons.svg#icon-badroom"></use>
+                                            </svg>
+                                            <span class="features__item-name">3-Bedroom</span>
+                                        </li>
+                                        <li class="features__list-item">
+                                            <svg class="features__item-icon" width="21px" height="21px" aria-hidden="true">
+                                                <use href="./images/icons.svg#icon-bathroom"></use>
+                                            </svg>
+                                            <span class="features__item-name">3-Bathroom</span>
+                                        </li>
+                                        <li class="features__list-item">
+                                            <svg class="features__item-icon" width="20px" height="20px" aria-hidden="true">
+                                                <use href="./images/icons.svg#icon-villa"></use>
+                                            </svg>
+                                            <span class="features__item-name">Villa</span>
+                                        </li>
+                                    </ul>
+                                    <div class="features__price">
+                                        <div class="features__price-title">
+                                            <span class="features__price-text">Price</span>
+                                            <p class="features__price-sum">$550,000</p>
+                                        </div>
+                                        <button class="features__price-btn">View Property Details</button>
+                                    </div>
+                            </li>
+                            <li class="features__item swiper-slide">
+                                <img class="features__img" src="./images/serenity_villa-min.jpg" alt="Seaside Serenity Villa">
+                                <span class="features__name">Seaside Serenity Villa</span>
+                                <p class="features__text">A stunning 4-bedroom, 3-bathroom villa in a peaceful suburban neighborhood...
+                                    <a href="" class="features__link">Read More</a>
+                                </p>
+                                <ul class="features__item-list">
+                                    <li class="features__list-item">
+                                        <svg class="features__item-icon" width="22px" height="17px" aria-hidden="true">
+                                            <use href="./images/icons.svg#icon-badroom"></use>
+                                        </svg>
+                                        <span class="features__item-name">4-Bedroom</span>
+                                    </li>
+                                    <li class="features__list-item">
+                                        <svg class="features__item-icon" width="21px" height="21px" aria-hidden="true">
+                                            <use href="./images/icons.svg#icon-bathroom"></use>
+                                        </svg>
+                                        <span class="features__item-name">3-Bathroom</span>
+                                    </li>
+                                    <li class="features__list-item">
+                                        <svg class="features__item-icon" width="20px" height="20px" aria-hidden="true">
+                                            <use href="./images/icons.svg#icon-villa"></use>
+                                        </svg>
+                                        <span class="features__item-name">Villa</span>
+                                    </li>
+                                </ul>
+                                <div class="features__price">
+                                    <div class="features__price-title">
+                                        <span class="features__price-text">Price</span>
+                                        <p class="features__price-sum">$550,000</p>
+                                    </div>
+                                    <button class="features__price-btn">View Property Details</button>
+                                </div>
+                            </li>
+                            <li class="features__item swiper-slide">
+                                    <img class="features__img" src="./images/metropolitan-min.jpg" alt="Metropolitan Haven">
+                                    <span class="features__name">Metropolitan Haven</span>
+                                    <p class="features__text">A chic and fully-furnished 2-bedroom apartment with panoramic city views...
+                                        <a href="" class="features__link">Read More</a>
+                                    </p>
+                                    <ul class="features__item-list">
+                                        <li class="features__list-item">
+                                            <svg class="features__item-icon" width="22px" height="17px" aria-hidden="true">
+                                                <use href="./images/icons.svg#icon-badroom"></use>
+                                            </svg>
+                                            <span class="features__item-name">2-Bedroom</span>
+                                        </li>
+                                        <li class="features__list-item">
+                                            <svg class="features__item-icon" width="21px" height="21px" aria-hidden="true">
+                                                <use href="./images/icons.svg#icon-bathroom"></use>
+                                            </svg>
+                                            <span class="features__item-name">2-Bathroom</span>
+                                        </li>
+                                        <li class="features__list-item">
+                                            <svg class="features__item-icon" width="20px" height="20px" aria-hidden="true">
+                                                <use href="./images/icons.svg#icon-villa"></use>
+                                            </svg>
+                                            <span class="features__item-name">Villa</span>
+                                        </li>
+                                    </ul>
+                                    <div class="features__price">
+                                        <div class="features__price-title">
+                                            <span class="features__price-text">Price</span>
+                                            <p class="features__price-sum">$550,000</p>
+                                        </div>
+                                        <button class="features__price-btn">View Property Details</button>
+                                    </div>
+                            </li>
+                            <li class="features__item swiper-slide">
+                                    <img class="features__img" src="./images/rustic_cottage-min.jpg" alt="Rustic Retreat Cottage">
+                                    <span class="features__name">Rustic Retreat Cottage</span>
+                                    <p class="features__text">An elegant 3-bedroom, 2.5-bathroom townhouse in a gated community...
+                                        <a href="" class="features__link">Read More</a>
+                                    </p>
+                                    <ul class="features__item-list">
+                                        <li class="features__list-item">
+                                            <svg class="features__item-icon" width="22px" height="17px" aria-hidden="true">
+                                                <use href="./images/icons.svg#icon-badroom"></use>
+                                            </svg>
+                                            <span class="features__item-name">3-Bedroom</span>
+                                        </li>
+                                        <li class="features__list-item">
+                                            <svg class="features__item-icon" width="21px" height="21px" aria-hidden="true">
+                                                <use href="./images/icons.svg#icon-bathroom"></use>
+                                            </svg>
+                                            <span class="features__item-name">3-Bathroom</span>
+                                        </li>
+                                        <li class="features__list-item">
+                                            <svg class="features__item-icon" width="20px" height="20px" aria-hidden="true">
+                                                <use href="./images/icons.svg#icon-villa"></use>
+                                            </svg>
+                                            <span class="features__item-name">Villa</span>
+                                        </li>
+                                    </ul>
+                                    <div class="features__price">
+                                        <div class="features__price-title">
+                                            <span class="features__price-text">Price</span>
+                                            <p class="features__price-sum">$550,000</p>
+                                        </div>
+                                        <button class="features__price-btn">View Property Details</button>
+                                    </div>
+                            </li>
+                            <li class="features__item swiper-slide">
+                                <img class="features__img" src="./images/serenity_villa-min.jpg" alt="Seaside Serenity Villa">
+                                <span class="features__name">Seaside Serenity Villa</span>
+                                <p class="features__text">A stunning 4-bedroom, 3-bathroom villa in a peaceful suburban neighborhood...
+                                    <a href="" class="features__link">Read More</a>
+                                </p>
+                                <ul class="features__item-list">
+                                    <li class="features__list-item">
+                                        <svg class="features__item-icon" width="22px" height="17px" aria-hidden="true">
+                                            <use href="./images/icons.svg#icon-badroom"></use>
+                                        </svg>
+                                        <span class="features__item-name">4-Bedroom</span>
+                                    </li>
+                                    <li class="features__list-item">
+                                        <svg class="features__item-icon" width="21px" height="21px" aria-hidden="true">
+                                            <use href="./images/icons.svg#icon-bathroom"></use>
+                                        </svg>
+                                        <span class="features__item-name">3-Bathroom</span>
+                                    </li>
+                                    <li class="features__list-item">
+                                        <svg class="features__item-icon" width="20px" height="20px" aria-hidden="true">
+                                            <use href="./images/icons.svg#icon-villa"></use>
+                                        </svg>
+                                        <span class="features__item-name">Villa</span>
+                                    </li>
+                                </ul>
+                                <div class="features__price">
+                                    <div class="features__price-title">
+                                        <span class="features__price-text">Price</span>
+                                        <p class="features__price-sum">$550,000</p>
+                                    </div>
+                                    <button class="features__price-btn">View Property Details</button>
+                                </div>
+                            </li>
+                            <li class="features__item swiper-slide">
+                                    <img class="features__img" src="./images/metropolitan-min.jpg" alt="Metropolitan Haven">
+                                    <span class="features__name">Metropolitan Haven</span>
+                                    <p class="features__text">A chic and fully-furnished 2-bedroom apartment with panoramic city views...
+                                        <a href="" class="features__link">Read More</a>
+                                    </p>
+                                    <ul class="features__item-list">
+                                        <li class="features__list-item">
+                                            <svg class="features__item-icon" width="22px" height="17px" aria-hidden="true">
+                                                <use href="./images/icons.svg#icon-badroom"></use>
+                                            </svg>
+                                            <span class="featurse__item-name">2-Bedroom</span>
+                                        </li>
+                                        <li class="features__list-item">
+                                            <svg class="features__item-icon" width="21px" height="21px" aria-hidden="true">
+                                                <use href="./images/icons.svg#icon-bathroom"></use>
+                                            </svg>
+                                            <span class="features__item-name">2-Bathroom</span>
+                                        </li>
+                                        <li class="features__list-item">
+                                            <svg class="features__item-icon" width="20px" height="20px" aria-hidden="true">
+                                                <use href="./images/icons.svg#icon-villa"></use>
+                                            </svg>
+                                            <span class="features__item-name">Villa</span>
+                                        </li>
+                                    </ul>
+                                    <div class="features__price">
+                                        <div class="features__price-title">
+                                            <span class="features__price-text">Price</span>
+                                            <p class="features__price-sum">$550,000</p>
+                                        </div>
+                                        <button class="features__price-btn">View Property Details</button>
+                                    </div>
+                            </li>
+                            <li class="features__item swiper-slide">
+                                    <img class="features__img" src="./images/rustic_cottage-min.jpg" alt="Rustic Retreat Cottage">
+                                    <span class="features__name">Rustic Retreat Cottage</span>
+                                    <p class="features__text">An elegant 3-bedroom, 2.5-bathroom townhouse in a gated community...
+                                        <a href="" class="features__link">Read More</a>
+                                    </p>
+                                    <ul class="features__item-list">
+                                        <li class="features__list-item">
+                                            <svg class="features__item-icon" width="22px" height="17px" aria-hidden="true">
+                                                <use href="./images/icons.svg#icon-badroom"></use>
+                                            </svg>
+                                            <span class="features__item-name">3-Bedroom</span>
+                                        </li>
+                                        <li class="features__list-item">
+                                            <svg class="features__item-icon" width="21px" height="21px" aria-hidden="true">
+                                                <use href="./images/icons.svg#icon-bathroom"></use>
+                                            </svg>
+                                            <span class="feature__item-name">3-Bathroom</span>
+                                        </li>
+                                        <li class="features__list-item">
+                                            <svg class="features__item-icon" width="20px" height="20px" aria-hidden="true">
+                                                <use href="./images/icons.svg#icon-villa"></use>
+                                            </svg>
+                                            <span class="features__item-name">Villa</span>
+                                        </li>
+                                    </ul>
+                                    <div class="features__price">
+                                        <div class="features__price-title">
+                                            <span class="features__price-text">Price</span>
+                                            <p class="features__price-sum">$550,000</p>
+                                        </div>
+                                        <button class="features__price-btn">View Property Details</button>
+                                    </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="features__pagination">
+                        <button class="features__title-btn">View All Properties</button>  
+                        <div class="features__pagination-numbers1"></div>
+                        <div class="features__btns-container">
+                            <button class="features__button-prev">                                    
+                                <svg class="features__arrow-left" width="24px" height="24px" aria-hidden="true">
+                                    <use href="./images/icons.svg#icon-arrow-left"></use>
+                                </svg>
+                            </button>
+                            <span class="features__pagination-numbers">01 of 09</span>
+                            <button class="features__button-next">
+                                <svg class="features__arrow-right" width="24px" height="24px" aria-hidden="true">
+                                    <use href="./images/icons.svg#icon-arrow-right"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>                   
+            </div>               
+        </section>            
+        <section class="join" id="join">
+                <div class="join__container">
+                    <div>
+                        <h1 class="join__title-name">Start Your Real Estate Journey Today</h1>
+                        <p class="join__title-text">Your dream property is just a click away. Whether you're looking for a new home, a strategic investment, or expert real
+                        estate advice, Estatein is here to assist you every step of the way. Take the first step towards your real estate goals
+                        and explore our available properties or get in touch with our team for personalized assistance.</p>
+                    </div>
+                    <button class="join__title-btn">Explore Properties</button>
+                </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__subscribe">
+                <a href="">
+                    <div class="footer__logo">
+                        <svg class="footer__logo-img" aria-hidden="true">
+                            <use href="./images/icons.svg#icon-logo"></use>
+                        </svg>
+                        <svg class="footer__logo-text" aria-hidden="true">
+                            <use href="./images/icons.svg#icon-estatein"></use>
+                        </svg>
+                    </div>
+                </a>
+                <form class="footer__submit" name="signup_form" autocomplete="off" novalidate>
+                        <svg class="footer__icon-mail" width="20px" height="20px" aria-hidden="true">
+                            <use href="./images/icons.svg#icon-mail"></use>
+                        </svg>
+                        <label>
+                            <input class="footer__input" type="email" name="email" placeholder="Enter Your Email">
+                        </label>
+                        <a href="">
+                            <svg class="footer__icon-send" width="24px" height="24px" aria-hidden="true">
+                                <use href="./images/icons.svg#icon-send"></use>
+                            </svg>
+                        </a>                                     
+                </form>
+            </div>
+            <div class="footer__links">
+                <ul class="footer__links-list">
+                    <li class="footer__links-item"><a href="#top" class="footer__link-nav-categories">Home</a></li>
+                    <li class="footer__links-item"><a href="#hero" class="footer__link-nav">Hero Section</a></li>
+                    <li class="footer__links-item"><a href="#features" class="footer__link-nav">Features</a></li>
+                    <li class="footer__links-item"><a href="#features" class="footer__link-nav">Properties</a></li>
+                    <li class="footer__links-item"><a href="#feedback" class="footer__link-nav">Testimonials</a></li>
+                    <li class="footer__links-item"><a href="#question" class="footer__link-nav">FAQ’s</a></li>
+                </ul>
+                <ul class="footer__links-list">
+                    <li class="footer__links-item"><a href="about.html#about" class="footer__link-nav-categories">About Us</a></li>
+                    <li class="footer__links-item"><a href="about.html#story" class="footer__link-nav">Our Story</a></li>
+                    <li class="footer__links-item"><a href="about.html#achievements" class="footer__link-nav">Our Works</a></li>
+                    <li class="footer__links-item"><a href="about.html#experience" class="footer__link-nav">How It Works</a></li>
+                    <li class="footer__links-item"><a href="about.html#team" class="footer__link-nav">Our Team</a></li>
+                    <li class="footer__links-item"><a href="about.html#clients" class="footer__link-nav">Our Clients</a></li>
+                </ul>
+                <ul class="footer__links-list">
+                    <li class="footer__links-item"><a href="" class="footer__link-nav-categories">Properties</a></li>
+                    <li class="footer__links-item"><a href="" class="footer__link-nav">Portfolio</a></li>
+                    <li class="footer__links-item"><a href="" class="footer__link-nav">Categories</a></li>                    
+                </ul>
+                <ul class="footer__links-list">
+                    <li class="footer__links-item"><a href="" class="footer__link-nav-categories">Services</a></li>
+                    <li class="footer__links-item"><a href="" class="footer__link-nav">Valuation Mastery</a></li>
+                    <li class="footer__links-item"><a href="" class="footer__link-nav">Strategic Marketing</a></li>
+                    <li class="footer__links-item"><a href="" class="footer__link-nav">Negotiation Wizardry</a></li>
+                    <li class="footer__links-item"><a href="" class="footer__link-nav">Closing Success</a></li>
+                    <li class="footer__links-item"><a href="" class="footer__link-nav">Property Management</a></li>                    
+                </ul>
+                <ul class="footer__links-list">
+                    <li class="footer__links-item"><a href="" class="footer__link-nav-categories">Contact Us</a></li>
+                    <li class="footer__links-item"><a href="" class="footer__link-nav">Contact Form</a></li>
+                    <li class="footer__links-item"><a href="" class="footer__link-nav">Our Offices</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__end">
+            <div class="footer__rights-socials">
+                <div class="footer__rights">
+                    <span class="footer__rights-text">@2023 Estatein. All Rights Reserved</span>
+                    <a class="footer__rights-text-link" href="">Terms & Conditions</a>
+                </div>
+                <div class="footer__socials">
+                    <button class="footer__socials-btn">
+                        <svg class="footer__socials-icon" width="20px" height="20px" aria-hidden="true">
+                            <use href="./images/icons.svg#icon-facebook"></use>
+                        </svg>
+                    </button>
+                    <button class="footer__socials-btn">
+                        <svg class="footer__socials-icon" width="20px" height="20px" aria-hidden="true">
+                            <use href="./images/icons.svg#icon-linkedin"></use>
+                        </svg>
+                    </button>
+                    <button class="footer__socials-btn">
+                        <svg class="footer__socials-icon" width="20px" height="20px" aria-hidden="true">
+                            <use href="./images/icons.svg#icon-twitter"></use>
+                        </svg>
+                    </button>
+                    <button class="footer__socials-btn">
+                        <svg class="footer__socials-icon" width="20px" height="20px" aria-hidden="true">
+                            <use href="./images/icons.svg#icon-youtube"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+        </div>       
+    </footer> 
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="./js/mobile-menu.js"></script>
+<script src="./js/slider-swiper.js"></script>
+<script src="./js/rating.js"></script>
+
+
+
+</body>
+
+</html>

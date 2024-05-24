@@ -169,12 +169,12 @@
         border: 1px solid var(--border-primary-color);
         background-color: var(--bg-primary-color);
         @media screen and (min-width: 1440px) and (max-width: 1920px) {
-            width: 413px;
+            min-width: 413px;
             gap: 24px;
             padding: 40px;
         }
         @media screen and (min-width: 1920px) {
-            width: 512px;
+            min-width: 512px;
             gap: 30px;
             padding: 50px;
         }
